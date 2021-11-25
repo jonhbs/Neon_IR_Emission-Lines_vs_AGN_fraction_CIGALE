@@ -6,6 +6,7 @@
 4. [The Infrared Emission and Vigorous Star Formation of Low-redshift Quasars](https://ui.adsabs.harvard.edu/abs/2021ApJ...910..124X)
 5. [The viewing angle in AGN SED models, a data-driven analysis](https://ui.adsabs.harvard.edu/abs/2021arXiv210810899R)
 6. [Warm molecular gas temperature distribution in six local infrared bright Seyfert galaxies](https://ui.adsabs.harvard.edu/abs/2014A%26A...566A..49P/abstract)
+7. [A Spitzer High-resolution Mid-Infrared Spectral Atlas of Starburst Galaxies](https://ui.adsabs.harvard.edu/abs/2009ApJS..184..230B/abstract)
 
 ## Important references
 
