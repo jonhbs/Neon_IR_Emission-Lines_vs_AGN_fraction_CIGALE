@@ -1,0 +1,4365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Produced with astropy.io.votable version 5.0
+     http://www.astropy.org/ -->
+<VOTABLE version="1.4" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/VOTable-1.4.xsd">
+ <RESOURCE type="results">
+  <TABLE ID="NED_PhotometricData" name="Photometric Data for NGC 6300">
+   <DESCRIPTION>
+    Published and Homogenized [Frequency, Flux Density] Units
+   </DESCRIPTION>
+   <FIELD ID="No." datatype="int" name="No." ucd="meta.number;phot.mag">
+    <DESCRIPTION>
+     A sequential number of Photometry Measurement for this object,
+     applicable to this list only.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Observed_Passband" arraysize="*" datatype="char" name="Observed Passband" ucd="instr.bandpass">
+    <DESCRIPTION>
+     Colloquial descriptions of the frequency or wavelength at which
+     the data were collected, identifying the bandpass by name e.g.,
+     "V","1.4GHz", "6 cm", "HI", etc.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Photometry_Measurement" datatype="double" name="Photometry Measurement" ucd="phot">
+    <DESCRIPTION>
+     The published photometry or fluxes  for this point.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Uncertainty" arraysize="*" datatype="char" name="Uncertainty" ucd="stat.error;phot">
+    <DESCRIPTION>
+     The published uncertainty for photometric data.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Units" arraysize="*" datatype="char" name="Units" ucd="meta.unit;phot">
+    <DESCRIPTION>
+     Units of photometry measurement for this point.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Frequency" datatype="double" name="Frequency" ucd="em.freq" unit="Hz">
+    <DESCRIPTION>
+     The frequency, wavelength, or photometric passband, in absolute
+     units as calculated by NED
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Flux_Density" datatype="double" name="Flux Density" ucd="phot" unit="Jy">
+    <DESCRIPTION>
+     Flux/Photometric data for this point as transformed and stored by
+     NED.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Upper_limit_of_uncertainty" datatype="double" name="Upper limit of uncertainty" ucd="meta.code.error;stat.max">
+    <DESCRIPTION>
+     The NED upper limit of uncertainty for photometric data.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Lower_limit_of_uncertainty" datatype="double" name="Lower limit of uncertainty" ucd="meta.code.error;stat.min">
+    <DESCRIPTION>
+     The NED lower limit of uncertainty for photometric data.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Upper_limit_of_Flux_Density" datatype="double" name="Upper limit of Flux Density" ucd="phot;stat.max">
+    <DESCRIPTION>
+     The NED upper limit of Photometry Measurement.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Lower_limit_of_Flux_Density" datatype="double" name="Lower limit of Flux Density" ucd="phot;stat.min">
+    <DESCRIPTION>
+     The NED lower limit of Photometry Measurement.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NED_Uncertainty" arraysize="*" datatype="char" name="NED Uncertainty" ucd="stat.error;phot">
+    <DESCRIPTION>
+     Photometric/Flux uncertainty as transformed and stored by NED.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NED_Units" arraysize="*" datatype="char" name="NED Units" ucd="meta.unit;phot">
+    <DESCRIPTION>
+     Absolute units of photometry measurement for this point.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Refcode" arraysize="*" datatype="char" name="Refcode" ucd="meta.bib.bibcode">
+    <DESCRIPTION>
+     The NED 19-digit Bibliographic Reference code.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Significance" arraysize="*" datatype="char" name="Significance" ucd="meta.code.error">
+    <DESCRIPTION>
+     Type of uncertainty reported in the original publication
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Published_frequency" arraysize="*" datatype="char" name="Published frequency" ucd="meta.ref;em.freq">
+    <DESCRIPTION>
+     Wavelength or frequency  of observation as given in the original
+     publication
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Frequency_Mode" arraysize="*" datatype="char" name="Frequency Mode" ucd="meta.ref;em.freq;instr.setup">
+    <DESCRIPTION>
+     The method(s) by which the data were collected, reduced, or
+     derived, regarding the frequency or wavelength;
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Coordinates_Targeted" arraysize="*" datatype="char" name="Coordinates Targeted" ucd="pos">
+    <DESCRIPTION>
+     The position at which the measurements were taken, followed by
+     the coordinate reference frame (e.g.,  013350.90 +303935.8
+     (J2000) in format HHMMSS.ss +DDMMSS.s (EQUINOX),  etc.).
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Spatial_Mode" arraysize="*" datatype="char" name="Spatial Mode" ucd="phot.flux;instr.setup">
+    <DESCRIPTION>
+     The method(s) by which the data were collected, reduced, or
+     derived, regarding the spatially integrated flux
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Qualifiers" arraysize="*" datatype="char" name="Qualifiers" ucd="meta.note;instr.setup">
+    <DESCRIPTION>
+     Self-explanatory notes pertaining to the history of the data or
+     adjustments to the data or hanges introduced by NED
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Comments" arraysize="*" datatype="char" name="Comments" ucd="meta.note;comment">
+    <DESCRIPTION>
+     Other information from the published source or from NED that may
+     be helpful in interpreting or qualifying the data.
+    </DESCRIPTION>
+   </FIELD>
+   <DATA>
+    <TABLEDATA>
+     <TR>
+      <TD>1</TD>
+      <TD>14-195 keV (Swift)</TD>
+      <TD>1.035e-10</TD>
+      <TD>+/-0.64E-11</TD>
+      <TD>erg/s/cm^2^</TD>
+      <TD>2.53e+19</TD>
+      <TD>4.09e-07</TD>
+      <TD>2.53e-08</TD>
+      <TD>2.53e-08</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.53E-08</TD>
+      <TD>Jy</TD>
+      <TD>2010ApJS..186..378T</TD>
+      <TD>uncertainty</TD>
+      <TD>104.50 keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>259.263 -62.859 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data; NED frequency assigned to mid-point ofband in keV</TD>
+     </TR>
+     <TR>
+      <TD>2</TD>
+      <TD>14-195 keV (Swift)</TD>
+      <TD>9.1e-11</TD>
+      <TD/>
+      <TD>erg/cm^2^/s</TD>
+      <TD>2.53e+19</TD>
+      <TD>3.6e-07</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2008ApJ...681..113T</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>104.50 keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>259.2478 -62.8206 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD/>
+      <TD>From new raw data; NED frequency assigned to mid-point ofband in keV</TD>
+     </TR>
+     <TR>
+      <TD>3</TD>
+      <TD>14-195 keV (Swift)</TD>
+      <TD>1.074e-10</TD>
+      <TD/>
+      <TD>erg/cm^2^/s</TD>
+      <TD>2.53e+19</TD>
+      <TD>4.25e-07</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2017ApJS..233...17R</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>104.50 keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Modelled datum</TD>
+      <TD>Intrinsic flux</TD>
+      <TD>From reprocessed raw data; NED frequency assigned tomid-point of band in keV</TD>
+     </TR>
+     <TR>
+      <TD>4</TD>
+      <TD>14-195 keV (Swift)</TD>
+      <TD>9.94e-11</TD>
+      <TD/>
+      <TD>erg/cm^2^/s</TD>
+      <TD>2.53e+19</TD>
+      <TD>3.93e-07</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2017ApJS..233...17R</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>104.50 keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Modelled datum</TD>
+      <TD>Observed flux</TD>
+      <TD>From reprocessed raw data; NED frequency assigned tomid-point of band in keV</TD>
+     </TR>
+     <TR>
+      <TD>5</TD>
+      <TD>14-195 keV (Swift)</TD>
+      <TD>9.637e-11</TD>
+      <TD>+/-93.99E-12</TD>
+      <TD>erg/s/cm^2^</TD>
+      <TD>2.53e+19</TD>
+      <TD>3.81e-07</TD>
+      <TD>3.72e-07</TD>
+      <TD>3.72e-07</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.72E-07</TD>
+      <TD>Jy</TD>
+      <TD>2018ApJS..235....4O</TD>
+      <TD>90% confidence</TD>
+      <TD>104.50 keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>259.25296350 -62.82760560 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD>S/N = 49.89 ; power law model</TD>
+      <TD>From new raw data; NED frequency assigned to mid-point ofband in keV</TD>
+     </TR>
+     <TR>
+      <TD>6</TD>
+      <TD>15-150 keV (Swift)</TD>
+      <TD>8.3e-11</TD>
+      <TD>+/-3.0e-12</TD>
+      <TD>erg/cm^2^/s</TD>
+      <TD>1.99e+19</TD>
+      <TD>4.17e-07</TD>
+      <TD>1.51e-08</TD>
+      <TD>1.51e-08</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.51E-08</TD>
+      <TD>Jy</TD>
+      <TD>2010A&amp;A...524A..64C</TD>
+      <TD>uncertainty</TD>
+      <TD>82.50 keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>259.272 -62.834 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD/>
+      <TD>From new raw data; NED frequency assigned to mid-point ofband in keV</TD>
+     </TR>
+     <TR>
+      <TD>7</TD>
+      <TD>14-150 keV (Swift)</TD>
+      <TD>9.4e-11</TD>
+      <TD/>
+      <TD>erg/cm^2^/s</TD>
+      <TD>1.98e+19</TD>
+      <TD>4.75e-07</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2017ApJS..233...17R</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>82.00 keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Modelled datum</TD>
+      <TD>Intrinsic flux</TD>
+      <TD>From reprocessed raw data; NED frequency assigned tomid-point of band in keV</TD>
+     </TR>
+     <TR>
+      <TD>8</TD>
+      <TD>15-136 keV BeppoSAX</TD>
+      <TD>8.35e-11</TD>
+      <TD/>
+      <TD>erg/s/cm^2^</TD>
+      <TD>1.83e+19</TD>
+      <TD>4.56e-07</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2004A&amp;A...415...39D</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>75.5   keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 17 00.3 -62 49 15.0 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From reprocessed raw data; NED frequency assigned tomid-point of band in keV</TD>
+     </TR>
+     <TR>
+      <TD>9</TD>
+      <TD>40-100 keV INTEGRAL</TD>
+      <TD>3.49e-11</TD>
+      <TD>+/-6.59E-12</TD>
+      <TD>erg cm^-2^ s^-1^</TD>
+      <TD>1.69e+19</TD>
+      <TD>2.06e-07</TD>
+      <TD>3.9e-08</TD>
+      <TD>3.9e-08</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.90E-08</TD>
+      <TD>Jy</TD>
+      <TD>2006ApJ...636..765B</TD>
+      <TD>uncertainty</TD>
+      <TD>70   keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>259.213 -62.823 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data; NED frequency assigned to mid-point ofband in keV</TD>
+     </TR>
+     <TR>
+      <TD>10</TD>
+      <TD>40-100 keV INTEGRAL</TD>
+      <TD>3.72e-11</TD>
+      <TD>+/-0.35E-11</TD>
+      <TD>erg cm^-2^ s^-1^</TD>
+      <TD>1.69e+19</TD>
+      <TD>2.2e-07</TD>
+      <TD>2.07e-08</TD>
+      <TD>2.07e-08</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.07E-08</TD>
+      <TD>Jy</TD>
+      <TD>2006ApJ...638..642B</TD>
+      <TD>uncertainty</TD>
+      <TD>70   keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 17 00 -62 49 14 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data; NED frequency assigned to mid-point ofband in keV</TD>
+     </TR>
+     <TR>
+      <TD>11</TD>
+      <TD>40-100 keV INTEGRAL</TD>
+      <TD>3.6</TD>
+      <TD>+/-0.5</TD>
+      <TD>milliCrab</TD>
+      <TD>1.69e+19</TD>
+      <TD>2.01e-07</TD>
+      <TD>2.79e-08</TD>
+      <TD>2.79e-08</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.79E-08</TD>
+      <TD>Jy</TD>
+      <TD>2007ApJS..170..175B</TD>
+      <TD>uncertainty</TD>
+      <TD>70   keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>259.229 -62.822 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD>Time-averaged flux</TD>
+      <TD>From reprocessed raw data; NED frequency assigned tomid-point of band in keV</TD>
+     </TR>
+     <TR>
+      <TD>12</TD>
+      <TD>40-100 keV INTEGRAL</TD>
+      <TD>3.59e-11</TD>
+      <TD/>
+      <TD>erg/cm^2^/s</TD>
+      <TD>1.69e+19</TD>
+      <TD>2.12e-07</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2009A&amp;A...505..417B</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>70.00 keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>259.24670 -62.81972 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD/>
+      <TD>From new raw data; NED frequency assigned to mid-point ofband in keV</TD>
+     </TR>
+     <TR>
+      <TD>13</TD>
+      <TD>20-100 keV INTEGRAL</TD>
+      <TD>5e-11</TD>
+      <TD/>
+      <TD>erg cm^-2^ s^-1^</TD>
+      <TD>1.45e+19</TD>
+      <TD>3.45e-07</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2005A&amp;A...444..431S</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>60   keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>259.2 -62.8 (2000 )</TD>
+      <TD>Flux integrated from map</TD>
+      <TD>From ISGRI data</TD>
+      <TD>From new raw data; NED frequency assigned to mid-point ofband in keV</TD>
+     </TR>
+     <TR>
+      <TD>14</TD>
+      <TD>20-100 keV BeppoSAX</TD>
+      <TD>1.3e-10</TD>
+      <TD/>
+      <TD>erg cm^-2^ s^-1^</TD>
+      <TD>1.45e+19</TD>
+      <TD>8.97e-07</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2005A&amp;A...444..431S</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>60   keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>259.2 -62.8 (2000 )</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>Averaged new and previously published data; NED frequencyassigned to mid-point of band in keV</TD>
+     </TR>
+     <TR>
+      <TD>15</TD>
+      <TD>20-100 keV INTEGRAL</TD>
+      <TD>6.722e-11</TD>
+      <TD/>
+      <TD>erg/s/cm^2^</TD>
+      <TD>1.45e+19</TD>
+      <TD>4.64e-07</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2009MNRAS.399..944M</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>60.00 keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 16 59.47 -62 49 14.0 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>Averaged from previously published data; NED frequencyassigned to mid-point of band in keV</TD>
+     </TR>
+     <TR>
+      <TD>16</TD>
+      <TD>17-60 keV (INTEGRAL)</TD>
+      <TD>4.71e-11</TD>
+      <TD>+/-0.45E-11</TD>
+      <TD>erg s^-1^ cm^-2^</TD>
+      <TD>9.31e+18</TD>
+      <TD>5.06e-07</TD>
+      <TD>4.83e-08</TD>
+      <TD>4.83e-08</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.83E-08</TD>
+      <TD>Jy</TD>
+      <TD>2007A&amp;A...462...57S</TD>
+      <TD>uncertainty</TD>
+      <TD>38.50   keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>Averaged new and previously published data; NED frequencyassigned to mid-point of band in keV</TD>
+     </TR>
+     <TR>
+      <TD>17</TD>
+      <TD>20-50 keV (Swift)</TD>
+      <TD>4.36e-11</TD>
+      <TD/>
+      <TD>erg/cm^2^/s</TD>
+      <TD>8.46e+18</TD>
+      <TD>5.15e-07</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2017ApJS..233...17R</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>35.00 keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Modelled datum</TD>
+      <TD>Intrinsic flux</TD>
+      <TD>From reprocessed raw data; NED frequency assigned tomid-point of band in keV</TD>
+     </TR>
+     <TR>
+      <TD>18</TD>
+      <TD>20-40 keV (INTEGRAL)</TD>
+      <TD>3.26e-11</TD>
+      <TD>+/-3.03E-12</TD>
+      <TD>erg cm^-2^ s^-1^</TD>
+      <TD>7.25e+18</TD>
+      <TD>4.49e-07</TD>
+      <TD>4.18e-08</TD>
+      <TD>4.18e-08</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.18E-08</TD>
+      <TD>Jy</TD>
+      <TD>2006ApJ...636..765B</TD>
+      <TD>uncertainty</TD>
+      <TD>30   keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>259.213 -62.823 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data; NED frequency assigned to mid-point ofband in keV</TD>
+     </TR>
+     <TR>
+      <TD>19</TD>
+      <TD>20-40 keV (INTEGRAL)</TD>
+      <TD>3.91e-11</TD>
+      <TD>+/-0.37E-11</TD>
+      <TD>erg cm^-2^ s^-1^</TD>
+      <TD>7.25e+18</TD>
+      <TD>5.39e-07</TD>
+      <TD>5.1e-08</TD>
+      <TD>5.1e-08</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.10E-08</TD>
+      <TD>Jy</TD>
+      <TD>2006ApJ...638..642B</TD>
+      <TD>uncertainty</TD>
+      <TD>30   keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 17 00 -62 49 14 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data; NED frequency assigned to mid-point ofband in keV</TD>
+     </TR>
+     <TR>
+      <TD>20</TD>
+      <TD>20-40 keV (INTEGRAL)</TD>
+      <TD>4.4</TD>
+      <TD>+/-0.3</TD>
+      <TD>milliCrab</TD>
+      <TD>7.25e+18</TD>
+      <TD>4.59e-07</TD>
+      <TD>3.13e-08</TD>
+      <TD>3.13e-08</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.13E-08</TD>
+      <TD>Jy</TD>
+      <TD>2007ApJS..170..175B</TD>
+      <TD>uncertainty</TD>
+      <TD>30   keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>259.229 -62.822 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD>Time-averaged flux</TD>
+      <TD>From reprocessed raw data; NED frequency assigned tomid-point of band in keV</TD>
+     </TR>
+     <TR>
+      <TD>21</TD>
+      <TD>20-40 keV (INTEGRAL)</TD>
+      <TD>3.09e-11</TD>
+      <TD/>
+      <TD>erg/cm^2^/s</TD>
+      <TD>7.25e+18</TD>
+      <TD>4.26e-07</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2009A&amp;A...505..417B</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>30.00 keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>259.24670 -62.81972 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD/>
+      <TD>From new raw data; NED frequency assigned to mid-point ofband in keV</TD>
+     </TR>
+     <TR>
+      <TD>22</TD>
+      <TD>10-50 keV (Suzaku)</TD>
+      <TD>1.83</TD>
+      <TD/>
+      <TD>log(erg/s/cm^2^)</TD>
+      <TD>7.25e+18</TD>
+      <TD>9.33e-07</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2011ApJ...727...19F</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>30.00 keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Modelled datum</TD>
+      <TD/>
+      <TD>From reprocessed raw data; NED frequency assigned tomid-point of band in keV</TD>
+     </TR>
+     <TR>
+      <TD>23</TD>
+      <TD>2-10 keV (INTEGRAL)</TD>
+      <TD>4.66e-11</TD>
+      <TD>+/-1.69E-11</TD>
+      <TD>erg cm^-2^ s^-1^</TD>
+      <TD>1.45e+18</TD>
+      <TD>3.21e-06</TD>
+      <TD>1.17e-06</TD>
+      <TD>1.17e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.17E-06</TD>
+      <TD>Jy</TD>
+      <TD>2006ApJ...638..642B</TD>
+      <TD>uncertainty</TD>
+      <TD>6   keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 17 00 -62 49 14 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data; NED frequency assigned to mid-point ofband in keV</TD>
+     </TR>
+     <TR>
+      <TD>24</TD>
+      <TD>2-10 keV (XMM)</TD>
+      <TD>8.6e-12</TD>
+      <TD/>
+      <TD>ergs/cm^2^/s</TD>
+      <TD>1.45e+18</TD>
+      <TD>5.93e-07</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2004ApJ...617..930M</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>6    keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 16 59.8 -62 49 13 (J2000)</TD>
+      <TD>Total flux</TD>
+      <TD>Nuclear flux</TD>
+      <TD>From new raw data; NED frequency assigned to mid-point ofband in keV</TD>
+     </TR>
+     <TR>
+      <TD>25</TD>
+      <TD>2-10 keV (Swift)</TD>
+      <TD>8.6e-12</TD>
+      <TD/>
+      <TD>erg/cm^2^/s</TD>
+      <TD>1.45e+18</TD>
+      <TD>5.93e-07</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2017ApJS..233...17R</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>6.00 keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Modelled datum</TD>
+      <TD>Observed flux</TD>
+      <TD>From reprocessed raw data; NED frequency assigned tomid-point of band in keV</TD>
+     </TR>
+     <TR>
+      <TD>26</TD>
+      <TD>2-10 keV (Swift)</TD>
+      <TD>2.3e-11</TD>
+      <TD/>
+      <TD>erg/cm^2^/s</TD>
+      <TD>1.45e+18</TD>
+      <TD>1.59e-06</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2017ApJS..233...17R</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>6.00 keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Modelled datum</TD>
+      <TD>Intrinsic flux</TD>
+      <TD>From reprocessed raw data; NED frequency assigned tomid-point of band in keV</TD>
+     </TR>
+     <TR>
+      <TD>27</TD>
+      <TD>0.3-8 keV (Chandra)</TD>
+      <TD>3.7e-12</TD>
+      <TD/>
+      <TD>erg/cm^2^/s</TD>
+      <TD>1e+18</TD>
+      <TD>3.7e-07</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2016ApJS..224...40W</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>4.15 keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD>Average flux</TD>
+      <TD>From reprocessed raw data; NED frequency assigned tomid-point of band in keV</TD>
+     </TR>
+     <TR>
+      <TD>28</TD>
+      <TD>2-7 keV Chandra</TD>
+      <TD/>
+      <TD>&lt;2.6130E-15</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>9.19e+17</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>2.84e-10</TD>
+      <TD/>
+      <TD>&lt;2.84E-10</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>3.8        keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>flux_aper;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>29</TD>
+      <TD>2-7 keV Chandra</TD>
+      <TD>1.0799e-15</TD>
+      <TD>+/-7.1992E-16</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>9.19e+17</TD>
+      <TD>1.18e-10</TD>
+      <TD>7.84e-11</TD>
+      <TD>7.84e-11</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-7.84E-11</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>3.8        keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>flux_aper_avg;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>30</TD>
+      <TD>2-7 keV Chandra</TD>
+      <TD/>
+      <TD>&lt;9.0969E-16</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>9.19e+17</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>9.9e-11</TD>
+      <TD/>
+      <TD>&lt;9.90E-11</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>3.8        keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>flux_aper90;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>31</TD>
+      <TD>2-7 keV Chandra</TD>
+      <TD>8.252e-16</TD>
+      <TD>+/-4.6550E-16</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>9.19e+17</TD>
+      <TD>8.98e-11</TD>
+      <TD>5.07e-11</TD>
+      <TD>5.07e-11</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.07E-11</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>3.8        keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>flux_aper90_avg;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>32</TD>
+      <TD>0.5-7 keV Chandra</TD>
+      <TD>9.5962e-12</TD>
+      <TD>+/-2.0044E-13</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>5.56e+17</TD>
+      <TD>1.73e-06</TD>
+      <TD>3.6e-08</TD>
+      <TD>3.6e-08</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.60E-08</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>2.3        keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>flux_aper;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>33</TD>
+      <TD>0.5-7 keV Chandra</TD>
+      <TD>8.8588e-12</TD>
+      <TD>+/-7.8256E-14</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>5.56e+17</TD>
+      <TD>1.59e-06</TD>
+      <TD>1.41e-08</TD>
+      <TD>1.41e-08</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.41E-08</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>2.3        keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>flux_aper_avg;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>34</TD>
+      <TD>0.5-7 keV Chandra</TD>
+      <TD>9.1652e-12</TD>
+      <TD>+/-2.0350E-13</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>5.56e+17</TD>
+      <TD>1.65e-06</TD>
+      <TD>3.66e-08</TD>
+      <TD>3.66e-08</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.66E-08</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>2.3        keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>flux_aper90;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>35</TD>
+      <TD>0.5-7 keV Chandra</TD>
+      <TD>8.5146e-12</TD>
+      <TD>+/-7.9999E-14</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>5.56e+17</TD>
+      <TD>1.53e-06</TD>
+      <TD>1.44e-08</TD>
+      <TD>1.44e-08</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.44E-08</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>2.3        keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>flux_aper90_avg;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>36</TD>
+      <TD>0.2-4 keV (EINSTEIN)</TD>
+      <TD/>
+      <TD>&lt;5.14E-13</TD>
+      <TD>ergs sec^-1^ cm^-2^</TD>
+      <TD>5.25e+17</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>9.8e-08</TD>
+      <TD/>
+      <TD>&lt;9.80E-08</TD>
+      <TD>Jy</TD>
+      <TD>1992ApJS...80..531F</TD>
+      <TD>3 sigma</TD>
+      <TD>2.1    keV</TD>
+      <TD>Broad-band measurement; synthetic band</TD>
+      <TD>17 12 18 -62 45 47 (B1950)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From reprocessed raw data; Extinction-corrected for MilkyWay; NED frequency assigned to mid-point of band in keV</TD>
+     </TR>
+     <TR>
+      <TD>37</TD>
+      <TD>1.2-2 keV Chandra</TD>
+      <TD>1.0041e-14</TD>
+      <TD>+/-2.2985E-15</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>3.77e+17</TD>
+      <TD>2.66e-09</TD>
+      <TD>6.09e-10</TD>
+      <TD>6.09e-10</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.09E-10</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>1.56       keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>flux_aper;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>38</TD>
+      <TD>1.2-2 keV Chandra</TD>
+      <TD>1.0135e-14</TD>
+      <TD>+/-9.9549E-16</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>3.77e+17</TD>
+      <TD>2.69e-09</TD>
+      <TD>2.64e-10</TD>
+      <TD>2.64e-10</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.64E-10</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>1.56       keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>flux_aper_avg;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>39</TD>
+      <TD>1.2-2 keV Chandra</TD>
+      <TD>4.9728e-15</TD>
+      <TD>+/-1.6576E-15</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>3.77e+17</TD>
+      <TD>1.32e-09</TD>
+      <TD>4.39e-10</TD>
+      <TD>4.39e-10</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.39E-10</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>1.56       keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>flux_aper90;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>40</TD>
+      <TD>1.2-2 keV Chandra</TD>
+      <TD>6.6041e-15</TD>
+      <TD>+/-8.2308E-16</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>3.77e+17</TD>
+      <TD>1.75e-09</TD>
+      <TD>2.18e-10</TD>
+      <TD>2.18e-10</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.18E-10</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>1.56       keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>flux_aper90_avg;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>41</TD>
+      <TD>0.5-1.2 keV Chandra</TD>
+      <TD>1.7699e-14</TD>
+      <TD>+/-3.2135E-15</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>2.22e+17</TD>
+      <TD>7.96e-09</TD>
+      <TD>1.44e-09</TD>
+      <TD>1.44e-09</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.44E-09</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>0.92       keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>flux_aper;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>42</TD>
+      <TD>0.5-1.2 keV Chandra</TD>
+      <TD>1.7131e-14</TD>
+      <TD>+/-1.4621E-15</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>2.22e+17</TD>
+      <TD>7.7e-09</TD>
+      <TD>6.57e-10</TD>
+      <TD>6.57e-10</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.57E-10</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>0.92       keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>flux_aper_avg;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>43</TD>
+      <TD>0.5-1.2 keV Chandra</TD>
+      <TD>1.3844e-14</TD>
+      <TD>+/-2.8976E-15</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>2.22e+17</TD>
+      <TD>6.22e-09</TD>
+      <TD>1.3e-09</TD>
+      <TD>1.3e-09</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.30E-09</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>0.92       keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>flux_aper90;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>44</TD>
+      <TD>0.5-1.2 keV Chandra</TD>
+      <TD>1.3809e-14</TD>
+      <TD>+/-1.2677E-15</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>2.22e+17</TD>
+      <TD>6.21e-09</TD>
+      <TD>5.7e-10</TD>
+      <TD>5.7e-10</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.70E-10</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>0.92       keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>flux_aper90_avg;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>45</TD>
+      <TD>0.2-0.5 keV Chandra</TD>
+      <TD>9.7431e-12</TD>
+      <TD>+/-1.9940E-13</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>9.67e+16</TD>
+      <TD>1.01e-05</TD>
+      <TD>2.06e-07</TD>
+      <TD>2.06e-07</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.06E-07</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>0.4        keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>flux_aper;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>46</TD>
+      <TD>0.2-0.5 keV Chandra</TD>
+      <TD>8.9993e-12</TD>
+      <TD>+/-8.7063E-14</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>9.67e+16</TD>
+      <TD>9.3e-06</TD>
+      <TD>9e-08</TD>
+      <TD>9e-08</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.00E-08</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>0.4        keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>flux_aper_avg;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>47</TD>
+      <TD>0.2-0.5 keV Chandra</TD>
+      <TD>9.6772e-12</TD>
+      <TD>+/-2.0378E-13</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>9.67e+16</TD>
+      <TD>1e-05</TD>
+      <TD>2.11e-07</TD>
+      <TD>2.11e-07</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.11E-07</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>0.4        keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>flux_aper90;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>48</TD>
+      <TD>0.2-0.5 keV Chandra</TD>
+      <TD>8.9614e-12</TD>
+      <TD>+/-8.5915E-14</TD>
+      <TD>erg/cm^2/s</TD>
+      <TD>9.67e+16</TD>
+      <TD>9.27e-06</TD>
+      <TD>8.88e-08</TD>
+      <TD>8.88e-08</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-8.88E-08</TD>
+      <TD>Jy</TD>
+      <TD>2020CSC...C2..0000:</TD>
+      <TD>68% confidence</TD>
+      <TD>0.4        keV</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>flux_aper90_avg;var;ext</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>49</TD>
+      <TD>F330W (HST/ACS)</TD>
+      <TD>18.62</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>908000000000000</TD>
+      <TD>0.000129</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2007AJ....134..648M</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>3300   A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>1" radius aperture</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>50</TD>
+      <TD>F330W (HST/ACS)</TD>
+      <TD>17.62</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>908000000000000</TD>
+      <TD>0.000325</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2007AJ....134..648M</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>3300   A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>1.77" radius aperture</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>51</TD>
+      <TD>F330W (HST/ACS)</TD>
+      <TD>21.1</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>908000000000000</TD>
+      <TD>1.32e-05</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2007AJ....134..648M</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>3300   A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>0.3" radius aperture</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>52</TD>
+      <TD>U (U_T)</TD>
+      <TD>11.11</TD>
+      <TD>+/-0.06</TD>
+      <TD>mag</TD>
+      <TD>819000000000000</TD>
+      <TD>0.0651</TD>
+      <TD>0.00359</TD>
+      <TD>0.00359</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.59E-03</TD>
+      <TD>Jy</TD>
+      <TD>1991RC3.9.C...0000d</TD>
+      <TD>rms uncertainty</TD>
+      <TD>3660       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171218.0 -624554 (B1950)</TD>
+      <TD>Multiple methods</TD>
+      <TD/>
+      <TD>Homogenized from new and previously published data; StandardJohnson UBVRI filters assumed</TD>
+     </TR>
+     <TR>
+      <TD>53</TD>
+      <TD>U (U_T^0)</TD>
+      <TD>10.19</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>819000000000000</TD>
+      <TD>0.152</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>1991RC3.9.C...0000d</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>3660       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171218.0 -624554 (B1950)</TD>
+      <TD>Multiple methods</TD>
+      <TD/>
+      <TD>Homogenized from new and previously published data;Extinction-corrected for internal and Milky Way and K-correction applied; Standard Johnson UBVRI filters assumed</TD>
+     </TR>
+     <TR>
+      <TD>54</TD>
+      <TD>[O II] 3727 (ESO)</TD>
+      <TD>5.53e-15</TD>
+      <TD>+/-5.3E-16</TD>
+      <TD>erg cm^-2^ s^-1^</TD>
+      <TD>804000000000000</TD>
+      <TD>553000000</TD>
+      <TD>53000000</TD>
+      <TD>53000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.30E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2006MNRAS.366..480G</TD>
+      <TD>uncertainty</TD>
+      <TD>3727   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>55</TD>
+      <TD>H{delta} 4101 (ESO)</TD>
+      <TD>4.9e-16</TD>
+      <TD>+/-1.6E-16</TD>
+      <TD>erg cm^-2^ s^-1^</TD>
+      <TD>731000000000000</TD>
+      <TD>49000000</TD>
+      <TD>16000000</TD>
+      <TD>16000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.60E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2006MNRAS.366..480G</TD>
+      <TD>uncertainty</TD>
+      <TD>4101   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>56</TD>
+      <TD>H{gamma} 4340 (ESO)</TD>
+      <TD>6e-16</TD>
+      <TD>+/-1.8E-16</TD>
+      <TD>erg cm^-2^ s^-1^</TD>
+      <TD>691000000000000</TD>
+      <TD>60000000</TD>
+      <TD>18000000</TD>
+      <TD>18000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.80E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2006MNRAS.366..480G</TD>
+      <TD>uncertainty</TD>
+      <TD>4340   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>57</TD>
+      <TD>B (CTIO)</TD>
+      <TD>10.5</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>688000000000000</TD>
+      <TD>0.269</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2004ApJ...613..914H</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>4360 A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 16 59.22 -62 49 11.2 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Isophotal mag; isophotal radius=126"</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>58</TD>
+      <TD>B (B_T^0)</TD>
+      <TD>10.2</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>681000000000000</TD>
+      <TD>0.354</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>1991RC3.9.C...0000d</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>4400       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171218.0 -624554 (B1950)</TD>
+      <TD>Multiple methods</TD>
+      <TD/>
+      <TD>Homogenized from new and previously published data;Extinction-corrected for internal and Milky Way and K-correction applied; Standard Johnson UBVRI filters assumed</TD>
+     </TR>
+     <TR>
+      <TD>59</TD>
+      <TD>B (Cousins) (B_26)</TD>
+      <TD>10.89</TD>
+      <TD>+/-0.09</TD>
+      <TD>mag</TD>
+      <TD>681000000000000</TD>
+      <TD>0.187</TD>
+      <TD>0.0162</TD>
+      <TD>0.0162</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.62E-02</TD>
+      <TD>Jy</TD>
+      <TD>1989ESOLV.C...0000L</TD>
+      <TD>typical accuracy</TD>
+      <TD>4400       A</TD>
+      <TD>Broad-band measurement; photometric system transformed</TD>
+      <TD>171218 -6245.9 (B1950)</TD>
+      <TD>Modelled datum</TD>
+      <TD>See ESO-LV catalog for warning flag.</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>60</TD>
+      <TD>B (Cousins)</TD>
+      <TD>10.8</TD>
+      <TD>+/-0.05</TD>
+      <TD>mag</TD>
+      <TD>681000000000000</TD>
+      <TD>0.204</TD>
+      <TD>0.00939</TD>
+      <TD>0.00939</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.39E-03</TD>
+      <TD>Jy</TD>
+      <TD>2006ApJS..162...80K</TD>
+      <TD>uncertainty</TD>
+      <TD>4400   A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>61</TD>
+      <TD>B (m_B)</TD>
+      <TD>10.91</TD>
+      <TD>+/-0.21</TD>
+      <TD>mag</TD>
+      <TD>681000000000000</TD>
+      <TD>0.184</TD>
+      <TD>0.0393</TD>
+      <TD>0.0393</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.93E-02</TD>
+      <TD>Jy</TD>
+      <TD>1991RC3.9.C...0000d</TD>
+      <TD>rms uncertainty</TD>
+      <TD>4400       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171218.0 -624554 (B1950)</TD>
+      <TD>Multiple methods</TD>
+      <TD/>
+      <TD>Homogenized from new and previously published data; StandardJohnson UBVRI filters assumed</TD>
+     </TR>
+     <TR>
+      <TD>62</TD>
+      <TD>B (B_T)</TD>
+      <TD>10.98</TD>
+      <TD>+/-0.05</TD>
+      <TD>mag</TD>
+      <TD>681000000000000</TD>
+      <TD>0.173</TD>
+      <TD>0.00814</TD>
+      <TD>0.00814</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-8.14E-03</TD>
+      <TD>Jy</TD>
+      <TD>1991RC3.9.C...0000d</TD>
+      <TD>rms uncertainty</TD>
+      <TD>4400       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171218.0 -624554 (B1950)</TD>
+      <TD>Multiple methods</TD>
+      <TD/>
+      <TD>Homogenized from new and previously published data; StandardJohnson UBVRI filters assumed</TD>
+     </TR>
+     <TR>
+      <TD>63</TD>
+      <TD>B (Cousins) (B_T)</TD>
+      <TD>10.88</TD>
+      <TD>+/-0.09</TD>
+      <TD>mag</TD>
+      <TD>681000000000000</TD>
+      <TD>0.189</TD>
+      <TD>0.0163</TD>
+      <TD>0.0163</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.63E-02</TD>
+      <TD>Jy</TD>
+      <TD>1989ESOLV.C...0000L</TD>
+      <TD>typical accuracy</TD>
+      <TD>4400       A</TD>
+      <TD>Broad-band measurement; photometric system transformed</TD>
+      <TD>171218 -6245.9 (B1950)</TD>
+      <TD>Modelled datum</TD>
+      <TD>See ESO-LV catalog for warning flag.</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>64</TD>
+      <TD>B (Cousins) (B_25)</TD>
+      <TD>10.92</TD>
+      <TD>+/-0.09</TD>
+      <TD>mag</TD>
+      <TD>681000000000000</TD>
+      <TD>0.182</TD>
+      <TD>0.0157</TD>
+      <TD>0.0157</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.57E-02</TD>
+      <TD>Jy</TD>
+      <TD>1989ESOLV.C...0000L</TD>
+      <TD>typical accuracy</TD>
+      <TD>4400       A</TD>
+      <TD>Broad-band measurement; photometric system transformed</TD>
+      <TD>171218 -6245.9 (B1950)</TD>
+      <TD>Modelled datum</TD>
+      <TD>See ESO-LV catalog for warning flag.</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>65</TD>
+      <TD>B_J</TD>
+      <TD>10.7806</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>641000000000000</TD>
+      <TD>0.193</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2005MNRAS.361...34D</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>4680   A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171659.5 -624915.1 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>66</TD>
+      <TD>He II 4686</TD>
+      <TD/>
+      <TD>&lt;18.8E-15</TD>
+      <TD>erg/cm^2^/s</TD>
+      <TD>640000000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>1880000000</TD>
+      <TD/>
+      <TD>&lt;1.88E+09</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2017ApJ...850...74K</TD>
+      <TD>3 sigma</TD>
+      <TD>4686 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Spectral fitting flag=9; see paper</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>67</TD>
+      <TD>He II 4686 (ESO)</TD>
+      <TD>6e-16</TD>
+      <TD>+/-1.8E-16</TD>
+      <TD>erg cm^-2^ s^-1^</TD>
+      <TD>640000000000000</TD>
+      <TD>60000000</TD>
+      <TD>18000000</TD>
+      <TD>18000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.80E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2006MNRAS.366..480G</TD>
+      <TD>uncertainty</TD>
+      <TD>4686   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>68</TD>
+      <TD>H{beta} 4861 (ESO)</TD>
+      <TD>1.55e-15</TD>
+      <TD>+/-2.8E-16</TD>
+      <TD>erg cm^-2^ s^-1^</TD>
+      <TD>617000000000000</TD>
+      <TD>155000000</TD>
+      <TD>28000000</TD>
+      <TD>28000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.80E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2006MNRAS.366..480G</TD>
+      <TD>uncertainty</TD>
+      <TD>4861   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>69</TD>
+      <TD>H{beta}</TD>
+      <TD/>
+      <TD>&lt;9.9E-15</TD>
+      <TD>erg/cm^2^/s</TD>
+      <TD>617000000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>990000000</TD>
+      <TD/>
+      <TD>&lt;9.90E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2017ApJ...850...74K</TD>
+      <TD>3 sigma</TD>
+      <TD>4861 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Narrow comp;spec fit flag=2; see paper</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>70</TD>
+      <TD>[O III] 5007 (AAT)</TD>
+      <TD>1.4e-13</TD>
+      <TD/>
+      <TD>erg/s/cm^2^</TD>
+      <TD>599000000000000</TD>
+      <TD>14000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2004MNRAS.348.1451L</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>5007   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>71</TD>
+      <TD>[O III] 5007 (SDSS)</TD>
+      <TD>1.349e-14</TD>
+      <TD/>
+      <TD>erg/s/cm^2^</TD>
+      <TD>599000000000000</TD>
+      <TD>1350000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2011ApJ...742...73Z</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>5007 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>Averaged from previously published data</TD>
+     </TR>
+     <TR>
+      <TD>72</TD>
+      <TD>[O III] 5007</TD>
+      <TD>3.66e-14</TD>
+      <TD>+/-0.7E-15</TD>
+      <TD>erg/cm^2^/s</TD>
+      <TD>599000000000000</TD>
+      <TD>3660000000</TD>
+      <TD>70000000</TD>
+      <TD>70000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-7.00E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2017ApJ...850...74K</TD>
+      <TD>uncertainty</TD>
+      <TD>5007 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Spectral fittting flag=2; see paper</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>73</TD>
+      <TD>[O III] 5007 (ESO)</TD>
+      <TD>2.346e-14</TD>
+      <TD>+/-11.3E-16</TD>
+      <TD>erg cm^-2^ s^-1^</TD>
+      <TD>599000000000000</TD>
+      <TD>2350000000</TD>
+      <TD>113000000</TD>
+      <TD>113000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.13E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2006MNRAS.366..480G</TD>
+      <TD>uncertainty</TD>
+      <TD>5007   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>74</TD>
+      <TD>V (Cousins)</TD>
+      <TD>10</TD>
+      <TD>+/-0.03</TD>
+      <TD>mag</TD>
+      <TD>545000000000000</TD>
+      <TD>0.364</TD>
+      <TD>0.0101</TD>
+      <TD>0.0101</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.01E-02</TD>
+      <TD>Jy</TD>
+      <TD>2006ApJS..162...80K</TD>
+      <TD>uncertainty</TD>
+      <TD>5500   A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>75</TD>
+      <TD>V (Johnson)</TD>
+      <TD>10.17</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>542000000000000</TD>
+      <TD>0.311</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>1988VIrPh.C...0000d</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>5530   A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>203.3" aperture</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>76</TD>
+      <TD>V (V_T^0)</TD>
+      <TD>9.61</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>542000000000000</TD>
+      <TD>0.521</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>1991RC3.9.C...0000d</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>5530       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171218.0 -624554 (B1950)</TD>
+      <TD>Multiple methods</TD>
+      <TD/>
+      <TD>Homogenized from new and previously published data;Extinction-corrected for internal and Milky Way and K-correction applied; Standard Johnson UBVRI filters assumed</TD>
+     </TR>
+     <TR>
+      <TD>77</TD>
+      <TD>V (V_T)</TD>
+      <TD>10.2</TD>
+      <TD>+/-0.05</TD>
+      <TD>mag</TD>
+      <TD>542000000000000</TD>
+      <TD>0.303</TD>
+      <TD>0.0146</TD>
+      <TD>0.0146</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.46E-02</TD>
+      <TD>Jy</TD>
+      <TD>1991RC3.9.C...0000d</TD>
+      <TD>rms uncertainty</TD>
+      <TD>5530       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171218.0 -624554 (B1950)</TD>
+      <TD>Multiple methods</TD>
+      <TD/>
+      <TD>Homogenized from new and previously published data; StandardJohnson UBVRI filters assumed</TD>
+     </TR>
+     <TR>
+      <TD>78</TD>
+      <TD>[O I] 6300</TD>
+      <TD/>
+      <TD>&lt;7.3E-15</TD>
+      <TD>erg/cm^2^/s</TD>
+      <TD>476000000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>730000000</TD>
+      <TD/>
+      <TD>&lt;7.30E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2017ApJ...850...74K</TD>
+      <TD>3 sigma</TD>
+      <TD>6300 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Spectral fittting flag=2; see paper</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>79</TD>
+      <TD>R (Cousins) (R_26)</TD>
+      <TD>9.46</TD>
+      <TD>+/-0.09</TD>
+      <TD>mag</TD>
+      <TD>468000000000000</TD>
+      <TD>0.504</TD>
+      <TD>0.0436</TD>
+      <TD>0.0436</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.36E-02</TD>
+      <TD>Jy</TD>
+      <TD>1989ESOLV.C...0000L</TD>
+      <TD>typical accuracy</TD>
+      <TD>6400       A</TD>
+      <TD>Broad-band measurement; photometric system transformed</TD>
+      <TD>171218 -6245.9 (B1950)</TD>
+      <TD>Modelled datum</TD>
+      <TD>See ESO-LV catalog for warning flag.</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>80</TD>
+      <TD>R (Cousins) (R_T)</TD>
+      <TD>9.44</TD>
+      <TD>+/-0.09</TD>
+      <TD>mag</TD>
+      <TD>468000000000000</TD>
+      <TD>0.514</TD>
+      <TD>0.0445</TD>
+      <TD>0.0445</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.45E-02</TD>
+      <TD>Jy</TD>
+      <TD>1989ESOLV.C...0000L</TD>
+      <TD>typical accuracy</TD>
+      <TD>6400       A</TD>
+      <TD>Broad-band measurement; photometric system transformed</TD>
+      <TD>171218 -6245.9 (B1950)</TD>
+      <TD>Modelled datum</TD>
+      <TD>See ESO-LV catalog for warning flag.</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>81</TD>
+      <TD>R (Cousins) (R_25)</TD>
+      <TD>9.5</TD>
+      <TD>+/-0.09</TD>
+      <TD>mag</TD>
+      <TD>468000000000000</TD>
+      <TD>0.489</TD>
+      <TD>0.0422</TD>
+      <TD>0.0422</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.22E-02</TD>
+      <TD>Jy</TD>
+      <TD>1989ESOLV.C...0000L</TD>
+      <TD>typical accuracy</TD>
+      <TD>6400       A</TD>
+      <TD>Broad-band measurement; photometric system transformed</TD>
+      <TD>171218 -6245.9 (B1950)</TD>
+      <TD>Modelled datum</TD>
+      <TD>See ESO-LV catalog for warning flag.</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>82</TD>
+      <TD>R</TD>
+      <TD>10.7738</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>468000000000000</TD>
+      <TD>0.151</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2005MNRAS.361...34D</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>6400   A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171659.5 -624915.1 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>83</TD>
+      <TD>R (Cousins)</TD>
+      <TD>9.33</TD>
+      <TD>+/-0.03</TD>
+      <TD>mag</TD>
+      <TD>468000000000000</TD>
+      <TD>0.571</TD>
+      <TD>0.0158</TD>
+      <TD>0.0158</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.58E-02</TD>
+      <TD>Jy</TD>
+      <TD>2006ApJS..162...80K</TD>
+      <TD>uncertainty</TD>
+      <TD>6400   A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>84</TD>
+      <TD>R (CTIO)</TD>
+      <TD>9.2</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>466000000000000</TD>
+      <TD>0.644</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2004ApJ...613..914H</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>6440 A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 16 59.22 -62 49 11.2 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Isophotal mag; isophotal radius=126"</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>85</TD>
+      <TD>H{alpha} (CTIO)</TD>
+      <TD>-10.5</TD>
+      <TD/>
+      <TD>log(ergs/s/cm^2^)</TD>
+      <TD>457000000000000</TD>
+      <TD>3160000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2004ApJ...613..914H</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>6563 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>17 16 59.22 -62 49 11.2 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD>Corrected for [NII] emission</TD>
+      <TD>From new raw data; Extinction-corrected for internal andMilky Way</TD>
+     </TR>
+     <TR>
+      <TD>86</TD>
+      <TD>H{alpha} (AAT)</TD>
+      <TD/>
+      <TD>&lt;1.3E-15</TD>
+      <TD>erg/s/cm^2^</TD>
+      <TD>457000000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>130000000</TD>
+      <TD/>
+      <TD>&lt;1.30E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2004MNRAS.348.1451L</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>6563   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD>Broad component</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>87</TD>
+      <TD>H{alpha}</TD>
+      <TD>1.29e-14</TD>
+      <TD>+/-0.4E-15</TD>
+      <TD>erg/cm^2^/s</TD>
+      <TD>457000000000000</TD>
+      <TD>1290000000</TD>
+      <TD>40000000</TD>
+      <TD>40000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.00E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2017ApJ...850...74K</TD>
+      <TD>uncertainty</TD>
+      <TD>6563 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Narrow comp;spec fit flag=2; see paper</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>88</TD>
+      <TD>H{alpha}+[NII] CTIO</TD>
+      <TD>-11.01</TD>
+      <TD/>
+      <TD>log(ergs/s/cm^2^)</TD>
+      <TD>456000000000000</TD>
+      <TD>977000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2004ApJ...613..914H</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>6574 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>17 16 59.22 -62 49 11.2 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>89</TD>
+      <TD>[N II] 6583</TD>
+      <TD>3.75e-14</TD>
+      <TD>+/-0.7E-15</TD>
+      <TD>erg/cm^2^/s</TD>
+      <TD>455000000000000</TD>
+      <TD>3750000000</TD>
+      <TD>70000000</TD>
+      <TD>70000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-7.00E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2017ApJ...850...74K</TD>
+      <TD>uncertainty</TD>
+      <TD>6583 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Spectral fitting flag=2; see paper</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>90</TD>
+      <TD>R' (Johnson)</TD>
+      <TD>9.59</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>448000000000000</TD>
+      <TD>0.406</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>1988VIrPh.C...0000d</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>6690   A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>203.3" aperture</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>91</TD>
+      <TD>[S II] 6716</TD>
+      <TD>8.1e-15</TD>
+      <TD>+/-0.9E-15</TD>
+      <TD>erg/cm^2^/s</TD>
+      <TD>446000000000000</TD>
+      <TD>810000000</TD>
+      <TD>90000000</TD>
+      <TD>90000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.00E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2017ApJ...850...74K</TD>
+      <TD>uncertainty</TD>
+      <TD>6716 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Spectral fitting flag=2; see paper</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>92</TD>
+      <TD>[S II] 6731</TD>
+      <TD/>
+      <TD>&lt;9.2E-15</TD>
+      <TD>erg/cm^2^/s</TD>
+      <TD>445000000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>920000000</TD>
+      <TD/>
+      <TD>&lt;9.20E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2017ApJ...850...74K</TD>
+      <TD>3 sigma</TD>
+      <TD>6731 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Spectral fitting flag=2; see paper</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>93</TD>
+      <TD>I_t_ (Kron-Cousins)</TD>
+      <TD>9.11</TD>
+      <TD>+/-5   %</TD>
+      <TD>mag</TD>
+      <TD>380000000000000</TD>
+      <TD>0.54</TD>
+      <TD>0.027</TD>
+      <TD>0.027</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.70E-02</TD>
+      <TD>Jy</TD>
+      <TD>1996ApJS..107...97M</TD>
+      <TD>estimated error</TD>
+      <TD>8060       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171218 -624554 (B1950)</TD>
+      <TD>From multi-aperture data</TD>
+      <TD/>
+      <TD>From new raw data; Corrected for contaminating sources</TD>
+     </TR>
+     <TR>
+      <TD>94</TD>
+      <TD>I</TD>
+      <TD>8.78</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>379000000000000</TD>
+      <TD>0.784</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2007ApJS..172..599S</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>7900 A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 16 58.1 -62 49 11 (J2000)</TD>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>Averaged new and previously published data;Extinction-corrected for Milky Way; Standard Cousins R_C, I_C filters assumed</TD>
+     </TR>
+     <TR>
+      <TD>95</TD>
+      <TD>I</TD>
+      <TD>9.1</TD>
+      <TD>+/-0.04</TD>
+      <TD>mag</TD>
+      <TD>379000000000000</TD>
+      <TD>0.584</TD>
+      <TD>0.0215</TD>
+      <TD>0.0215</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.15E-02</TD>
+      <TD>Jy</TD>
+      <TD>2007ApJS..172..599S</TD>
+      <TD>uncertainty</TD>
+      <TD>7900 A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 16 58.1 -62 49 11 (J2000)</TD>
+      <TD>Total flux</TD>
+      <TD>Observed magnitude</TD>
+      <TD>Averaged new and previously published data; Standard CousinsR_C, I_C filters assumed</TD>
+     </TR>
+     <TR>
+      <TD>96</TD>
+      <TD>I</TD>
+      <TD>10.2374</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>379000000000000</TD>
+      <TD>0.205</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2005MNRAS.361...34D</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>7900   A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171659.5 -624915.1 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>97</TD>
+      <TD>I' (Johnson)</TD>
+      <TD>9.03</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>375000000000000</TD>
+      <TD>0.547</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>1988VIrPh.C...0000d</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>8000   A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>203.3" aperture</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>98</TD>
+      <TD>J (2MASS/CTIO)</TD>
+      <TD>11.428</TD>
+      <TD>+/-0.024</TD>
+      <TD>mag</TD>
+      <TD>243000000000000</TD>
+      <TD>0.0428</TD>
+      <TD>0.000946</TD>
+      <TD>0.000946</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.46E-04</TD>
+      <TD>Jy</TD>
+      <TD>2006AJ....131.1163S</TD>
+      <TD>uncertainty</TD>
+      <TD>1.235      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Profile-fit; Poor quality</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>99</TD>
+      <TD>J (2MASS/CTIO)</TD>
+      <TD>11.688</TD>
+      <TD>+/-0.006</TD>
+      <TD>mag</TD>
+      <TD>243000000000000</TD>
+      <TD>0.0337</TD>
+      <TD>0.000186</TD>
+      <TD>0.000186</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.86E-04</TD>
+      <TD>Jy</TD>
+      <TD>2006AJ....131.1163S</TD>
+      <TD>uncertainty</TD>
+      <TD>1.235      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>4" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>100</TD>
+      <TD>J_14arcsec (2MASS)</TD>
+      <TD>10.881</TD>
+      <TD>+/-0.015</TD>
+      <TD>mag</TD>
+      <TD>240000000000000</TD>
+      <TD>0.0707</TD>
+      <TD>0.000984</TD>
+      <TD>0.000984</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.84E-04</TD>
+      <TD>Jy</TD>
+      <TD>20032MASX.C.......:</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>1.25      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171659.47 -624914.0 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>14.0 x 14.0 arcsec aperture</TD>
+      <TD>From new raw data; Corrected for contaminating sources</TD>
+     </TR>
+     <TR>
+      <TD>101</TD>
+      <TD>J_20 (2MASS LGA)</TD>
+      <TD>7.956</TD>
+      <TD>+/-0.016</TD>
+      <TD>mag</TD>
+      <TD>240000000000000</TD>
+      <TD>1.05</TD>
+      <TD>0.0155</TD>
+      <TD>0.0155</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.55E-02</TD>
+      <TD>Jy</TD>
+      <TD>2003AJ....125..525J</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>1.25      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171659.47 -624914.0 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD>233.6 x  142.5 arcsec integration area.</TD>
+      <TD>From new raw data; Corrected for contaminating sources</TD>
+     </TR>
+     <TR>
+      <TD>102</TD>
+      <TD>J</TD>
+      <TD>7.79</TD>
+      <TD>+/-4   %</TD>
+      <TD>mag</TD>
+      <TD>240000000000000</TD>
+      <TD>1.22</TD>
+      <TD>0.35</TD>
+      <TD>0.35</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.50E-01</TD>
+      <TD>Jy</TD>
+      <TD>2006ApJS..162...80K</TD>
+      <TD>uncertainty</TD>
+      <TD>1.25   microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>103</TD>
+      <TD>J_tot (2MASS LGA)</TD>
+      <TD>7.864</TD>
+      <TD>+/-0.017</TD>
+      <TD>mag</TD>
+      <TD>240000000000000</TD>
+      <TD>1.14</TD>
+      <TD>0.018</TD>
+      <TD>0.018</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.80E-02</TD>
+      <TD>Jy</TD>
+      <TD>2003AJ....125..525J</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>1.25      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171659.47 -624914.0 (J2000)</TD>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>104</TD>
+      <TD>J_Kron (2MASS LGA)</TD>
+      <TD>7.87</TD>
+      <TD>+/-0.017</TD>
+      <TD>mag</TD>
+      <TD>240000000000000</TD>
+      <TD>1.13</TD>
+      <TD>0.0179</TD>
+      <TD>0.0179</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.79E-02</TD>
+      <TD>Jy</TD>
+      <TD>2003AJ....125..525J</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>1.25      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171659.47 -624914.0 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD>297.8 x  181.7 arcsec integration area.</TD>
+      <TD>From new raw data; Corrected for contaminating sources</TD>
+     </TR>
+     <TR>
+      <TD>105</TD>
+      <TD>H_Kron (2MASS LGA)</TD>
+      <TD>7.205</TD>
+      <TD>+/-0.018</TD>
+      <TD>mag</TD>
+      <TD>182000000000000</TD>
+      <TD>1.34</TD>
+      <TD>0.0225</TD>
+      <TD>0.0225</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.25E-02</TD>
+      <TD>Jy</TD>
+      <TD>2003AJ....125..525J</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>1.65      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171659.47 -624914.0 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD>297.8 x  181.7 arcsec integration area.</TD>
+      <TD>From new raw data; Corrected for contaminating sources</TD>
+     </TR>
+     <TR>
+      <TD>106</TD>
+      <TD>H</TD>
+      <TD>7.13</TD>
+      <TD>+/-4   %</TD>
+      <TD>mag</TD>
+      <TD>182000000000000</TD>
+      <TD>1.44</TD>
+      <TD>0.378</TD>
+      <TD>0.378</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.78E-01</TD>
+      <TD>Jy</TD>
+      <TD>2006ApJS..162...80K</TD>
+      <TD>uncertainty</TD>
+      <TD>1.65   microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>107</TD>
+      <TD>H_14arcsec (2MASS)</TD>
+      <TD>10.081</TD>
+      <TD>+/-0.015</TD>
+      <TD>mag</TD>
+      <TD>182000000000000</TD>
+      <TD>0.095</TD>
+      <TD>0.00132</TD>
+      <TD>0.00132</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.32E-03</TD>
+      <TD>Jy</TD>
+      <TD>20032MASX.C.......:</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>1.65      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171659.47 -624914.0 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>14.0 x 14.0 arcsec aperture</TD>
+      <TD>From new raw data; Corrected for contaminating sources</TD>
+     </TR>
+     <TR>
+      <TD>108</TD>
+      <TD>H_20 (2MASS LGA)</TD>
+      <TD>7.287</TD>
+      <TD>+/-0.016</TD>
+      <TD>mag</TD>
+      <TD>182000000000000</TD>
+      <TD>1.25</TD>
+      <TD>0.0185</TD>
+      <TD>0.0185</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.85E-02</TD>
+      <TD>Jy</TD>
+      <TD>2003AJ....125..525J</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>1.65      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171659.47 -624914.0 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD>233.6 x  142.5 arcsec integration area.</TD>
+      <TD>From new raw data; Corrected for contaminating sources</TD>
+     </TR>
+     <TR>
+      <TD>109</TD>
+      <TD>H_tot (2MASS LGA)</TD>
+      <TD>7.198</TD>
+      <TD>+/-0.019</TD>
+      <TD>mag</TD>
+      <TD>182000000000000</TD>
+      <TD>1.35</TD>
+      <TD>0.0239</TD>
+      <TD>0.0239</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.39E-02</TD>
+      <TD>Jy</TD>
+      <TD>2003AJ....125..525J</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>1.65      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171659.47 -624914.0 (J2000)</TD>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>110</TD>
+      <TD>H (2MASS/CTIO)</TD>
+      <TD>10.579</TD>
+      <TD>+/-0.025</TD>
+      <TD>mag</TD>
+      <TD>180000000000000</TD>
+      <TD>0.0601</TD>
+      <TD>0.00138</TD>
+      <TD>0.00138</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.38E-03</TD>
+      <TD>Jy</TD>
+      <TD>2006AJ....131.1163S</TD>
+      <TD>uncertainty</TD>
+      <TD>1.662      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Profile-fit; Poor quality</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>111</TD>
+      <TD>H (2MASS/CTIO)</TD>
+      <TD>10.834</TD>
+      <TD>+/-0.005</TD>
+      <TD>mag</TD>
+      <TD>180000000000000</TD>
+      <TD>0.0475</TD>
+      <TD>0.000219</TD>
+      <TD>0.000219</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.19E-04</TD>
+      <TD>Jy</TD>
+      <TD>2006AJ....131.1163S</TD>
+      <TD>uncertainty</TD>
+      <TD>1.662      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>4" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>112</TD>
+      <TD>K_s (2MASS/CTIO)</TD>
+      <TD>10.317</TD>
+      <TD>+/-0.004</TD>
+      <TD>mag</TD>
+      <TD>139000000000000</TD>
+      <TD>0.0498</TD>
+      <TD>0.000183</TD>
+      <TD>0.000183</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.83E-04</TD>
+      <TD>Jy</TD>
+      <TD>2006AJ....131.1163S</TD>
+      <TD>uncertainty</TD>
+      <TD>2.159      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>4" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>113</TD>
+      <TD>K_s (2MASS/CTIO)</TD>
+      <TD>10.103</TD>
+      <TD>+/-0.026</TD>
+      <TD>mag</TD>
+      <TD>139000000000000</TD>
+      <TD>0.0606</TD>
+      <TD>0.00145</TD>
+      <TD>0.00145</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.45E-03</TD>
+      <TD>Jy</TD>
+      <TD>2006AJ....131.1163S</TD>
+      <TD>uncertainty</TD>
+      <TD>2.159      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Profile-fit; Poor quality</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>114</TD>
+      <TD>K</TD>
+      <TD>6.89</TD>
+      <TD>+/-4   %</TD>
+      <TD>mag</TD>
+      <TD>138000000000000</TD>
+      <TD>1.17</TD>
+      <TD>0.297</TD>
+      <TD>0.297</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.97E-01</TD>
+      <TD>Jy</TD>
+      <TD>2006ApJS..162...80K</TD>
+      <TD>uncertainty</TD>
+      <TD>2.17   microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>115</TD>
+      <TD>K_s (2MASS)</TD>
+      <TD>6.15</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>138000000000000</TD>
+      <TD>2.31</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2006A&amp;A...453..863P</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>2.17   microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Modelled datum</TD>
+      <TD>Disk magnitude</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>116</TD>
+      <TD>K_s (2MASS)</TD>
+      <TD>9.65</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>138000000000000</TD>
+      <TD>0.092</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2006A&amp;A...453..863P</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>2.17   microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Modelled datum</TD>
+      <TD>Bulge magnitude</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>117</TD>
+      <TD>K_tot (2MASS LGA)</TD>
+      <TD>6.931</TD>
+      <TD>+/-0.020</TD>
+      <TD>mag</TD>
+      <TD>138000000000000</TD>
+      <TD>1.13</TD>
+      <TD>0.0209</TD>
+      <TD>0.0209</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.09E-02</TD>
+      <TD>Jy</TD>
+      <TD>2003AJ....125..525J</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>2.17      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171659.47 -624914.0 (J2000)</TD>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>118</TD>
+      <TD>K_Kron (2MASS LGA)</TD>
+      <TD>6.934</TD>
+      <TD>+/-0.019</TD>
+      <TD>mag</TD>
+      <TD>138000000000000</TD>
+      <TD>1.12</TD>
+      <TD>0.0198</TD>
+      <TD>0.0198</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.98E-02</TD>
+      <TD>Jy</TD>
+      <TD>2003AJ....125..525J</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>2.17      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171659.47 -624914.0 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD>297.8 x  181.7 arcsec integration area.</TD>
+      <TD>From new raw data; Corrected for contaminating sources</TD>
+     </TR>
+     <TR>
+      <TD>119</TD>
+      <TD>K_s_14arcsec (2MASS)</TD>
+      <TD>9.674</TD>
+      <TD>+/-0.015</TD>
+      <TD>mag</TD>
+      <TD>138000000000000</TD>
+      <TD>0.09</TD>
+      <TD>0.00125</TD>
+      <TD>0.00125</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.25E-03</TD>
+      <TD>Jy</TD>
+      <TD>20032MASX.C.......:</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>2.17      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171659.47 -624914.0 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>14.0 x 14.0 arcsec aperture</TD>
+      <TD>From new raw data; Corrected for contaminating sources</TD>
+     </TR>
+     <TR>
+      <TD>120</TD>
+      <TD>K_20 (2MASS LGA)</TD>
+      <TD>7.007</TD>
+      <TD>+/-0.017</TD>
+      <TD>mag</TD>
+      <TD>138000000000000</TD>
+      <TD>1.05</TD>
+      <TD>0.0166</TD>
+      <TD>0.0166</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.66E-02</TD>
+      <TD>Jy</TD>
+      <TD>2003AJ....125..525J</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>2.17      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171659.47 -624914.0 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD>233.6 x  142.5 arcsec integration area.</TD>
+      <TD>From new raw data; Corrected for contaminating sources</TD>
+     </TR>
+     <TR>
+      <TD>121</TD>
+      <TD>K_s (2MASS)</TD>
+      <TD>11.22</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>138000000000000</TD>
+      <TD>0.0217</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2006A&amp;A...453..863P</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>2.17   microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Modelled datum</TD>
+      <TD>AGN magnitude</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>122</TD>
+      <TD>W1 (WISE)</TD>
+      <TD>9.022</TD>
+      <TD>+/-0.023</TD>
+      <TD>mag</TD>
+      <TD>89400000000000</TD>
+      <TD>0.0762</TD>
+      <TD>0.00161</TD>
+      <TD>0.00161</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.61E-03</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>3.3526     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Profile-fit;extended</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>123</TD>
+      <TD>W1 (WISE)</TD>
+      <TD>8.958</TD>
+      <TD>+/-0.008</TD>
+      <TD>mag</TD>
+      <TD>89400000000000</TD>
+      <TD>0.0808</TD>
+      <TD>0.000596</TD>
+      <TD>0.000596</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.96E-04</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>3.3526     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=8.25" COG-corrected;extended</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>124</TD>
+      <TD>W1 (WISE)</TD>
+      <TD>8.236</TD>
+      <TD>+/-0.008</TD>
+      <TD>mag</TD>
+      <TD>89400000000000</TD>
+      <TD>0.157</TD>
+      <TD>0.00116</TD>
+      <TD>0.00116</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.16E-03</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>3.3526     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=22.0" aperture;extended</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>125</TD>
+      <TD>3.6 microns IRAC AB</TD>
+      <TD>9.34</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>84400000000000</TD>
+      <TD>0.667</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2014MNRAS.444..527S</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>3.55 microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 16 59.3 -62 49 12 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>aperture corrected</TD>
+      <TD>From reprocessed raw data; Extinction-corrected for internaland Milky Way and K-correction applied</TD>
+     </TR>
+     <TR>
+      <TD>126</TD>
+      <TD>3.6 microns IRAC AB</TD>
+      <TD>9.27</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>84400000000000</TD>
+      <TD>0.711</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2014MNRAS.444..527S</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>3.55 microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 16 59.3 -62 49 12 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD/>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>127</TD>
+      <TD>W2 (WISE)</TD>
+      <TD>7.952</TD>
+      <TD>+/-0.021</TD>
+      <TD>mag</TD>
+      <TD>65100000000000</TD>
+      <TD>0.113</TD>
+      <TD>0.00219</TD>
+      <TD>0.00219</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.19E-03</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>4.6028     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Profile-fit;extended</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>128</TD>
+      <TD>W2 (WISE)</TD>
+      <TD>7.965</TD>
+      <TD>+/-0.006</TD>
+      <TD>mag</TD>
+      <TD>65100000000000</TD>
+      <TD>0.112</TD>
+      <TD>0.000619</TD>
+      <TD>0.000619</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.19E-04</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>4.6028     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=8.25" COG-corrected;extended</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>129</TD>
+      <TD>W2 (WISE)</TD>
+      <TD>7.662</TD>
+      <TD>+/-0.007</TD>
+      <TD>mag</TD>
+      <TD>65100000000000</TD>
+      <TD>0.148</TD>
+      <TD>0.000954</TD>
+      <TD>0.000954</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.54E-04</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>4.6028     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=22.0" aperture;extended</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>130</TD>
+      <TD>PAH1 (VLT)</TD>
+      <TD>217.8</TD>
+      <TD>+/-10.4</TD>
+      <TD>milliJy</TD>
+      <TD>34900000000000</TD>
+      <TD>0.218</TD>
+      <TD>0.0104</TD>
+      <TD>0.0104</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.04E-02</TD>
+      <TD>Jy</TD>
+      <TD>2014MNRAS.439.1648A</TD>
+      <TD>uncertainty</TD>
+      <TD>8.59   microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>259.247917 -62.820556 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Nuclear flux</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>131</TD>
+      <TD>SIV (VLT)</TD>
+      <TD>153.2</TD>
+      <TD>+/-3.3</TD>
+      <TD>milliJy</TD>
+      <TD>28600000000000</TD>
+      <TD>0.153</TD>
+      <TD>0.0033</TD>
+      <TD>0.0033</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.30E-03</TD>
+      <TD>Jy</TD>
+      <TD>2014MNRAS.439.1648A</TD>
+      <TD>uncertainty</TD>
+      <TD>10.49   microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>259.247917 -62.820556 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Nuclear flux</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>132</TD>
+      <TD>PAH2 (VLT)</TD>
+      <TD>266.5</TD>
+      <TD>+/-14.9</TD>
+      <TD>milliJy</TD>
+      <TD>26600000000000</TD>
+      <TD>0.267</TD>
+      <TD>0.0149</TD>
+      <TD>0.0149</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.49E-02</TD>
+      <TD>Jy</TD>
+      <TD>2014MNRAS.439.1648A</TD>
+      <TD>uncertainty</TD>
+      <TD>11.25   microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>259.247917 -62.820556 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Nuclear flux</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>133</TD>
+      <TD>W3 (WISE)</TD>
+      <TD>4.607</TD>
+      <TD>+/-0.008</TD>
+      <TD>mag</TD>
+      <TD>25900000000000</TD>
+      <TD>0.455</TD>
+      <TD>0.00335</TD>
+      <TD>0.00335</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.35E-03</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>11.5608    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=8.25" COG-corrected;extended</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>134</TD>
+      <TD>W3 (WISE)</TD>
+      <TD>4.639</TD>
+      <TD>+/-0.009</TD>
+      <TD>mag</TD>
+      <TD>25900000000000</TD>
+      <TD>0.442</TD>
+      <TD>0.00366</TD>
+      <TD>0.00366</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.66E-03</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>11.5608    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=22.0" aperture;extended</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>135</TD>
+      <TD>W3 (WISE)</TD>
+      <TD>4.579</TD>
+      <TD>+/-0.015</TD>
+      <TD>mag</TD>
+      <TD>25900000000000</TD>
+      <TD>0.467</TD>
+      <TD>0.00645</TD>
+      <TD>0.00645</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.45E-03</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>11.5608    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Profile-fit;extended</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>136</TD>
+      <TD>12 microns (IRAS)</TD>
+      <TD>1.71</TD>
+      <TD>+/-0.021</TD>
+      <TD>Jy</TD>
+      <TD>25000000000000</TD>
+      <TD>1.71</TD>
+      <TD>0.021</TD>
+      <TD>0.021</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.10E-02</TD>
+      <TD>Jy</TD>
+      <TD>2003AJ....126.1607S</TD>
+      <TD>1 sigma</TD>
+      <TD>12   microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 17 00.3 -62 49 13 (J2000)</TD>
+      <TD>Total flux</TD>
+      <TD>Size, Method, Flag codes: RI;see paper</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>137</TD>
+      <TD>12 microns (IRAS)</TD>
+      <TD>0.9268</TD>
+      <TD>+/-6   %</TD>
+      <TD>Jy</TD>
+      <TD>25000000000000</TD>
+      <TD>0.927</TD>
+      <TD>0.0556</TD>
+      <TD>0.0556</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.56E-02</TD>
+      <TD>Jy</TD>
+      <TD>1990IRASF.C...0000M</TD>
+      <TD>uncertainty</TD>
+      <TD>12        microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171219.1 -624556 (B1950)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>IRAS quality flag = 3</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>138</TD>
+      <TD>[Ne II] 12.81</TD>
+      <TD>1.152e-20</TD>
+      <TD/>
+      <TD>W/cm^2^</TD>
+      <TD>23400000000000</TD>
+      <TD>11500000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2011ApJS..195...17W</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>12.81 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Not reported in paper</TD>
+      <TD/>
+      <TD>Averaged from previously published data</TD>
+     </TR>
+     <TR>
+      <TD>139</TD>
+      <TD>[Ne II] 12.8 (IRS)</TD>
+      <TD>1.152e-13</TD>
+      <TD>+/-0.63E-14</TD>
+      <TD>erg/s/cm^2^</TD>
+      <TD>23400000000000</TD>
+      <TD>11500000000</TD>
+      <TD>630000000</TD>
+      <TD>630000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.30E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2009MNRAS.398.1165G</TD>
+      <TD>uncertainty</TD>
+      <TD>12.81 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>17 17 00.3 -62 49 13 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>140</TD>
+      <TD>[Ne II] 12.8 Spitzer</TD>
+      <TD>1.1e-13</TD>
+      <TD/>
+      <TD>erg/cm^2^/s</TD>
+      <TD>23400000000000</TD>
+      <TD>11000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2010ApJ...725.2270P</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>12.81 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>17 16 59.5 -62 49 14 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD/>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>141</TD>
+      <TD>NEII_2 (VLT)</TD>
+      <TD>608.2</TD>
+      <TD>+/-12.6</TD>
+      <TD>milliJy</TD>
+      <TD>23000000000000</TD>
+      <TD>0.608</TD>
+      <TD>0.0126</TD>
+      <TD>0.0126</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.26E-02</TD>
+      <TD>Jy</TD>
+      <TD>2014MNRAS.439.1648A</TD>
+      <TD>uncertainty</TD>
+      <TD>13.04   microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>259.247917 -62.820556 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Nuclear flux</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>142</TD>
+      <TD>13.04 microns (VLT)</TD>
+      <TD>727</TD>
+      <TD>+/-38</TD>
+      <TD>milliJy</TD>
+      <TD>23000000000000</TD>
+      <TD>0.727</TD>
+      <TD>0.038</TD>
+      <TD>0.038</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.80E-02</TD>
+      <TD>Jy</TD>
+      <TD>2009A&amp;A...502..457G</TD>
+      <TD>uncertainty</TD>
+      <TD>13.04 microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>143</TD>
+      <TD>[Ne V] 14.3 (IRS)</TD>
+      <TD>1.254e-13</TD>
+      <TD>+/-0.66E-14</TD>
+      <TD>erg/s/cm^2^</TD>
+      <TD>20900000000000</TD>
+      <TD>12500000000</TD>
+      <TD>660000000</TD>
+      <TD>660000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.60E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2009MNRAS.398.1165G</TD>
+      <TD>uncertainty</TD>
+      <TD>14.32 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>17 17 00.3 -62 49 13 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>144</TD>
+      <TD>[Ne V] 14.3 Spitzer</TD>
+      <TD>1.3e-13</TD>
+      <TD/>
+      <TD>erg/cm^2^/s</TD>
+      <TD>20900000000000</TD>
+      <TD>13000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2010ApJ...725.2270P</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>14.32 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>17 16 59.5 -62 49 14 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD/>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>145</TD>
+      <TD>[Ne V] 14.32</TD>
+      <TD>1.254e-20</TD>
+      <TD/>
+      <TD>W/cm^2^</TD>
+      <TD>20900000000000</TD>
+      <TD>12500000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2011ApJS..195...17W</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>14.32 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Not reported in paper</TD>
+      <TD/>
+      <TD>Averaged from previously published data</TD>
+     </TR>
+     <TR>
+      <TD>146</TD>
+      <TD>[NeIII] 15.6 Spitzer</TD>
+      <TD>1.5e-13</TD>
+      <TD/>
+      <TD>erg/cm^2^/s</TD>
+      <TD>19300000000000</TD>
+      <TD>15000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2010ApJ...725.2270P</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>15.56 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>17 16 59.5 -62 49 14 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD/>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>147</TD>
+      <TD>[Ne III] 15.56</TD>
+      <TD>1.528e-20</TD>
+      <TD/>
+      <TD>W/cm^2^</TD>
+      <TD>19300000000000</TD>
+      <TD>15300000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2011ApJS..195...17W</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>15.56 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Not reported in paper</TD>
+      <TD/>
+      <TD>Averaged from previously published data</TD>
+     </TR>
+     <TR>
+      <TD>148</TD>
+      <TD>[Ne III] 15.5 (IRS)</TD>
+      <TD>1.528e-13</TD>
+      <TD>+/-0.57E-14</TD>
+      <TD>erg/s/cm^2^</TD>
+      <TD>19300000000000</TD>
+      <TD>15300000000</TD>
+      <TD>570000000</TD>
+      <TD>570000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.70E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2009MNRAS.398.1165G</TD>
+      <TD>uncertainty</TD>
+      <TD>15.56 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>17 17 00.3 -62 49 13 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>149</TD>
+      <TD>W4 (WISE)</TD>
+      <TD>1.669</TD>
+      <TD>+/-0.006</TD>
+      <TD>mag</TD>
+      <TD>13600000000000</TD>
+      <TD>1.8</TD>
+      <TD>0.00994</TD>
+      <TD>0.00994</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.94E-03</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>22.0883    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=16.5" COG-corrected;extended</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>150</TD>
+      <TD>W4 (WISE)</TD>
+      <TD>1.689</TD>
+      <TD>+/-0.017</TD>
+      <TD>mag</TD>
+      <TD>13600000000000</TD>
+      <TD>1.77</TD>
+      <TD>0.0276</TD>
+      <TD>0.0276</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.76E-02</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>22.0883    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Profile-fit;extended</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>151</TD>
+      <TD>W4 (WISE)</TD>
+      <TD>1.95</TD>
+      <TD>+/-0.007</TD>
+      <TD>mag</TD>
+      <TD>13600000000000</TD>
+      <TD>1.39</TD>
+      <TD>0.00895</TD>
+      <TD>0.00895</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-8.95E-03</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>22.0883    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=22.0" aperture;extended</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>152</TD>
+      <TD>[Ne V] 24.3 (IRS)</TD>
+      <TD>8.33e-14</TD>
+      <TD>+/-1.29E-14</TD>
+      <TD>erg/s/cm^2^</TD>
+      <TD>12300000000000</TD>
+      <TD>8330000000</TD>
+      <TD>1290000000</TD>
+      <TD>1290000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.29E+09</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2009MNRAS.398.1165G</TD>
+      <TD>uncertainty</TD>
+      <TD>24.32 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>17 17 00.3 -62 49 13 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>153</TD>
+      <TD>[Ne V] 24.3 Spitzer</TD>
+      <TD>9.1e-14</TD>
+      <TD/>
+      <TD>erg/cm^2^/s</TD>
+      <TD>12300000000000</TD>
+      <TD>9100000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2010ApJ...725.2270P</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>24.32 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>17 16 59.5 -62 49 14 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD/>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>154</TD>
+      <TD>25 microns (IRAS)</TD>
+      <TD>3.25</TD>
+      <TD>+/-0.026</TD>
+      <TD>Jy</TD>
+      <TD>12000000000000</TD>
+      <TD>3.25</TD>
+      <TD>0.026</TD>
+      <TD>0.026</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.60E-02</TD>
+      <TD>Jy</TD>
+      <TD>2003AJ....126.1607S</TD>
+      <TD>1 sigma</TD>
+      <TD>25   microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 17 00.3 -62 49 13 (J2000)</TD>
+      <TD>Total flux</TD>
+      <TD>Size, Method, Flag codes: RI;see paper</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>155</TD>
+      <TD>25 microns (IRAS)</TD>
+      <TD>2.272</TD>
+      <TD>+/-5   %</TD>
+      <TD>Jy</TD>
+      <TD>12000000000000</TD>
+      <TD>2.27</TD>
+      <TD>0.0463</TD>
+      <TD>0.0463</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.63E-02</TD>
+      <TD>Jy</TD>
+      <TD>1990IRASF.C...0000M</TD>
+      <TD>uncertainty</TD>
+      <TD>25        microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171219.1 -624556 (B1950)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>IRAS quality flag = 3</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>156</TD>
+      <TD>[O IV] 25.9 (IRS)</TD>
+      <TD>2.945e-13</TD>
+      <TD>+/-2.26E-14</TD>
+      <TD>erg/s/cm^2^</TD>
+      <TD>11600000000000</TD>
+      <TD>29400000000</TD>
+      <TD>2260000000</TD>
+      <TD>2260000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.26E+09</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2009MNRAS.398.1165G</TD>
+      <TD>uncertainty</TD>
+      <TD>25.89 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>17 17 00.3 -62 49 13 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>157</TD>
+      <TD>[O IV] 25.89 Spitzer</TD>
+      <TD>-12.53</TD>
+      <TD/>
+      <TD>log(erg/cm^2^/s)</TD>
+      <TD>11600000000000</TD>
+      <TD>29500000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2016ApJ...822..109A</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>25.89 microns</TD>
+      <TD>Line measurement; flux integrated over line</TD>
+      <TD/>
+      <TD>Not reported in paper</TD>
+      <TD>From 2009ApJ...698..623D</TD>
+      <TD>Averaged from previously published data</TD>
+     </TR>
+     <TR>
+      <TD>158</TD>
+      <TD>[O IV] 25.89 Spitzer</TD>
+      <TD>2.98e-13</TD>
+      <TD>+/-0.47e-13</TD>
+      <TD>erg/cm^2^/s</TD>
+      <TD>11600000000000</TD>
+      <TD>29800000000</TD>
+      <TD>4700000000</TD>
+      <TD>4700000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.70E+09</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2009ApJ...698..623D</TD>
+      <TD>uncertainty</TD>
+      <TD>25.89 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>159</TD>
+      <TD>[O IV] 25.89</TD>
+      <TD>2.945e-20</TD>
+      <TD/>
+      <TD>W/cm^2^</TD>
+      <TD>11600000000000</TD>
+      <TD>29400000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2011ApJS..195...17W</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>25.89 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Not reported in paper</TD>
+      <TD/>
+      <TD>Averaged from previously published data</TD>
+     </TR>
+     <TR>
+      <TD>160</TD>
+      <TD>[O IV] 25.9 Spitzer</TD>
+      <TD>3.1e-13</TD>
+      <TD/>
+      <TD>erg/cm^2^/s</TD>
+      <TD>11600000000000</TD>
+      <TD>31000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2010ApJ...725.2270P</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>25.89 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>17 16 59.5 -62 49 14 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD/>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>161</TD>
+      <TD>[Fe II] 25.9 (IRS)</TD>
+      <TD/>
+      <TD>&lt;3.49E-14</TD>
+      <TD>erg/s/cm^2^</TD>
+      <TD>11500000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>3490000000</TD>
+      <TD/>
+      <TD>&lt;3.49E+09</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2009MNRAS.398.1165G</TD>
+      <TD>3 sigma</TD>
+      <TD>25.99 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>17 17 00.3 -62 49 13 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>162</TD>
+      <TD>[Fe II] 25.99</TD>
+      <TD/>
+      <TD>&lt;3.49E-21</TD>
+      <TD>W/cm^2^</TD>
+      <TD>11500000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>3490000000</TD>
+      <TD/>
+      <TD>&lt;3.49E+09</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2011ApJS..195...17W</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>25.99 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Not reported in paper</TD>
+      <TD/>
+      <TD>Averaged from previously published data</TD>
+     </TR>
+     <TR>
+      <TD>163</TD>
+      <TD>[S III] 33.48</TD>
+      <TD/>
+      <TD>&lt;7.63E-21</TD>
+      <TD>W/cm^2^</TD>
+      <TD>8950000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>7630000000</TD>
+      <TD/>
+      <TD>&lt;7.63E+09</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2011ApJS..195...17W</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>33.48 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Not reported in paper</TD>
+      <TD/>
+      <TD>Averaged from previously published data</TD>
+     </TR>
+     <TR>
+      <TD>164</TD>
+      <TD>[S III] 33.4 (IRS)</TD>
+      <TD/>
+      <TD>&lt;7.63E-14</TD>
+      <TD>erg/s/cm^2^</TD>
+      <TD>8950000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>7630000000</TD>
+      <TD/>
+      <TD>&lt;7.63E+09</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2009MNRAS.398.1165G</TD>
+      <TD>3 sigma</TD>
+      <TD>33.48 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>17 17 00.3 -62 49 13 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>165</TD>
+      <TD>[Si II] 34.28</TD>
+      <TD>1.131e-20</TD>
+      <TD/>
+      <TD>W/cm^2^</TD>
+      <TD>8750000000000</TD>
+      <TD>11300000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2011ApJS..195...17W</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>34.28 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Not reported in paper</TD>
+      <TD/>
+      <TD>Averaged from previously published data</TD>
+     </TR>
+     <TR>
+      <TD>166</TD>
+      <TD>[S III] 34.8 (IRS)</TD>
+      <TD>1.131e-13</TD>
+      <TD>+/-0.82E-14</TD>
+      <TD>erg/s/cm^2^</TD>
+      <TD>8610000000000</TD>
+      <TD>11300000000</TD>
+      <TD>820000000</TD>
+      <TD>820000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-8.20E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2009MNRAS.398.1165G</TD>
+      <TD>uncertainty</TD>
+      <TD>34.82 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>17 17 00.3 -62 49 13 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>167</TD>
+      <TD>60 microns (IRAS)</TD>
+      <TD>16.72</TD>
+      <TD>+/-0.031</TD>
+      <TD>Jy</TD>
+      <TD>5000000000000</TD>
+      <TD>16.7</TD>
+      <TD>0.031</TD>
+      <TD>0.031</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.10E-02</TD>
+      <TD>Jy</TD>
+      <TD>2003AJ....126.1607S</TD>
+      <TD>1 sigma</TD>
+      <TD>60   microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 17 00.3 -62 49 13 (J2000)</TD>
+      <TD>Total flux</TD>
+      <TD>Size, Method, Flag codes: RI;see paper</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>168</TD>
+      <TD>60 microns (IRAS)</TD>
+      <TD>14.65</TD>
+      <TD>+/-5   %</TD>
+      <TD>Jy</TD>
+      <TD>5000000000000</TD>
+      <TD>14.7</TD>
+      <TD>0.732</TD>
+      <TD>0.732</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-7.32E-01</TD>
+      <TD>Jy</TD>
+      <TD>1990IRASF.C...0000M</TD>
+      <TD>uncertainty</TD>
+      <TD>60        microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171219.1 -624556 (B1950)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>IRAS quality flag = 2</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>169</TD>
+      <TD>70 microns (PACS)</TD>
+      <TD>19.113</TD>
+      <TD>+/-1.091</TD>
+      <TD>Jy</TD>
+      <TD>4280000000000</TD>
+      <TD>19.1</TD>
+      <TD>1.09</TD>
+      <TD>1.09</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.09E+00</TD>
+      <TD>Jy</TD>
+      <TD>2014ApJ...794..152M</TD>
+      <TD>uncertainty</TD>
+      <TD>70 microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 16 59.5 -62 49 14 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>PA=120 deg; Min=73"; Max=90"</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>170</TD>
+      <TD>100 microns (IRAS)</TD>
+      <TD>42.45</TD>
+      <TD>+/-0.145</TD>
+      <TD>Jy</TD>
+      <TD>3000000000000</TD>
+      <TD>42.5</TD>
+      <TD>0.145</TD>
+      <TD>0.145</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.45E-01</TD>
+      <TD>Jy</TD>
+      <TD>2003AJ....126.1607S</TD>
+      <TD>1 sigma</TD>
+      <TD>100   microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 17 00.3 -62 49 13 (J2000)</TD>
+      <TD>Total flux</TD>
+      <TD>Size, Method, Flag codes: MI;see paper</TD>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>171</TD>
+      <TD>100 microns (IRAS)</TD>
+      <TD>36.03</TD>
+      <TD>+/-7   %</TD>
+      <TD>Jy</TD>
+      <TD>3000000000000</TD>
+      <TD>36</TD>
+      <TD>2.52</TD>
+      <TD>2.52</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.52E+00</TD>
+      <TD>Jy</TD>
+      <TD>1990IRASF.C...0000M</TD>
+      <TD>uncertainty</TD>
+      <TD>100       microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171219.1 -624556 (B1950)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>IRAS quality flag = 2</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>172</TD>
+      <TD>160 microns (PACS)</TD>
+      <TD>44.229</TD>
+      <TD>+/-2.621</TD>
+      <TD>Jy</TD>
+      <TD>1810000000000</TD>
+      <TD>44.2</TD>
+      <TD>2.62</TD>
+      <TD>2.62</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.62E+00</TD>
+      <TD>Jy</TD>
+      <TD>2014ApJ...794..152M</TD>
+      <TD>uncertainty</TD>
+      <TD>166 microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 16 59.5 -62 49 14 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>PA=120 deg; Min=73"; Max=90"</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>173</TD>
+      <TD>250 microns (SPIRE)</TD>
+      <TD>29.767</TD>
+      <TD>+/-2.011</TD>
+      <TD>Jy</TD>
+      <TD>1200000000000</TD>
+      <TD>29.8</TD>
+      <TD>2.01</TD>
+      <TD>2.01</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.01E+00</TD>
+      <TD>Jy</TD>
+      <TD>2016MNRAS.456.3335S</TD>
+      <TD>uncertainty</TD>
+      <TD>250 microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 16 59.5 -62 49 14 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Greater than 5sigma detection</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>174</TD>
+      <TD>350 microns (SPIRE)</TD>
+      <TD>13.115</TD>
+      <TD>+/-0.981</TD>
+      <TD>Jy</TD>
+      <TD>857000000000</TD>
+      <TD>13.1</TD>
+      <TD>0.981</TD>
+      <TD>0.981</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.81E-01</TD>
+      <TD>Jy</TD>
+      <TD>2016MNRAS.456.3335S</TD>
+      <TD>uncertainty</TD>
+      <TD>350 microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 16 59.5 -62 49 14 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Greater than 5sigma detection</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>175</TD>
+      <TD>500 microns (SPIRE)</TD>
+      <TD>4.559</TD>
+      <TD>+/-0.341</TD>
+      <TD>Jy</TD>
+      <TD>600000000000</TD>
+      <TD>4.56</TD>
+      <TD>0.341</TD>
+      <TD>0.341</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.41E-01</TD>
+      <TD>Jy</TD>
+      <TD>2016MNRAS.456.3335S</TD>
+      <TD>uncertainty</TD>
+      <TD>500 microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>17 16 59.5 -62 49 14 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Greater than 5sigma detection</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>176</TD>
+      <TD>5010 MHz</TD>
+      <TD>0.059</TD>
+      <TD>+/-0.01</TD>
+      <TD>Jy</TD>
+      <TD>5010000000</TD>
+      <TD>0.059</TD>
+      <TD>0.01</TD>
+      <TD>0.01</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.00E-02</TD>
+      <TD>Jy</TD>
+      <TD>1970ApL.....5...29W</TD>
+      <TD>estimated error</TD>
+      <TD>5010       MHz</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>177</TD>
+      <TD>4.85 GHz</TD>
+      <TD>39</TD>
+      <TD>+/-7</TD>
+      <TD>milliJy</TD>
+      <TD>4850000000</TD>
+      <TD>0.039</TD>
+      <TD>0.007</TD>
+      <TD>0.007</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-7.00E-03</TD>
+      <TD>Jy</TD>
+      <TD>1994ApJS...91..111W</TD>
+      <TD>rms noise</TD>
+      <TD>4.85       GHz</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171654.0 -624910 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD/>
+      <TD>From new raw data; Corrected for contaminating sources</TD>
+     </TR>
+     <TR>
+      <TD>178</TD>
+      <TD>HI (21 cm line)</TD>
+      <TD>13.02</TD>
+      <TD>+/-0.20</TD>
+      <TD>m_21 mag</TD>
+      <TD>1420000000</TD>
+      <TD>270000</TD>
+      <TD>54700</TD>
+      <TD>54700</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.47E+04</TD>
+      <TD>Jy-Hz</TD>
+      <TD>1991RC3.9.C...0000d</TD>
+      <TD>rms uncertainty</TD>
+      <TD>21         cm</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>171218.0 -624554 (B1950)</TD>
+      <TD>Multiple methods</TD>
+      <TD>m_21 equiv. to S(HI) = 2.704E-21 W m^-2</TD>
+      <TD>Homogenized from new and previously published data</TD>
+     </TR>
+     <TR>
+      <TD>179</TD>
+      <TD>HI line (Parkes)</TD>
+      <TD>59.9</TD>
+      <TD/>
+      <TD>Jy km s^-1^</TD>
+      <TD>1420000000</TD>
+      <TD>283000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2005MNRAS.361...34D</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>1102.2     km s^-1^</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>171701.5 -624927. (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>Averaged from previously published data</TD>
+     </TR>
+     <TR>
+      <TD>180</TD>
+      <TD>HI 21cm line Parkes</TD>
+      <TD>53.2</TD>
+      <TD>+/-5.0</TD>
+      <TD>Jy km/s</TD>
+      <TD>1420000000</TD>
+      <TD>250000</TD>
+      <TD>23500</TD>
+      <TD>23500</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.35E+04</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2004AJ....128...16K</TD>
+      <TD>uncertainty</TD>
+      <TD>1109   km s^-1^</TD>
+      <TD>Line measurement; flux integrated over line</TD>
+      <TD>17 16 59 -62 49 11 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>181</TD>
+      <TD>HI (21 cm line)</TD>
+      <TD>62.21</TD>
+      <TD/>
+      <TD>Jy km s^-1^</TD>
+      <TD>1420000000</TD>
+      <TD>294000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>1996ApJS..107...97M</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>21         cm</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>171218 -624554 (B1950)</TD>
+      <TD>Integrated from scans; Beam filling or dilution corrected</TD>
+      <TD/>
+      <TD>From new raw data; Corrected for flux in reference beam</TD>
+     </TR>
+     <TR>
+      <TD>182</TD>
+      <TD>HI (21 cm line)</TD>
+      <TD>61</TD>
+      <TD>+/-4.80</TD>
+      <TD>Jy km s^-1^</TD>
+      <TD>1420000000</TD>
+      <TD>287000</TD>
+      <TD>22600</TD>
+      <TD>22600</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.26E+04</TD>
+      <TD>Jy-Hz</TD>
+      <TD>1989H&amp;RHI.C...0000H</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>21         cm</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>171216.9 -624554. (B1950)</TD>
+      <TD>Not reported in paper</TD>
+      <TD/>
+      <TD>Transformed from previously published data</TD>
+     </TR>
+     <TR>
+      <TD>183</TD>
+      <TD>843 MHz</TD>
+      <TD>102.2</TD>
+      <TD>+/-6.1</TD>
+      <TD>milliJy</TD>
+      <TD>843000000</TD>
+      <TD>0.102</TD>
+      <TD>0.0061</TD>
+      <TD>0.0061</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.10E-03</TD>
+      <TD>Jy</TD>
+      <TD>2003MNRAS.342.1117M</TD>
+      <TD>uncertainty</TD>
+      <TD>843   MHz</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171659.77 -624909.3 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>184</TD>
+      <TD>843 MHz (SUMSS)</TD>
+      <TD>102.1</TD>
+      <TD>+/-6.1</TD>
+      <TD>milliJy</TD>
+      <TD>843000000</TD>
+      <TD>0.102</TD>
+      <TD>0.0061</TD>
+      <TD>0.0061</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.10E-03</TD>
+      <TD>Jy</TD>
+      <TD>2008SUMSS.2.1.....:</TD>
+      <TD>uncertainty</TD>
+      <TD>843   MHz</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>171659.77 -624909.3 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+    </TABLEDATA>
+   </DATA>
+  </TABLE>
+ </RESOURCE>
+</VOTABLE>

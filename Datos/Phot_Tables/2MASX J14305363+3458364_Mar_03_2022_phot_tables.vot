@@ -1,0 +1,2323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Produced with astropy.io.votable version 5.0
+     http://www.astropy.org/ -->
+<VOTABLE version="1.4" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/VOTable-1.4.xsd">
+ <RESOURCE type="results">
+  <TABLE ID="NED_PhotometricData" name="Photometric Data for 2MASX J14305363+3458364">
+   <DESCRIPTION>
+    Published and Homogenized [Frequency, Flux Density] Units
+   </DESCRIPTION>
+   <FIELD ID="No." datatype="int" name="No." ucd="meta.number;phot.mag">
+    <DESCRIPTION>
+     A sequential number of Photometry Measurement for this object,
+     applicable to this list only.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Observed_Passband" arraysize="*" datatype="char" name="Observed Passband" ucd="instr.bandpass">
+    <DESCRIPTION>
+     Colloquial descriptions of the frequency or wavelength at which
+     the data were collected, identifying the bandpass by name e.g.,
+     "V","1.4GHz", "6 cm", "HI", etc.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Photometry_Measurement" datatype="double" name="Photometry Measurement" ucd="phot">
+    <DESCRIPTION>
+     The published photometry or fluxes  for this point.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Uncertainty" arraysize="*" datatype="char" name="Uncertainty" ucd="stat.error;phot">
+    <DESCRIPTION>
+     The published uncertainty for photometric data.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Units" arraysize="*" datatype="char" name="Units" ucd="meta.unit;phot">
+    <DESCRIPTION>
+     Units of photometry measurement for this point.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Frequency" datatype="double" name="Frequency" ucd="em.freq" unit="Hz">
+    <DESCRIPTION>
+     The frequency, wavelength, or photometric passband, in absolute
+     units as calculated by NED
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Flux_Density" datatype="double" name="Flux Density" ucd="phot" unit="Jy">
+    <DESCRIPTION>
+     Flux/Photometric data for this point as transformed and stored by
+     NED.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Upper_limit_of_uncertainty" datatype="double" name="Upper limit of uncertainty" ucd="meta.code.error;stat.max">
+    <DESCRIPTION>
+     The NED upper limit of uncertainty for photometric data.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Lower_limit_of_uncertainty" datatype="double" name="Lower limit of uncertainty" ucd="meta.code.error;stat.min">
+    <DESCRIPTION>
+     The NED lower limit of uncertainty for photometric data.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Upper_limit_of_Flux_Density" datatype="double" name="Upper limit of Flux Density" ucd="phot;stat.max">
+    <DESCRIPTION>
+     The NED upper limit of Photometry Measurement.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Lower_limit_of_Flux_Density" datatype="double" name="Lower limit of Flux Density" ucd="phot;stat.min">
+    <DESCRIPTION>
+     The NED lower limit of Photometry Measurement.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NED_Uncertainty" arraysize="*" datatype="char" name="NED Uncertainty" ucd="stat.error;phot">
+    <DESCRIPTION>
+     Photometric/Flux uncertainty as transformed and stored by NED.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NED_Units" arraysize="*" datatype="char" name="NED Units" ucd="meta.unit;phot">
+    <DESCRIPTION>
+     Absolute units of photometry measurement for this point.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Refcode" arraysize="*" datatype="char" name="Refcode" ucd="meta.bib.bibcode">
+    <DESCRIPTION>
+     The NED 19-digit Bibliographic Reference code.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Significance" arraysize="*" datatype="char" name="Significance" ucd="meta.code.error">
+    <DESCRIPTION>
+     Type of uncertainty reported in the original publication
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Published_frequency" arraysize="*" datatype="char" name="Published frequency" ucd="meta.ref;em.freq">
+    <DESCRIPTION>
+     Wavelength or frequency  of observation as given in the original
+     publication
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Frequency_Mode" arraysize="*" datatype="char" name="Frequency Mode" ucd="meta.ref;em.freq;instr.setup">
+    <DESCRIPTION>
+     The method(s) by which the data were collected, reduced, or
+     derived, regarding the frequency or wavelength;
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Coordinates_Targeted" arraysize="*" datatype="char" name="Coordinates Targeted" ucd="pos">
+    <DESCRIPTION>
+     The position at which the measurements were taken, followed by
+     the coordinate reference frame (e.g.,  013350.90 +303935.8
+     (J2000) in format HHMMSS.ss +DDMMSS.s (EQUINOX),  etc.).
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Spatial_Mode" arraysize="*" datatype="char" name="Spatial Mode" ucd="phot.flux;instr.setup">
+    <DESCRIPTION>
+     The method(s) by which the data were collected, reduced, or
+     derived, regarding the spatially integrated flux
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Qualifiers" arraysize="*" datatype="char" name="Qualifiers" ucd="meta.note;instr.setup">
+    <DESCRIPTION>
+     Self-explanatory notes pertaining to the history of the data or
+     adjustments to the data or hanges introduced by NED
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Comments" arraysize="*" datatype="char" name="Comments" ucd="meta.note;comment">
+    <DESCRIPTION>
+     Other information from the published source or from NED that may
+     be helpful in interpreting or qualifying the data.
+    </DESCRIPTION>
+   </FIELD>
+   <DATA>
+    <TABLEDATA>
+     <TR>
+      <TD>1</TD>
+      <TD>u (SDSS PSF) AB</TD>
+      <TD>19.645</TD>
+      <TD>+/-0.030</TD>
+      <TD>asinh mag</TD>
+      <TD>836000000000000</TD>
+      <TD>5.23e-05</TD>
+      <TD>1.43e-06</TD>
+      <TD>1.43e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.43E-06</TD>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>3585       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>2</TD>
+      <TD>u (SDSS Model) AB</TD>
+      <TD>18.469</TD>
+      <TD>+/-0.025</TD>
+      <TD>asinh mag</TD>
+      <TD>836000000000000</TD>
+      <TD>0.000154</TD>
+      <TD>3.57e-06</TD>
+      <TD>3.57e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.57E-06</TD>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>3585       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>3</TD>
+      <TD>u (SDSS CModel) AB</TD>
+      <TD>18.627</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>836000000000000</TD>
+      <TD>0.000129</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>3585       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>4</TD>
+      <TD>u (SDSS Petrosian)AB</TD>
+      <TD>18.708</TD>
+      <TD>+/-0.046</TD>
+      <TD>asinh mag</TD>
+      <TD>836000000000000</TD>
+      <TD>0.000124</TD>
+      <TD>5.2e-06</TD>
+      <TD>5.2e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.20E-06</TD>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>3585       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS Petrosian Radius =    1.21".         
+SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>5</TD>
+      <TD>u (SDSS PSF) AB</TD>
+      <TD>19.645</TD>
+      <TD>+/-0.030</TD>
+      <TD>asinh mag</TD>
+      <TD>836000000000000</TD>
+      <TD>5.22e-05</TD>
+      <TD>1.44e-06</TD>
+      <TD>1.44e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.44E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>3585       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.7236260182 34.9768243080 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>6</TD>
+      <TD>u (SDSS CModel) AB</TD>
+      <TD>18.627</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>836000000000000</TD>
+      <TD>0.000133</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>3585       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.7236260182 34.9768243080 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>7</TD>
+      <TD>u (SDSS Model) AB</TD>
+      <TD>18.469</TD>
+      <TD>+/-0.025</TD>
+      <TD>asinh mag</TD>
+      <TD>836000000000000</TD>
+      <TD>0.000154</TD>
+      <TD>3.55e-06</TD>
+      <TD>3.55e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.55E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>3585       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.7236260182 34.9768243080 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>8</TD>
+      <TD>g (SDSS PSF) AB</TD>
+      <TD>18.257</TD>
+      <TD>+/-0.012</TD>
+      <TD>asinh mag</TD>
+      <TD>617000000000000</TD>
+      <TD>0.000181</TD>
+      <TD>2.02e-06</TD>
+      <TD>2.02e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.02E-06</TD>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>4858       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>9</TD>
+      <TD>g (SDSS Model) AB</TD>
+      <TD>16.978</TD>
+      <TD>+/-0.005</TD>
+      <TD>asinh mag</TD>
+      <TD>617000000000000</TD>
+      <TD>0.000587</TD>
+      <TD>2.61e-06</TD>
+      <TD>2.61e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.61E-06</TD>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>4858       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>10</TD>
+      <TD>g (SDSS CModel) AB</TD>
+      <TD>17.058</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>617000000000000</TD>
+      <TD>0.000546</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>4858       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>11</TD>
+      <TD>g (SDSS Petrosian)AB</TD>
+      <TD>17.107</TD>
+      <TD>+/-0.005</TD>
+      <TD>asinh mag</TD>
+      <TD>617000000000000</TD>
+      <TD>0.000522</TD>
+      <TD>2.25e-06</TD>
+      <TD>2.25e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.25E-06</TD>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>4858       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS Petrosian Radius =    1.30".         
+SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>12</TD>
+      <TD>g (SDSS PSF) AB</TD>
+      <TD>18.257</TD>
+      <TD>+/-0.012</TD>
+      <TD>asinh mag</TD>
+      <TD>617000000000000</TD>
+      <TD>0.000181</TD>
+      <TD>2e-06</TD>
+      <TD>2e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.00E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>4858       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.7236260182 34.9768243080 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>13</TD>
+      <TD>g (SDSS CModel) AB</TD>
+      <TD>17.058</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>617000000000000</TD>
+      <TD>0.000546</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>4858       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.7236260182 34.9768243080 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>14</TD>
+      <TD>g (SDSS Model) AB</TD>
+      <TD>16.978</TD>
+      <TD>+/-0.005</TD>
+      <TD>asinh mag</TD>
+      <TD>617000000000000</TD>
+      <TD>0.000587</TD>
+      <TD>2.7e-06</TD>
+      <TD>2.7e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.70E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>4858       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.7236260182 34.9768243080 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>15</TD>
+      <TD>r (SDSS PSF) AB</TD>
+      <TD>17.7</TD>
+      <TD>+/-0.018</TD>
+      <TD>asinh mag</TD>
+      <TD>477000000000000</TD>
+      <TD>0.000302</TD>
+      <TD>5.05e-06</TD>
+      <TD>5.05e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.05E-06</TD>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>6290       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; CANONICAL_BAND - this band was primary (usually r);</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>16</TD>
+      <TD>r (SDSS Model) AB</TD>
+      <TD>16.354</TD>
+      <TD>+/-0.004</TD>
+      <TD>asinh mag</TD>
+      <TD>477000000000000</TD>
+      <TD>0.00104</TD>
+      <TD>3.92e-06</TD>
+      <TD>3.92e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.92E-06</TD>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>6290       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS Effective Radius =   0.53" x   0.47".;SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; CANONICAL_BAND - this band was primary (usually r);</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>17</TD>
+      <TD>r (SDSS CModel) AB</TD>
+      <TD>16.405</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>477000000000000</TD>
+      <TD>0.000996</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>6290       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; CANONICAL_BAND - this band was primary (usually r);</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>18</TD>
+      <TD>r (SDSS Petrosian)AB</TD>
+      <TD>16.461</TD>
+      <TD>+/-0.004</TD>
+      <TD>asinh mag</TD>
+      <TD>477000000000000</TD>
+      <TD>0.000945</TD>
+      <TD>3.55e-06</TD>
+      <TD>3.55e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.55E-06</TD>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>6290       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS Petrosian Radius =    1.39".         
+SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; CANONICAL_BAND - this band was primary (usually r);</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>19</TD>
+      <TD>r (SDSS PSF) AB</TD>
+      <TD>17.7</TD>
+      <TD>+/-0.018</TD>
+      <TD>asinh mag</TD>
+      <TD>477000000000000</TD>
+      <TD>0.000302</TD>
+      <TD>5.01e-06</TD>
+      <TD>5.01e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.01E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>6290       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.7236260182 34.9768243080 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; CANONICAL_BAND - this band was primary (usually r);</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>20</TD>
+      <TD>r (SDSS CModel) AB</TD>
+      <TD>16.405</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>477000000000000</TD>
+      <TD>0.000995</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>6290       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.7236260182 34.9768243080 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; CANONICAL_BAND - this band was primary (usually r);</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>21</TD>
+      <TD>r (SDSS Model) AB</TD>
+      <TD>16.354</TD>
+      <TD>+/-0.004</TD>
+      <TD>asinh mag</TD>
+      <TD>477000000000000</TD>
+      <TD>0.00104</TD>
+      <TD>3.84e-06</TD>
+      <TD>3.84e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.84E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>6290       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.7236260182 34.9768243080 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; PETROFAINT - Petrosian radius measured at very low surface brightness; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; CANONICAL_BAND - this band was primary (usually r);</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>22</TD>
+      <TD>i (SDSS Model) AB</TD>
+      <TD>16.012</TD>
+      <TD>+/-0.004</TD>
+      <TD>asinh mag</TD>
+      <TD>389000000000000</TD>
+      <TD>0.00143</TD>
+      <TD>5.58e-06</TD>
+      <TD>5.58e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.58E-06</TD>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>7706       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; MANYR90 - more than one 90% radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>23</TD>
+      <TD>i (SDSS CModel) AB</TD>
+      <TD>16.051</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>389000000000000</TD>
+      <TD>0.00138</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>7706       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; MANYR90 - more than one 90% radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>24</TD>
+      <TD>i (SDSS Petrosian)AB</TD>
+      <TD>16.139</TD>
+      <TD>+/-0.005</TD>
+      <TD>asinh mag</TD>
+      <TD>389000000000000</TD>
+      <TD>0.00145</TD>
+      <TD>6.49e-06</TD>
+      <TD>6.49e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.49E-06</TD>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>7706       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS Petrosian Radius =    1.34".         
+SDSS flags: MANYPETRO - more than one Petrosian radius; MANYR90 - more than one 90% radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>25</TD>
+      <TD>i (SDSS PSF) AB</TD>
+      <TD>17.47</TD>
+      <TD>+/-0.027</TD>
+      <TD>asinh mag</TD>
+      <TD>389000000000000</TD>
+      <TD>0.000373</TD>
+      <TD>9.34e-06</TD>
+      <TD>9.34e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.34E-06</TD>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>7706       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; MANYR90 - more than one 90% radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>26</TD>
+      <TD>i (SDSS PSF) AB</TD>
+      <TD>17.47</TD>
+      <TD>+/-0.027</TD>
+      <TD>asinh mag</TD>
+      <TD>389000000000000</TD>
+      <TD>0.000373</TD>
+      <TD>9.28e-06</TD>
+      <TD>9.28e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.28E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>7706       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.7236260182 34.9768243080 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; MANYR90 - more than one 90% radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>27</TD>
+      <TD>i (SDSS CModel) AB</TD>
+      <TD>16.051</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>389000000000000</TD>
+      <TD>0.00138</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>7706       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.7236260182 34.9768243080 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; MANYR90 - more than one 90% radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>28</TD>
+      <TD>i (SDSS Model) AB</TD>
+      <TD>16.012</TD>
+      <TD>+/-0.004</TD>
+      <TD>asinh mag</TD>
+      <TD>389000000000000</TD>
+      <TD>0.00143</TD>
+      <TD>5.27e-06</TD>
+      <TD>5.27e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.27E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>7706       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.7236260182 34.9768243080 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: MANYPETRO - more than one Petrosian radius; MANYR90 - more than one 90% radius; BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>29</TD>
+      <TD>z (SDSS CModel) AB</TD>
+      <TD>15.809</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>325000000000000</TD>
+      <TD>0.00172</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>9222       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>30</TD>
+      <TD>z (SDSS Petrosian)AB</TD>
+      <TD>15.931</TD>
+      <TD>+/-0.016</TD>
+      <TD>asinh mag</TD>
+      <TD>325000000000000</TD>
+      <TD>0.00151</TD>
+      <TD>2.16e-05</TD>
+      <TD>2.16e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.16E-05</TD>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>9222       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS Petrosian Radius =    1.38".         
+SDSS flags: BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>31</TD>
+      <TD>z (SDSS Model) AB</TD>
+      <TD>15.827</TD>
+      <TD>+/-0.010</TD>
+      <TD>asinh mag</TD>
+      <TD>325000000000000</TD>
+      <TD>0.00166</TD>
+      <TD>1.46e-05</TD>
+      <TD>1.46e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.46E-05</TD>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>9222       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>32</TD>
+      <TD>z (SDSS PSF) AB</TD>
+      <TD>17.304</TD>
+      <TD>+/-0.021</TD>
+      <TD>asinh mag</TD>
+      <TD>325000000000000</TD>
+      <TD>0.000427</TD>
+      <TD>8.26e-06</TD>
+      <TD>8.26e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-8.26E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>9222       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.7236260182 34.9768243080 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>33</TD>
+      <TD>z (SDSS PSF) AB</TD>
+      <TD>17.304</TD>
+      <TD>+/-0.021</TD>
+      <TD>asinh mag</TD>
+      <TD>325000000000000</TD>
+      <TD>0.000427</TD>
+      <TD>8.15e-06</TD>
+      <TD>8.15e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-8.15E-06</TD>
+      <TD>Jy</TD>
+      <TD>2005SDSS4.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>9222       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723633 34.976822 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>34</TD>
+      <TD>z (SDSS CModel) AB</TD>
+      <TD>15.809</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>325000000000000</TD>
+      <TD>0.00169</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>9222       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.7236260182 34.9768243080 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>35</TD>
+      <TD>z (SDSS Model) AB</TD>
+      <TD>15.827</TD>
+      <TD>+/-0.010</TD>
+      <TD>asinh mag</TD>
+      <TD>325000000000000</TD>
+      <TD>0.00166</TD>
+      <TD>1.53e-05</TD>
+      <TD>1.53e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.53E-05</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>9222       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.7236260182 34.9768243080 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BAD_RADIAL - some low S/N radial points; INCOMPLETE_PROFILE - Petrosian radius hits edge of frame; TOO_LARGE - very large object, poorly determined sky, or bad deblend; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>36</TD>
+      <TD>J (2MASS/FLWO)</TD>
+      <TD>15.059</TD>
+      <TD>+/-0.055</TD>
+      <TD>mag</TD>
+      <TD>243000000000000</TD>
+      <TD>0.00151</TD>
+      <TD>7.65e-05</TD>
+      <TD>7.65e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-7.65E-05</TD>
+      <TD>Jy</TD>
+      <TD>2006AJ....131.1163S</TD>
+      <TD>uncertainty</TD>
+      <TD>1.235      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Profile-fit</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>37</TD>
+      <TD>J (2MASS/FLWO)</TD>
+      <TD>14.771</TD>
+      <TD>+/-0.052</TD>
+      <TD>mag</TD>
+      <TD>243000000000000</TD>
+      <TD>0.00197</TD>
+      <TD>9.43e-05</TD>
+      <TD>9.43e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.43E-05</TD>
+      <TD>Jy</TD>
+      <TD>2006AJ....131.1163S</TD>
+      <TD>uncertainty</TD>
+      <TD>1.235      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>4" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>38</TD>
+      <TD>J_14arcsec (2MASS)</TD>
+      <TD>14.551</TD>
+      <TD>+/-0.065</TD>
+      <TD>mag</TD>
+      <TD>240000000000000</TD>
+      <TD>0.00241</TD>
+      <TD>0.000149</TD>
+      <TD>0.000149</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.49E-04</TD>
+      <TD>Jy</TD>
+      <TD>20032MASX.C.......:</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>1.25      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>143053.65 +345836.5 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>14.0 x 14.0 arcsec aperture.</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>39</TD>
+      <TD>J</TD>
+      <TD>14.332</TD>
+      <TD>+/-0.081</TD>
+      <TD>mag</TD>
+      <TD>240000000000000</TD>
+      <TD>0.00295</TD>
+      <TD>0.000228</TD>
+      <TD>0.000228</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.28E-04</TD>
+      <TD>Jy</TD>
+      <TD>20032MASX.C.......:</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>1.25      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>143053.65 +345836.5 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>40</TD>
+      <TD>J</TD>
+      <TD>14.698</TD>
+      <TD>+/-0.056</TD>
+      <TD>mag</TD>
+      <TD>240000000000000</TD>
+      <TD>0.0021</TD>
+      <TD>0.000111</TD>
+      <TD>0.000111</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.11E-04</TD>
+      <TD>Jy</TD>
+      <TD>20032MASX.C.......:</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>1.25      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>143053.65 +345836.5 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>10.0 x   10.0 arcsec integration area.</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>41</TD>
+      <TD>H</TD>
+      <TD>13.97</TD>
+      <TD>+/-0.145</TD>
+      <TD>mag</TD>
+      <TD>182000000000000</TD>
+      <TD>0.00264</TD>
+      <TD>0.000378</TD>
+      <TD>0.000378</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.78E-04</TD>
+      <TD>Jy</TD>
+      <TD>20032MASX.C.......:</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>1.65      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>143053.65 +345836.5 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>42</TD>
+      <TD>H_14arcsec (2MASS)</TD>
+      <TD>13.988</TD>
+      <TD>+/-0.090</TD>
+      <TD>mag</TD>
+      <TD>182000000000000</TD>
+      <TD>0.0026</TD>
+      <TD>0.000225</TD>
+      <TD>0.000225</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.25E-04</TD>
+      <TD>Jy</TD>
+      <TD>20032MASX.C.......:</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>1.65      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>143053.65 +345836.5 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>14.0 x 14.0 arcsec aperture.</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>43</TD>
+      <TD>H</TD>
+      <TD>14.078</TD>
+      <TD>+/-0.070</TD>
+      <TD>mag</TD>
+      <TD>182000000000000</TD>
+      <TD>0.00239</TD>
+      <TD>0.000159</TD>
+      <TD>0.000159</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.59E-04</TD>
+      <TD>Jy</TD>
+      <TD>20032MASX.C.......:</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>1.65      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>143053.65 +345836.5 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>10.0 x   10.0 arcsec integration area.</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>44</TD>
+      <TD>H (2MASS/FLWO)</TD>
+      <TD>14.558</TD>
+      <TD>+/-0.073</TD>
+      <TD>mag</TD>
+      <TD>180000000000000</TD>
+      <TD>0.00154</TD>
+      <TD>0.000103</TD>
+      <TD>0.000103</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.03E-04</TD>
+      <TD>Jy</TD>
+      <TD>2006AJ....131.1163S</TD>
+      <TD>uncertainty</TD>
+      <TD>1.662      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Profile-fit</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>45</TD>
+      <TD>H (2MASS/FLWO)</TD>
+      <TD>14.07</TD>
+      <TD>+/-0.086</TD>
+      <TD>mag</TD>
+      <TD>180000000000000</TD>
+      <TD>0.00241</TD>
+      <TD>0.000191</TD>
+      <TD>0.000191</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.91E-04</TD>
+      <TD>Jy</TD>
+      <TD>2006AJ....131.1163S</TD>
+      <TD>uncertainty</TD>
+      <TD>1.662      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>4" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>46</TD>
+      <TD>K_s (2MASS/FLWO)</TD>
+      <TD>13.677</TD>
+      <TD>+/-0.045</TD>
+      <TD>mag</TD>
+      <TD>139000000000000</TD>
+      <TD>0.00226</TD>
+      <TD>9.35e-05</TD>
+      <TD>9.35e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.35E-05</TD>
+      <TD>Jy</TD>
+      <TD>2006AJ....131.1163S</TD>
+      <TD>uncertainty</TD>
+      <TD>2.159      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>4" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>47</TD>
+      <TD>K_s (2MASS/FLWO)</TD>
+      <TD>14.112</TD>
+      <TD>+/-0.063</TD>
+      <TD>mag</TD>
+      <TD>139000000000000</TD>
+      <TD>0.00151</TD>
+      <TD>8.77e-05</TD>
+      <TD>8.77e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-8.77E-05</TD>
+      <TD>Jy</TD>
+      <TD>2006AJ....131.1163S</TD>
+      <TD>uncertainty</TD>
+      <TD>2.159      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Profile-fit</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>48</TD>
+      <TD>K_s_14arcsec (2MASS)</TD>
+      <TD>13.581</TD>
+      <TD>+/-0.090</TD>
+      <TD>mag</TD>
+      <TD>138000000000000</TD>
+      <TD>0.00246</TD>
+      <TD>0.000213</TD>
+      <TD>0.000213</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.13E-04</TD>
+      <TD>Jy</TD>
+      <TD>20032MASX.C.......:</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>2.17      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>143053.65 +345836.5 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>14.0 x 14.0 arcsec aperture.</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>49</TD>
+      <TD>K_s</TD>
+      <TD>13.63</TD>
+      <TD>+/-0.155</TD>
+      <TD>mag</TD>
+      <TD>138000000000000</TD>
+      <TD>0.00236</TD>
+      <TD>0.000361</TD>
+      <TD>0.000361</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.61E-04</TD>
+      <TD>Jy</TD>
+      <TD>20032MASX.C.......:</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>2.17      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>143053.65 +345836.5 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>50</TD>
+      <TD>K_s</TD>
+      <TD>13.683</TD>
+      <TD>+/-0.071</TD>
+      <TD>mag</TD>
+      <TD>138000000000000</TD>
+      <TD>0.00224</TD>
+      <TD>0.000152</TD>
+      <TD>0.000152</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.52E-04</TD>
+      <TD>Jy</TD>
+      <TD>20032MASX.C.......:</TD>
+      <TD>1 sigma uncert.</TD>
+      <TD>2.17      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>143053.65 +345836.5 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>10.0 x   10.0 arcsec integration area.</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>51</TD>
+      <TD>W1 (WISE)</TD>
+      <TD>13.417</TD>
+      <TD>+/-0.023</TD>
+      <TD>mag</TD>
+      <TD>89400000000000</TD>
+      <TD>0.00133</TD>
+      <TD>2.82e-05</TD>
+      <TD>2.82e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.82E-05</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>3.3526     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Profile-fit</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>52</TD>
+      <TD>W1 (WISE)</TD>
+      <TD>13.343</TD>
+      <TD>+/-0.011</TD>
+      <TD>mag</TD>
+      <TD>89400000000000</TD>
+      <TD>0.00142</TD>
+      <TD>1.44e-05</TD>
+      <TD>1.44e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.44E-05</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>3.3526     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=8.25" COG-corrected</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>53</TD>
+      <TD>W1 (WISE)</TD>
+      <TD>13.141</TD>
+      <TD>+/-0.017</TD>
+      <TD>mag</TD>
+      <TD>89400000000000</TD>
+      <TD>0.00172</TD>
+      <TD>2.69e-05</TD>
+      <TD>2.69e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.69E-05</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>3.3526     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=22.0" aperture</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>54</TD>
+      <TD>3.6 microns (IRAC)</TD>
+      <TD>1378.1</TD>
+      <TD>+/-1.0292E+00</TD>
+      <TD>microJy</TD>
+      <TD>84400000000000</TD>
+      <TD>0.00138</TD>
+      <TD>1.03e-06</TD>
+      <TD>1.03e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.03E-06</TD>
+      <TD>Jy</TD>
+      <TD>2013SSTSLC4.2....0C</TD>
+      <TD>uncertainty</TD>
+      <TD>3.55       microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>5.8" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>55</TD>
+      <TD>3.6 microns (IRAC)</TD>
+      <TD>1086.1</TD>
+      <TD>+/-9.7330E-01</TD>
+      <TD>microJy</TD>
+      <TD>84400000000000</TD>
+      <TD>0.00109</TD>
+      <TD>9.73e-07</TD>
+      <TD>9.73e-07</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.73E-07</TD>
+      <TD>Jy</TD>
+      <TD>2013SSTSLC4.2....0C</TD>
+      <TD>uncertainty</TD>
+      <TD>3.55       microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>3.8" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>56</TD>
+      <TD>4.5 microns (IRAC)</TD>
+      <TD>1152.7</TD>
+      <TD>+/-1.0788E+00</TD>
+      <TD>microJy</TD>
+      <TD>66700000000000</TD>
+      <TD>0.00115</TD>
+      <TD>1.08e-06</TD>
+      <TD>1.08e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.08E-06</TD>
+      <TD>Jy</TD>
+      <TD>2013SSTSLC4.2....0C</TD>
+      <TD>uncertainty</TD>
+      <TD>4.493      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>3.8" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>57</TD>
+      <TD>4.5 microns (IRAC)</TD>
+      <TD>1358.5</TD>
+      <TD>+/-1.1616E+00</TD>
+      <TD>microJy</TD>
+      <TD>66700000000000</TD>
+      <TD>0.00136</TD>
+      <TD>1.16e-06</TD>
+      <TD>1.16e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.16E-06</TD>
+      <TD>Jy</TD>
+      <TD>2013SSTSLC4.2....0C</TD>
+      <TD>uncertainty</TD>
+      <TD>4.493      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>5.8" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>58</TD>
+      <TD>W2 (WISE)</TD>
+      <TD>12.791</TD>
+      <TD>+/-0.024</TD>
+      <TD>mag</TD>
+      <TD>65100000000000</TD>
+      <TD>0.00131</TD>
+      <TD>2.9e-05</TD>
+      <TD>2.9e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.90E-05</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>4.6028     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Profile-fit</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>59</TD>
+      <TD>W2 (WISE)</TD>
+      <TD>12.772</TD>
+      <TD>+/-0.012</TD>
+      <TD>mag</TD>
+      <TD>65100000000000</TD>
+      <TD>0.00134</TD>
+      <TD>1.48e-05</TD>
+      <TD>1.48e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.48E-05</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>4.6028     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=8.25" COG-corrected</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>60</TD>
+      <TD>W2 (WISE)</TD>
+      <TD>12.748</TD>
+      <TD>+/-0.021</TD>
+      <TD>mag</TD>
+      <TD>65100000000000</TD>
+      <TD>0.00137</TD>
+      <TD>2.64e-05</TD>
+      <TD>2.64e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.64E-05</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>4.6028     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=22.0" aperture</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>61</TD>
+      <TD>5.5 microns Spitzer</TD>
+      <TD>1.9</TD>
+      <TD>+/-5   %</TD>
+      <TD>milliJy</TD>
+      <TD>54500000000000</TD>
+      <TD>0.0019</TD>
+      <TD>9.5e-05</TD>
+      <TD>9.5e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.50E-05</TD>
+      <TD>Jy</TD>
+      <TD>2009ApJ...693..370W</TD>
+      <TD>typical accuracy</TD>
+      <TD>5.5 microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>14 30 53.70 +34 58 36.7 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>62</TD>
+      <TD>5.8 microns (IRAC)</TD>
+      <TD>2118.5</TD>
+      <TD>+/-3.2716E+00</TD>
+      <TD>microJy</TD>
+      <TD>52300000000000</TD>
+      <TD>0.00212</TD>
+      <TD>3.27e-06</TD>
+      <TD>3.27e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.27E-06</TD>
+      <TD>Jy</TD>
+      <TD>2013SSTSLC4.2....0C</TD>
+      <TD>uncertainty</TD>
+      <TD>5.731      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>5.8" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>63</TD>
+      <TD>5.8 microns (IRAC)</TD>
+      <TD>1990.6</TD>
+      <TD>+/-3.3635E+00</TD>
+      <TD>microJy</TD>
+      <TD>52300000000000</TD>
+      <TD>0.00199</TD>
+      <TD>3.36e-06</TD>
+      <TD>3.36e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.36E-06</TD>
+      <TD>Jy</TD>
+      <TD>2013SSTSLC4.2....0C</TD>
+      <TD>uncertainty</TD>
+      <TD>5.731      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>3.8" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>64</TD>
+      <TD>6 microns (Spitzer)</TD>
+      <TD>2.4</TD>
+      <TD>+/-5   %</TD>
+      <TD>milliJy</TD>
+      <TD>50000000000000</TD>
+      <TD>0.0024</TD>
+      <TD>0.00012</TD>
+      <TD>0.00012</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.20E-04</TD>
+      <TD>Jy</TD>
+      <TD>2007ApJ...671..323H</TD>
+      <TD>typical accuracy</TD>
+      <TD>6 microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>65</TD>
+      <TD>6.2 microns Spitzer</TD>
+      <TD>3.6e-21</TD>
+      <TD>+/-10  %</TD>
+      <TD>W/cm^2^</TD>
+      <TD>48400000000000</TD>
+      <TD>3600000000</TD>
+      <TD>360000000</TD>
+      <TD>360000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.60E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2007ApJ...671..323H</TD>
+      <TD>typical accuracy</TD>
+      <TD>6.2 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>66</TD>
+      <TD>8.0 microns (IRAC)</TD>
+      <TD>6906.3</TD>
+      <TD>+/-4.2823E+00</TD>
+      <TD>microJy</TD>
+      <TD>38100000000000</TD>
+      <TD>0.00691</TD>
+      <TD>4.28e-06</TD>
+      <TD>4.28e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.28E-06</TD>
+      <TD>Jy</TD>
+      <TD>2013SSTSLC4.2....0C</TD>
+      <TD>uncertainty</TD>
+      <TD>7.872      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>3.8" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>67</TD>
+      <TD>8.0 microns (IRAC)</TD>
+      <TD>6735</TD>
+      <TD>+/-4.3289E+00</TD>
+      <TD>microJy</TD>
+      <TD>38100000000000</TD>
+      <TD>0.00673</TD>
+      <TD>4.33e-06</TD>
+      <TD>4.33e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.33E-06</TD>
+      <TD>Jy</TD>
+      <TD>2013SSTSLC4.2....0C</TD>
+      <TD>uncertainty</TD>
+      <TD>7.872      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>5.8" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>68</TD>
+      <TD>[S IV] 10.51 Spitzer</TD>
+      <TD>6.1e-22</TD>
+      <TD>+/-10  %</TD>
+      <TD>W/cm^2^</TD>
+      <TD>28500000000000</TD>
+      <TD>610000000</TD>
+      <TD>61000000</TD>
+      <TD>61000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.10E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2007ApJ...671..323H</TD>
+      <TD>typical accuracy</TD>
+      <TD>10.51 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>69</TD>
+      <TD>11.3 microns Spitzer</TD>
+      <TD>4e-21</TD>
+      <TD>+/-10  %</TD>
+      <TD>W/cm^2^</TD>
+      <TD>26500000000000</TD>
+      <TD>4000000000</TD>
+      <TD>400000000</TD>
+      <TD>400000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.00E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2007ApJ...671..323H</TD>
+      <TD>typical accuracy</TD>
+      <TD>11.3 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>70</TD>
+      <TD>W3 (WISE)</TD>
+      <TD>8.423</TD>
+      <TD>+/-0.02</TD>
+      <TD>mag</TD>
+      <TD>25900000000000</TD>
+      <TD>0.0135</TD>
+      <TD>0.000249</TD>
+      <TD>0.000249</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.49E-04</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>11.5608    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Profile-fit</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>71</TD>
+      <TD>W3 (WISE)</TD>
+      <TD>8.4</TD>
+      <TD>+/-0.011</TD>
+      <TD>mag</TD>
+      <TD>25900000000000</TD>
+      <TD>0.0138</TD>
+      <TD>0.00014</TD>
+      <TD>0.00014</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.40E-04</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>11.5608    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=8.25" COG-corrected</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>72</TD>
+      <TD>W3 (WISE)</TD>
+      <TD>8.499</TD>
+      <TD>+/-0.014</TD>
+      <TD>mag</TD>
+      <TD>25900000000000</TD>
+      <TD>0.0126</TD>
+      <TD>0.000163</TD>
+      <TD>0.000163</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.63E-04</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>11.5608    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=22.0" aperture</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>73</TD>
+      <TD>12 microns (IRAS)</TD>
+      <TD/>
+      <TD>&lt;7.466E-02</TD>
+      <TD>Jy</TD>
+      <TD>25000000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>0.0747</TD>
+      <TD/>
+      <TD>&lt;7.47E-02</TD>
+      <TD>Jy</TD>
+      <TD>1990IRASF.C...0000M</TD>
+      <TD>90% confidence</TD>
+      <TD>12        microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>142847.7 +351151 (B1950)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>74</TD>
+      <TD>[Ne II] 12.8 Spitzer</TD>
+      <TD>6.7e-21</TD>
+      <TD>+/-10  %</TD>
+      <TD>W/cm^2^</TD>
+      <TD>23400000000000</TD>
+      <TD>6700000000</TD>
+      <TD>670000000</TD>
+      <TD>670000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.70E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2007ApJ...671..323H</TD>
+      <TD>typical accuracy</TD>
+      <TD>12.81 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>75</TD>
+      <TD>15 microns Spitzer</TD>
+      <TD>33.5</TD>
+      <TD>+/-5   %</TD>
+      <TD>milliJy</TD>
+      <TD>20000000000000</TD>
+      <TD>0.0335</TD>
+      <TD>0.00168</TD>
+      <TD>0.00168</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.68E-03</TD>
+      <TD>Jy</TD>
+      <TD>2009ApJ...693..370W</TD>
+      <TD>typical accuracy</TD>
+      <TD>15 microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>14 30 53.70 +34 58 36.7 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>76</TD>
+      <TD>W4 (WISE)</TD>
+      <TD>4.966</TD>
+      <TD>+/-0.029</TD>
+      <TD>mag</TD>
+      <TD>13600000000000</TD>
+      <TD>0.0863</TD>
+      <TD>0.0023</TD>
+      <TD>0.0023</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.30E-03</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>22.0883    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Profile-fit</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>77</TD>
+      <TD>W4 (WISE)</TD>
+      <TD>4.942</TD>
+      <TD>+/-0.013</TD>
+      <TD>mag</TD>
+      <TD>13600000000000</TD>
+      <TD>0.0882</TD>
+      <TD>0.00106</TD>
+      <TD>0.00106</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.06E-03</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>22.0883    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=16.5" COG-corrected</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>78</TD>
+      <TD>W4 (WISE)</TD>
+      <TD>5.237</TD>
+      <TD>+/-0.013</TD>
+      <TD>mag</TD>
+      <TD>13600000000000</TD>
+      <TD>0.0672</TD>
+      <TD>0.000805</TD>
+      <TD>0.000805</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-8.05E-04</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>22.0883    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=22.0" aperture</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>79</TD>
+      <TD>24 microns (MIPS)</TD>
+      <TD>81.6</TD>
+      <TD/>
+      <TD>milliJy</TD>
+      <TD>12700000000000</TD>
+      <TD>0.0816</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2007ApJ...671..323H</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>23.68 microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Unresolved source</TD>
+      <TD>Averaged from previously published data</TD>
+     </TR>
+     <TR>
+      <TD>80</TD>
+      <TD>24 microns (MIPS)</TD>
+      <TD>80140</TD>
+      <TD>+/-3.6427E+01</TD>
+      <TD>microJy</TD>
+      <TD>12700000000000</TD>
+      <TD>0.0801</TD>
+      <TD>3.64e-05</TD>
+      <TD>3.64e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.64E-05</TD>
+      <TD>Jy</TD>
+      <TD>2013SSTSLC4.2....0C</TD>
+      <TD>uncertainty</TD>
+      <TD>23.68      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Modelled datum</TD>
+      <TD>PSF fit</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>81</TD>
+      <TD>24 microns (MIPS)</TD>
+      <TD>79005</TD>
+      <TD>+/-2.1544E+01</TD>
+      <TD>microJy</TD>
+      <TD>12700000000000</TD>
+      <TD>0.079</TD>
+      <TD>2.15e-05</TD>
+      <TD>2.15e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.15E-05</TD>
+      <TD>Jy</TD>
+      <TD>2013SSTSLC4.2....0C</TD>
+      <TD>uncertainty</TD>
+      <TD>23.68      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>14.7" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>82</TD>
+      <TD>25 microns (IRAS)</TD>
+      <TD>0.1262</TD>
+      <TD>+/-28  %</TD>
+      <TD>Jy</TD>
+      <TD>12000000000000</TD>
+      <TD>0.126</TD>
+      <TD>0.0209</TD>
+      <TD>0.0209</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.09E-02</TD>
+      <TD>Jy</TD>
+      <TD>1990IRASF.C...0000M</TD>
+      <TD>uncertainty</TD>
+      <TD>25        microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>142847.7 +351151 (B1950)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>IRAS quality flag = 2</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>83</TD>
+      <TD>60 microns (IRAS)</TD>
+      <TD>0.2796</TD>
+      <TD>+/-14  %</TD>
+      <TD>Jy</TD>
+      <TD>5000000000000</TD>
+      <TD>0.28</TD>
+      <TD>0.0391</TD>
+      <TD>0.0391</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.91E-02</TD>
+      <TD>Jy</TD>
+      <TD>1990IRASF.C...0000M</TD>
+      <TD>uncertainty</TD>
+      <TD>60        microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>142847.7 +351151 (B1950)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>IRAS quality flag = 3</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>84</TD>
+      <TD>70 microns (MIPS)</TD>
+      <TD>236</TD>
+      <TD/>
+      <TD>milliJy</TD>
+      <TD>4200000000000</TD>
+      <TD>0.236</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2007ApJ...671..323H</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>71.42 microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Unresolved source</TD>
+      <TD>Averaged from previously published data</TD>
+     </TR>
+     <TR>
+      <TD>85</TD>
+      <TD>70 microns (MIPS)</TD>
+      <TD>352462</TD>
+      <TD>+/-904</TD>
+      <TD>microJy</TD>
+      <TD>4200000000000</TD>
+      <TD>0.353</TD>
+      <TD>0.000904</TD>
+      <TD>0.000904</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.04E-04</TD>
+      <TD>Jy</TD>
+      <TD>2015ApJS..217...17H</TD>
+      <TD>uncertainty</TD>
+      <TD>71.42 microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723337 +34.976704 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD>PSF flux; SN = 471.7</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>86</TD>
+      <TD>70 microns (MIPS)</TD>
+      <TD>134300</TD>
+      <TD>+/-397</TD>
+      <TD>microJy</TD>
+      <TD>4200000000000</TD>
+      <TD>0.134</TD>
+      <TD>0.000397</TD>
+      <TD>0.000397</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.97E-04</TD>
+      <TD>Jy</TD>
+      <TD>2015ApJS..217...17H</TD>
+      <TD>uncertainty</TD>
+      <TD>71.42 microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723337 +34.976704 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>aper. radius = 18"</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>87</TD>
+      <TD>100 microns (IRAS)</TD>
+      <TD/>
+      <TD>&lt;6.935E-01</TD>
+      <TD>Jy</TD>
+      <TD>3000000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>0.694</TD>
+      <TD/>
+      <TD>&lt;6.94E-01</TD>
+      <TD>Jy</TD>
+      <TD>1990IRASF.C...0000M</TD>
+      <TD>90% confidence</TD>
+      <TD>100       microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>142847.7 +351151 (B1950)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>88</TD>
+      <TD>160 microns (MIPS)</TD>
+      <TD>235096</TD>
+      <TD>+/-2253</TD>
+      <TD>microJy</TD>
+      <TD>1920000000000</TD>
+      <TD>0.235</TD>
+      <TD>0.00225</TD>
+      <TD>0.00225</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.25E-03</TD>
+      <TD>Jy</TD>
+      <TD>2015ApJS..217...17H</TD>
+      <TD>uncertainty</TD>
+      <TD>155.9 microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723271 +34.976486 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD>PSF flux; SN = 101.3</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>89</TD>
+      <TD>160 microns (MIPS)</TD>
+      <TD>44330</TD>
+      <TD>+/-652</TD>
+      <TD>microJy</TD>
+      <TD>1920000000000</TD>
+      <TD>0.0443</TD>
+      <TD>0.000652</TD>
+      <TD>0.000652</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.52E-04</TD>
+      <TD>Jy</TD>
+      <TD>2015ApJS..217...17H</TD>
+      <TD>uncertainty</TD>
+      <TD>155.9 microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.723271 +34.976486 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>aper. radius = 40"</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>90</TD>
+      <TD>3.1 GHz (ATA)</TD>
+      <TD>1.25</TD>
+      <TD>+/-0.32</TD>
+      <TD>milliJy</TD>
+      <TD>3100000000</TD>
+      <TD>0.00125</TD>
+      <TD>0.00032</TD>
+      <TD>0.00032</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.20E-04</TD>
+      <TD>Jy</TD>
+      <TD>2010ApJ...725.1792B</TD>
+      <TD>uncertainty</TD>
+      <TD>3.1 GHz</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>14.51472 34.97876 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>91</TD>
+      <TD>1.4GHz</TD>
+      <TD>0.97</TD>
+      <TD/>
+      <TD>milliJy</TD>
+      <TD>1400000000</TD>
+      <TD>0.00097</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>1995ApJ...450..559B</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>1.4        GHz</TD>
+      <TD>Broad-band measurement; synthetic band</TD>
+      <TD>143053.646 +345836.63 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD/>
+      <TD>From new raw data; Corrected for contaminating sources</TD>
+     </TR>
+     <TR>
+      <TD>92</TD>
+      <TD>1.4GHz</TD>
+      <TD>1.12</TD>
+      <TD>+/-0.14</TD>
+      <TD>milliJy</TD>
+      <TD>1400000000</TD>
+      <TD>0.00112</TD>
+      <TD>0.000143</TD>
+      <TD>0.000143</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.43E-04</TD>
+      <TD>Jy</TD>
+      <TD>1995ApJ...450..559B</TD>
+      <TD>rms noise</TD>
+      <TD>1.4        GHz</TD>
+      <TD>Broad-band measurement; synthetic band</TD>
+      <TD>143053.646 +345836.63 (J2000)</TD>
+      <TD>Peak flux</TD>
+      <TD/>
+      <TD>From new raw data; Corrected for contaminating sources</TD>
+     </TR>
+     <TR>
+      <TD>93</TD>
+      <TD>1.38 GHz (WSRT)</TD>
+      <TD>1.02</TD>
+      <TD>+/-0.05</TD>
+      <TD>milliJy</TD>
+      <TD>1380000000</TD>
+      <TD>0.00102</TD>
+      <TD>5e-05</TD>
+      <TD>5e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.00E-05</TD>
+      <TD>Jy</TD>
+      <TD>2002AJ....123.1784D</TD>
+      <TD>uncertainty</TD>
+      <TD>1.38 GHz</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.7232 +34.9769 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD>a = 0"; b = 0"; PA = 0 deg</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>94</TD>
+      <TD>324.5 MHz (VLA)</TD>
+      <TD>2.3</TD>
+      <TD>+/-0.4</TD>
+      <TD>milliJy</TD>
+      <TD>325000000</TD>
+      <TD>0.0023</TD>
+      <TD>0.0004</TD>
+      <TD>0.0004</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.00E-04</TD>
+      <TD>Jy</TD>
+      <TD>2015MNRAS.450.1477C</TD>
+      <TD>statistical error</TD>
+      <TD>324.525 MHz</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.72344 +34.97675 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD>Bmaj=5.9"; Bmin=5.1"; PA=139.8 deg</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>95</TD>
+      <TD>150 MHz (LOFAR)</TD>
+      <TD>3.56</TD>
+      <TD>+/-0.17</TD>
+      <TD>milliJy</TD>
+      <TD>150000000</TD>
+      <TD>0.00356</TD>
+      <TD>0.00017</TD>
+      <TD>0.00017</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.70E-04</TD>
+      <TD>Jy</TD>
+      <TD>2016MNRAS.460.2385W</TD>
+      <TD>uncertainty</TD>
+      <TD>150 MHz</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>217.72364 +34.97673 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+    </TABLEDATA>
+   </DATA>
+  </TABLE>
+ </RESOURCE>
+</VOTABLE>
