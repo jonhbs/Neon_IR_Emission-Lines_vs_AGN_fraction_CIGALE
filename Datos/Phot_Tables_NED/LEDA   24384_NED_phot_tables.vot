@@ -1,0 +1,2438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Produced with astropy.io.votable version 5.0
+     http://www.astropy.org/ -->
+<VOTABLE version="1.4" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/VOTable-1.4.xsd">
+ <RESOURCE type="results">
+  <TABLE ID="NED_PhotometricData" name="Photometric Data for LEDA 024384">
+   <DESCRIPTION>
+    Published and Homogenized [Frequency, Flux Density] Units
+   </DESCRIPTION>
+   <FIELD ID="No." datatype="int" name="No." ucd="meta.number;phot.mag">
+    <DESCRIPTION>
+     A sequential number of Photometry Measurement for this object,
+     applicable to this list only.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Observed_Passband" arraysize="*" datatype="char" name="Observed Passband" ucd="instr.bandpass">
+    <DESCRIPTION>
+     Colloquial descriptions of the frequency or wavelength at which
+     the data were collected, identifying the bandpass by name e.g.,
+     "V","1.4GHz", "6 cm", "HI", etc.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Photometry_Measurement" datatype="double" name="Photometry Measurement" ucd="phot">
+    <DESCRIPTION>
+     The published photometry or fluxes  for this point.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Uncertainty" arraysize="*" datatype="char" name="Uncertainty" ucd="stat.error;phot">
+    <DESCRIPTION>
+     The published uncertainty for photometric data.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Units" arraysize="*" datatype="char" name="Units" ucd="meta.unit;phot">
+    <DESCRIPTION>
+     Units of photometry measurement for this point.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Frequency" datatype="double" name="Frequency" ucd="em.freq" unit="Hz">
+    <DESCRIPTION>
+     The frequency, wavelength, or photometric passband, in absolute
+     units as calculated by NED
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Flux_Density" datatype="double" name="Flux Density" ucd="phot" unit="Jy">
+    <DESCRIPTION>
+     Flux/Photometric data for this point as transformed and stored by
+     NED.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Upper_limit_of_uncertainty" datatype="double" name="Upper limit of uncertainty" ucd="meta.code.error;stat.max">
+    <DESCRIPTION>
+     The NED upper limit of uncertainty for photometric data.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Lower_limit_of_uncertainty" datatype="double" name="Lower limit of uncertainty" ucd="meta.code.error;stat.min">
+    <DESCRIPTION>
+     The NED lower limit of uncertainty for photometric data.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Upper_limit_of_Flux_Density" datatype="double" name="Upper limit of Flux Density" ucd="phot;stat.max">
+    <DESCRIPTION>
+     The NED upper limit of Photometry Measurement.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Lower_limit_of_Flux_Density" datatype="double" name="Lower limit of Flux Density" ucd="phot;stat.min">
+    <DESCRIPTION>
+     The NED lower limit of Photometry Measurement.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NED_Uncertainty" arraysize="*" datatype="char" name="NED Uncertainty" ucd="stat.error;phot">
+    <DESCRIPTION>
+     Photometric/Flux uncertainty as transformed and stored by NED.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NED_Units" arraysize="*" datatype="char" name="NED Units" ucd="meta.unit;phot">
+    <DESCRIPTION>
+     Absolute units of photometry measurement for this point.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Refcode" arraysize="*" datatype="char" name="Refcode" ucd="meta.bib.bibcode">
+    <DESCRIPTION>
+     The NED 19-digit Bibliographic Reference code.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Significance" arraysize="*" datatype="char" name="Significance" ucd="meta.code.error">
+    <DESCRIPTION>
+     Type of uncertainty reported in the original publication
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Published_frequency" arraysize="*" datatype="char" name="Published frequency" ucd="meta.ref;em.freq">
+    <DESCRIPTION>
+     Wavelength or frequency  of observation as given in the original
+     publication
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Frequency_Mode" arraysize="*" datatype="char" name="Frequency Mode" ucd="meta.ref;em.freq;instr.setup">
+    <DESCRIPTION>
+     The method(s) by which the data were collected, reduced, or
+     derived, regarding the frequency or wavelength;
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Coordinates_Targeted" arraysize="*" datatype="char" name="Coordinates Targeted" ucd="pos">
+    <DESCRIPTION>
+     The position at which the measurements were taken, followed by
+     the coordinate reference frame (e.g.,  013350.90 +303935.8
+     (J2000) in format HHMMSS.ss +DDMMSS.s (EQUINOX),  etc.).
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Spatial_Mode" arraysize="*" datatype="char" name="Spatial Mode" ucd="phot.flux;instr.setup">
+    <DESCRIPTION>
+     The method(s) by which the data were collected, reduced, or
+     derived, regarding the spatially integrated flux
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Qualifiers" arraysize="*" datatype="char" name="Qualifiers" ucd="meta.note;instr.setup">
+    <DESCRIPTION>
+     Self-explanatory notes pertaining to the history of the data or
+     adjustments to the data or hanges introduced by NED
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Comments" arraysize="*" datatype="char" name="Comments" ucd="meta.note;comment">
+    <DESCRIPTION>
+     Other information from the published source or from NED that may
+     be helpful in interpreting or qualifying the data.
+    </DESCRIPTION>
+   </FIELD>
+   <DATA>
+    <TABLEDATA>
+     <TR>
+      <TD>1</TD>
+      <TD>FUV (GALEX) AB</TD>
+      <TD>18.4696</TD>
+      <TD>+/-0.0970550</TD>
+      <TD>mag</TD>
+      <TD>1950000000000000</TD>
+      <TD>0.000149</TD>
+      <TD>1.33e-05</TD>
+      <TD>1.33e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.33E-05</TD>
+      <TD>Jy</TD>
+      <TD>2012GASC..C...0000S</TD>
+      <TD>uncertainty</TD>
+      <TD>1538.6     A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.12459718786 47.119473291429 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD>Kron flux in elliptical aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>2</TD>
+      <TD>FUV (GALEX) AB</TD>
+      <TD>18.891</TD>
+      <TD>+/-0.129027</TD>
+      <TD>mag</TD>
+      <TD>1950000000000000</TD>
+      <TD>0.000101</TD>
+      <TD>1.2e-05</TD>
+      <TD>1.2e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.20E-05</TD>
+      <TD>Jy</TD>
+      <TD>2012GASC..C...0000S</TD>
+      <TD>uncertainty</TD>
+      <TD>1538.6     A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.12459718786 47.119473291429 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Flux in 7.5 arcsec diameter aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>3</TD>
+      <TD>FUV (GALEX) AB</TD>
+      <TD>18.5084</TD>
+      <TD>+/-0.0186647</TD>
+      <TD>mag</TD>
+      <TD>1950000000000000</TD>
+      <TD>0.000143</TD>
+      <TD>2.47e-06</TD>
+      <TD>2.47e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.47E-06</TD>
+      <TD>Jy</TD>
+      <TD>2012GMSC..C...0000S</TD>
+      <TD>uncertainty</TD>
+      <TD>1538.6     A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.12449192062 47.119538866065 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD>Kron flux in elliptical aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>4</TD>
+      <TD>FUV (GALEX) AB</TD>
+      <TD>18.8523</TD>
+      <TD>+/-0.0237289</TD>
+      <TD>mag</TD>
+      <TD>1950000000000000</TD>
+      <TD>0.000104</TD>
+      <TD>2.28e-06</TD>
+      <TD>2.28e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.28E-06</TD>
+      <TD>Jy</TD>
+      <TD>2012GMSC..C...0000S</TD>
+      <TD>uncertainty</TD>
+      <TD>1538.6     A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.12449192062 47.119538866065 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Flux in 7.5 arcsec diameter aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>5</TD>
+      <TD>NUV (GALEX) AB</TD>
+      <TD>18.5733</TD>
+      <TD>+/-0.0583943</TD>
+      <TD>mag</TD>
+      <TD>1290000000000000</TD>
+      <TD>0.000135</TD>
+      <TD>7.27e-06</TD>
+      <TD>7.27e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-7.27E-06</TD>
+      <TD>Jy</TD>
+      <TD>2012GASC..C...0000S</TD>
+      <TD>uncertainty</TD>
+      <TD>2315.7     A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.12459718786 47.119473291429 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD>Kron flux in elliptical aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>6</TD>
+      <TD>NUV (GALEX) AB</TD>
+      <TD>18.985</TD>
+      <TD>+/-0.0745839</TD>
+      <TD>mag</TD>
+      <TD>1290000000000000</TD>
+      <TD>9.25e-05</TD>
+      <TD>6.35e-06</TD>
+      <TD>6.35e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.35E-06</TD>
+      <TD>Jy</TD>
+      <TD>2012GASC..C...0000S</TD>
+      <TD>uncertainty</TD>
+      <TD>2315.7     A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.12459718786 47.119473291429 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Flux in 7.5 arcsec diameter aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>7</TD>
+      <TD>NUV (GALEX) AB</TD>
+      <TD>18.5439</TD>
+      <TD>+/-0.0111799</TD>
+      <TD>mag</TD>
+      <TD>1290000000000000</TD>
+      <TD>0.000139</TD>
+      <TD>1.43e-06</TD>
+      <TD>1.43e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.43E-06</TD>
+      <TD>Jy</TD>
+      <TD>2012GMSC..C...0000S</TD>
+      <TD>uncertainty</TD>
+      <TD>2315.7     A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.12449192062 47.119538866065 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD>Kron flux in elliptical aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>8</TD>
+      <TD>NUV (GALEX) AB</TD>
+      <TD>18.9497</TD>
+      <TD>+/-0.0139031</TD>
+      <TD>mag</TD>
+      <TD>1290000000000000</TD>
+      <TD>9.55e-05</TD>
+      <TD>1.22e-06</TD>
+      <TD>1.22e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.22E-06</TD>
+      <TD>Jy</TD>
+      <TD>2012GMSC..C...0000S</TD>
+      <TD>uncertainty</TD>
+      <TD>2315.7     A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.12449192062 47.119538866065 (J2000)</TD>
+      <TD>Flux in fixed aperture</TD>
+      <TD>Flux in 7.5 arcsec diameter aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>9</TD>
+      <TD>u (SDSS CModel) AB</TD>
+      <TD>18.417</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>836000000000000</TD>
+      <TD>0.000156</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>3585       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>10</TD>
+      <TD>u (SDSS Petrosian)AB</TD>
+      <TD>18.392</TD>
+      <TD>+/-0.029</TD>
+      <TD>asinh mag</TD>
+      <TD>836000000000000</TD>
+      <TD>0.000166</TD>
+      <TD>4.41e-06</TD>
+      <TD>4.41e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.41E-06</TD>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>3585       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS Petrosian Radius =    0.82".         
+SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>11</TD>
+      <TD>u (SDSS PSF) AB</TD>
+      <TD>18.564</TD>
+      <TD>+/-0.024</TD>
+      <TD>asinh mag</TD>
+      <TD>836000000000000</TD>
+      <TD>0.000141</TD>
+      <TD>3.13e-06</TD>
+      <TD>3.13e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.13E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>3585       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.1246302593 47.1195094023 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>12</TD>
+      <TD>u (SDSS CModel) AB</TD>
+      <TD>18.417</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>836000000000000</TD>
+      <TD>0.000162</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>3585       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.1246302593 47.1195094023 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>13</TD>
+      <TD>u (SDSS Model) AB</TD>
+      <TD>18.338</TD>
+      <TD>+/-0.019</TD>
+      <TD>asinh mag</TD>
+      <TD>836000000000000</TD>
+      <TD>0.000174</TD>
+      <TD>3.05e-06</TD>
+      <TD>3.05e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.05E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>3585       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.1246302593 47.1195094023 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>14</TD>
+      <TD>u (SDSS PSF) AB</TD>
+      <TD>18.564</TD>
+      <TD>+/-0.024</TD>
+      <TD>asinh mag</TD>
+      <TD>836000000000000</TD>
+      <TD>0.000141</TD>
+      <TD>3.11e-06</TD>
+      <TD>3.11e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.11E-06</TD>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>3585       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>15</TD>
+      <TD>u (SDSS Model) AB</TD>
+      <TD>18.338</TD>
+      <TD>+/-0.019</TD>
+      <TD>asinh mag</TD>
+      <TD>836000000000000</TD>
+      <TD>0.000174</TD>
+      <TD>3.02e-06</TD>
+      <TD>3.02e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.02E-06</TD>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>3585       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>16</TD>
+      <TD>U (Wise Obs)</TD>
+      <TD>17.77</TD>
+      <TD>+/-0.17</TD>
+      <TD>mag</TD>
+      <TD>819000000000000</TD>
+      <TD>0.000141</TD>
+      <TD>2.24e-05</TD>
+      <TD>2.24e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.24E-05</TD>
+      <TD>Jy</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>3660   A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>08 40 29.84 +47 01 09.1 (J2000)</TD>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data; derived from a flux in a different bandand a color; Standard Johnson UBVRI filters assumed</TD>
+     </TR>
+     <TR>
+      <TD>17</TD>
+      <TD>B (103a-O)</TD>
+      <TD>18.3</TD>
+      <TD/>
+      <TD>mag</TD>
+      <TD>740000000000000</TD>
+      <TD>0.000204</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2004ApJS..153..119M</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>4050 A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>08 40 29.9 +47 07 09 (J2000)</TD>
+      <TD>Estimated by eye</TD>
+      <TD/>
+      <TD>Averaged from previously published data</TD>
+     </TR>
+     <TR>
+      <TD>18</TD>
+      <TD>B (Wise Obs)</TD>
+      <TD>18.18</TD>
+      <TD>+/-0.10</TD>
+      <TD>mag</TD>
+      <TD>681000000000000</TD>
+      <TD>0.000228</TD>
+      <TD>2.1e-05</TD>
+      <TD>2.1e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.10E-05</TD>
+      <TD>Jy</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>4400   A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>08 40 29.84 +47 01 09.1 (J2000)</TD>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data; Standard Johnson UBVRI filters assumed</TD>
+     </TR>
+     <TR>
+      <TD>19</TD>
+      <TD>N III 4640 (MMT)</TD>
+      <TD>2.5e-16</TD>
+      <TD>+/-25  %</TD>
+      <TD>ergs/s/cm^2^</TD>
+      <TD>646000000000000</TD>
+      <TD>25000000</TD>
+      <TD>6250000</TD>
+      <TD>6250000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.25E+06</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>4640   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>20</TD>
+      <TD>N III 4640 (BTA)</TD>
+      <TD>3.8e-16</TD>
+      <TD>+/-25  %</TD>
+      <TD>ergs/s/cm^2^</TD>
+      <TD>646000000000000</TD>
+      <TD>38000000</TD>
+      <TD>9500000</TD>
+      <TD>9500000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.50E+06</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>4640   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>21</TD>
+      <TD>C IV 4658 (MMT)</TD>
+      <TD>2.6e-16</TD>
+      <TD>+/-25  %</TD>
+      <TD>ergs/s/cm^2^</TD>
+      <TD>644000000000000</TD>
+      <TD>26000000</TD>
+      <TD>6500000</TD>
+      <TD>6500000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.50E+06</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>4658   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>22</TD>
+      <TD>C IV 4658 (BTA)</TD>
+      <TD>5e-16</TD>
+      <TD>+/-25  %</TD>
+      <TD>ergs/s/cm^2^</TD>
+      <TD>644000000000000</TD>
+      <TD>50000000</TD>
+      <TD>12500000</TD>
+      <TD>12500000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.25E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>4658   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>23</TD>
+      <TD>He II 4686 (MMT)</TD>
+      <TD>2.4e-16</TD>
+      <TD>+/-50  %</TD>
+      <TD>ergs/s/cm^2^</TD>
+      <TD>640000000000000</TD>
+      <TD>24000000</TD>
+      <TD>12000000</TD>
+      <TD>12000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.20E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>4686   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>24</TD>
+      <TD>He II 4686 (BTA)</TD>
+      <TD>3.7e-16</TD>
+      <TD>+/-50  %</TD>
+      <TD>ergs/s/cm^2^</TD>
+      <TD>640000000000000</TD>
+      <TD>37000000</TD>
+      <TD>18500000</TD>
+      <TD>18500000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.85E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>4686   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>25</TD>
+      <TD>g (SDSS CModel) AB</TD>
+      <TD>17.593</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>617000000000000</TD>
+      <TD>0.000333</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>4858       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; INTERP - object contains interpolated-over pixels; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; INTERP_CENTER - interpolated pixel(s) within 3 pixels of center; PSF_FLUX_INTERP - a signifcant amount of PSF's flux is interpolated;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>26</TD>
+      <TD>g (SDSS CModel) AB</TD>
+      <TD>17.593</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>617000000000000</TD>
+      <TD>0.000333</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>4858       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.1246302593 47.1195094023 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; INTERP - object contains interpolated-over pixels; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; INTERP_CENTER - interpolated pixel(s) within 3 pixels of center; PSF_FLUX_INTERP - a signifcant amount of PSF's flux is interpolated;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>27</TD>
+      <TD>g (SDSS Model) AB</TD>
+      <TD>17.597</TD>
+      <TD>+/-0.008</TD>
+      <TD>asinh mag</TD>
+      <TD>617000000000000</TD>
+      <TD>0.000332</TD>
+      <TD>2.45e-06</TD>
+      <TD>2.45e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.45E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>4858       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.1246302593 47.1195094023 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; INTERP - object contains interpolated-over pixels; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; INTERP_CENTER - interpolated pixel(s) within 3 pixels of center; PSF_FLUX_INTERP - a signifcant amount of PSF's flux is interpolated;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>28</TD>
+      <TD>H{beta} (MMT)</TD>
+      <TD>6.3e-16</TD>
+      <TD>+/-25  %</TD>
+      <TD>ergs/s/cm^2^</TD>
+      <TD>617000000000000</TD>
+      <TD>63000000</TD>
+      <TD>15800000</TD>
+      <TD>15800000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.58E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>4861   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>29</TD>
+      <TD>g (SDSS PSF) AB</TD>
+      <TD>17.759</TD>
+      <TD>+/-0.013</TD>
+      <TD>asinh mag</TD>
+      <TD>617000000000000</TD>
+      <TD>0.000286</TD>
+      <TD>3.42e-06</TD>
+      <TD>3.42e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.42E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>4858       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.1246302593 47.1195094023 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; INTERP - object contains interpolated-over pixels; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; INTERP_CENTER - interpolated pixel(s) within 3 pixels of center; PSF_FLUX_INTERP - a signifcant amount of PSF's flux is interpolated;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>30</TD>
+      <TD>H{beta} (BTA)</TD>
+      <TD>1.5e-15</TD>
+      <TD>+/-25  %</TD>
+      <TD>ergs/s/cm^2^</TD>
+      <TD>617000000000000</TD>
+      <TD>150000000</TD>
+      <TD>37500000</TD>
+      <TD>37500000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.75E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>4861   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>31</TD>
+      <TD>g (SDSS Petrosian)AB</TD>
+      <TD>17.566</TD>
+      <TD>+/-0.007</TD>
+      <TD>asinh mag</TD>
+      <TD>617000000000000</TD>
+      <TD>0.000342</TD>
+      <TD>2.21e-06</TD>
+      <TD>2.21e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.21E-06</TD>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>4858       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS Petrosian Radius =    0.71".         
+SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; INTERP - object contains interpolated-over pixels; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; INTERP_CENTER - interpolated pixel(s) within 3 pixels of center; PSF_FLUX_INTERP - a signifcant amount of PSF's flux is interpolated;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>32</TD>
+      <TD>H{beta} line</TD>
+      <TD>3.446e-14</TD>
+      <TD/>
+      <TD>ergs/s/cm^2^</TD>
+      <TD>617000000000000</TD>
+      <TD>3450000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2004ApJS..153..429K</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>4861 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>08 40 30.00 +47 07 10.2 (J2000)</TD>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From reprocessed raw data</TD>
+     </TR>
+     <TR>
+      <TD>33</TD>
+      <TD>H{beta} (MMT)</TD>
+      <TD>3.27e-14</TD>
+      <TD/>
+      <TD>ergs/s/cm^2^</TD>
+      <TD>617000000000000</TD>
+      <TD>3270000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2007ApJ...671.1297I</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>4861 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>08 40 29.9 +47 07 10 (J2000)</TD>
+      <TD>From fitting to map</TD>
+      <TD/>
+      <TD>Averaged new and previously published data;Extinction-corrected for Milky Way</TD>
+     </TR>
+     <TR>
+      <TD>34</TD>
+      <TD>g (SDSS PSF) AB</TD>
+      <TD>17.759</TD>
+      <TD>+/-0.013</TD>
+      <TD>asinh mag</TD>
+      <TD>617000000000000</TD>
+      <TD>0.000286</TD>
+      <TD>3.32e-06</TD>
+      <TD>3.32e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.32E-06</TD>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>4858       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; INTERP - object contains interpolated-over pixels; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; INTERP_CENTER - interpolated pixel(s) within 3 pixels of center; PSF_FLUX_INTERP - a signifcant amount of PSF's flux is interpolated;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>35</TD>
+      <TD>g (SDSS Model) AB</TD>
+      <TD>17.597</TD>
+      <TD>+/-0.008</TD>
+      <TD>asinh mag</TD>
+      <TD>617000000000000</TD>
+      <TD>0.000332</TD>
+      <TD>2.38e-06</TD>
+      <TD>2.38e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.38E-06</TD>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>4858       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; INTERP - object contains interpolated-over pixels; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; INTERP_CENTER - interpolated pixel(s) within 3 pixels of center; PSF_FLUX_INTERP - a signifcant amount of PSF's flux is interpolated;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>36</TD>
+      <TD>H{beta}</TD>
+      <TD>-13.169</TD>
+      <TD>+/-0.086</TD>
+      <TD>erg/cm^2^/s</TD>
+      <TD>617000000000000</TD>
+      <TD>6780000000</TD>
+      <TD>1340000000</TD>
+      <TD>1340000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.34E+09</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2016MNRAS.463.1144W</TD>
+      <TD>1 sigma</TD>
+      <TD>4861 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD>From 2014MNRAS.442.3565C</TD>
+      <TD>Averaged from previously published data; Extinction-correctedfor Milky Way</TD>
+     </TR>
+     <TR>
+      <TD>37</TD>
+      <TD>[O III] 4959 (MMT)</TD>
+      <TD>1.16e-15</TD>
+      <TD>+/-25  %</TD>
+      <TD>ergs/s/cm^2^</TD>
+      <TD>605000000000000</TD>
+      <TD>116000000</TD>
+      <TD>29000000</TD>
+      <TD>29000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.90E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>4959   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>38</TD>
+      <TD>[O III] 4959 (BTA)</TD>
+      <TD>1.83e-15</TD>
+      <TD>+/-25  %</TD>
+      <TD>ergs/s/cm^2^</TD>
+      <TD>605000000000000</TD>
+      <TD>183000000</TD>
+      <TD>45800000</TD>
+      <TD>45800000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.58E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>4959   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>39</TD>
+      <TD>[O III] 5007 (MMT)</TD>
+      <TD>3.48e-15</TD>
+      <TD>+/-25  %</TD>
+      <TD>ergs/s/cm^2^</TD>
+      <TD>599000000000000</TD>
+      <TD>348000000</TD>
+      <TD>87000000</TD>
+      <TD>87000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-8.70E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>5007   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>40</TD>
+      <TD>[O III] 5007 (BTA)</TD>
+      <TD>5.5e-15</TD>
+      <TD>+/-25  %</TD>
+      <TD>ergs/s/cm^2^</TD>
+      <TD>599000000000000</TD>
+      <TD>550000000</TD>
+      <TD>138000000</TD>
+      <TD>138000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.38E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>5007   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>41</TD>
+      <TD>V (Wise Obs)</TD>
+      <TD>17.32</TD>
+      <TD>+/-0.17</TD>
+      <TD>mag</TD>
+      <TD>542000000000000</TD>
+      <TD>0.00043</TD>
+      <TD>6.81e-05</TD>
+      <TD>6.81e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.81E-05</TD>
+      <TD>Jy</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>5530   A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>08 40 29.84 +47 01 09.1 (J2000)</TD>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data; derived from a flux in a different bandand a color; Standard Johnson UBVRI filters assumed</TD>
+     </TR>
+     <TR>
+      <TD>42</TD>
+      <TD>r (SDSS PSF) AB</TD>
+      <TD>18.796</TD>
+      <TD>+/-0.018</TD>
+      <TD>asinh mag</TD>
+      <TD>477000000000000</TD>
+      <TD>0.00011</TD>
+      <TD>1.82e-06</TD>
+      <TD>1.82e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.82E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>6290       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.1246302593 47.1195094023 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; INTERP - object contains interpolated-over pixels; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; CANONICAL_BAND - this band was primary (usually r);</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>43</TD>
+      <TD>r (SDSS Petrosian)AB</TD>
+      <TD>18.478</TD>
+      <TD>+/-0.019</TD>
+      <TD>asinh mag</TD>
+      <TD>477000000000000</TD>
+      <TD>0.000148</TD>
+      <TD>2.58e-06</TD>
+      <TD>2.58e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.58E-06</TD>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>6290       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS Petrosian Radius =    0.94".         
+SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; INTERP - object contains interpolated-over pixels; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; CANONICAL_BAND - this band was primary (usually r);</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>44</TD>
+      <TD>r (SDSS CModel) AB</TD>
+      <TD>18.502</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>477000000000000</TD>
+      <TD>0.000144</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>6290       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.1246302593 47.1195094023 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; INTERP - object contains interpolated-over pixels; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; CANONICAL_BAND - this band was primary (usually r);</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>45</TD>
+      <TD>r (SDSS CModel) AB</TD>
+      <TD>18.502</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>477000000000000</TD>
+      <TD>0.000144</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>6290       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; INTERP - object contains interpolated-over pixels; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; CANONICAL_BAND - this band was primary (usually r);</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>46</TD>
+      <TD>r (SDSS Model) AB</TD>
+      <TD>18.502</TD>
+      <TD>+/-0.012</TD>
+      <TD>asinh mag</TD>
+      <TD>477000000000000</TD>
+      <TD>0.000144</TD>
+      <TD>1.59e-06</TD>
+      <TD>1.59e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.59E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>6290       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.1246302593 47.1195094023 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; INTERP - object contains interpolated-over pixels; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; CANONICAL_BAND - this band was primary (usually r);</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>47</TD>
+      <TD>r (SDSS PSF) AB</TD>
+      <TD>18.796</TD>
+      <TD>+/-0.018</TD>
+      <TD>asinh mag</TD>
+      <TD>477000000000000</TD>
+      <TD>0.00011</TD>
+      <TD>1.78e-06</TD>
+      <TD>1.78e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.78E-06</TD>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>6290       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; INTERP - object contains interpolated-over pixels; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; CANONICAL_BAND - this band was primary (usually r);</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>48</TD>
+      <TD>r (SDSS Model) AB</TD>
+      <TD>18.502</TD>
+      <TD>+/-0.012</TD>
+      <TD>asinh mag</TD>
+      <TD>477000000000000</TD>
+      <TD>0.000144</TD>
+      <TD>1.58e-06</TD>
+      <TD>1.58e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.58E-06</TD>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>6290       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS Effective Radius =   0.21" x   0.10".;SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; INTERP - object contains interpolated-over pixels; DEBLEND_PRUNED - parent object containing undeblended peaks; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding; CANONICAL_BAND - this band was primary (usually r);</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>49</TD>
+      <TD>R (Wise Obs)</TD>
+      <TD>18.03</TD>
+      <TD>+/-0.22</TD>
+      <TD>mag</TD>
+      <TD>468000000000000</TD>
+      <TD>0.000189</TD>
+      <TD>3.86e-05</TD>
+      <TD>3.86e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.86E-05</TD>
+      <TD>Jy</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>6400   A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>08 40 29.84 +47 01 09.1 (J2000)</TD>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data; derived from a flux in a different bandand a color; Standard Cousins R_C, I_C filters assumed</TD>
+     </TR>
+     <TR>
+      <TD>50</TD>
+      <TD>H{alpha} (BTA)</TD>
+      <TD>2.613e-14</TD>
+      <TD>+/-25  %</TD>
+      <TD>ergs/s/cm^2^</TD>
+      <TD>457000000000000</TD>
+      <TD>2610000000</TD>
+      <TD>653000000</TD>
+      <TD>653000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.53E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>6563   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>51</TD>
+      <TD>H{alpha}</TD>
+      <TD>-13.06</TD>
+      <TD/>
+      <TD>log(erg/s/cm^2^)</TD>
+      <TD>457000000000000</TD>
+      <TD>8710000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy-Hz</TD>
+      <TD>2011A&amp;A...532A.141P</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>6563 A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD>08 40 29.9 +47 07 10 (J2000)</TD>
+      <TD>Not reported in paper</TD>
+      <TD/>
+      <TD>Averaged from previously published data</TD>
+     </TR>
+     <TR>
+      <TD>52</TD>
+      <TD>H{alpha} (MMT)</TD>
+      <TD>1.594e-14</TD>
+      <TD>+/-25  %</TD>
+      <TD>ergs/s/cm^2^</TD>
+      <TD>457000000000000</TD>
+      <TD>1590000000</TD>
+      <TD>398000000</TD>
+      <TD>398000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.98E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2004A&amp;A...419..469P</TD>
+      <TD>uncertainty</TD>
+      <TD>6563   A</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Total flux</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>53</TD>
+      <TD>i (SDSS PSF) AB</TD>
+      <TD>18.596</TD>
+      <TD>+/-0.019</TD>
+      <TD>asinh mag</TD>
+      <TD>389000000000000</TD>
+      <TD>0.000132</TD>
+      <TD>2.32e-06</TD>
+      <TD>2.32e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.32E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>7706       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.1246302593 47.1195094023 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>54</TD>
+      <TD>i (SDSS CModel) AB</TD>
+      <TD>18.325</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>389000000000000</TD>
+      <TD>0.00017</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>7706       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>55</TD>
+      <TD>i (SDSS Model) AB</TD>
+      <TD>18.284</TD>
+      <TD>+/-0.013</TD>
+      <TD>asinh mag</TD>
+      <TD>389000000000000</TD>
+      <TD>0.000176</TD>
+      <TD>2.11e-06</TD>
+      <TD>2.11e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.11E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>7706       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.1246302593 47.1195094023 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>56</TD>
+      <TD>i (SDSS CModel) AB</TD>
+      <TD>18.325</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>389000000000000</TD>
+      <TD>0.00017</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>7706       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.1246302593 47.1195094023 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>57</TD>
+      <TD>i (SDSS Model) AB</TD>
+      <TD>18.284</TD>
+      <TD>+/-0.013</TD>
+      <TD>asinh mag</TD>
+      <TD>389000000000000</TD>
+      <TD>0.000176</TD>
+      <TD>2.18e-06</TD>
+      <TD>2.18e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.18E-06</TD>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>7706       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>58</TD>
+      <TD>i (SDSS PSF) AB</TD>
+      <TD>18.596</TD>
+      <TD>+/-0.019</TD>
+      <TD>asinh mag</TD>
+      <TD>389000000000000</TD>
+      <TD>0.000132</TD>
+      <TD>2.3e-06</TD>
+      <TD>2.3e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.30E-06</TD>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>7706       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>59</TD>
+      <TD>i (SDSS Petrosian)AB</TD>
+      <TD>18.307</TD>
+      <TD>+/-0.022</TD>
+      <TD>asinh mag</TD>
+      <TD>389000000000000</TD>
+      <TD>0.000229</TD>
+      <TD>4.61e-06</TD>
+      <TD>4.61e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.61E-06</TD>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>7706       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS Petrosian Radius =    0.85".         
+SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>60</TD>
+      <TD>z (SDSS Model) AB</TD>
+      <TD>18.593</TD>
+      <TD>+/-0.048</TD>
+      <TD>asinh mag</TD>
+      <TD>325000000000000</TD>
+      <TD>0.00013</TD>
+      <TD>5.76e-06</TD>
+      <TD>5.76e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.76E-06</TD>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>9222       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>61</TD>
+      <TD>z (SDSS PSF) AB</TD>
+      <TD>18.982</TD>
+      <TD>+/-0.049</TD>
+      <TD>asinh mag</TD>
+      <TD>325000000000000</TD>
+      <TD>9.1e-05</TD>
+      <TD>4.08e-06</TD>
+      <TD>4.08e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.08E-06</TD>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>9222       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>62</TD>
+      <TD>z (SDSS Petrosian)AB</TD>
+      <TD>18.452</TD>
+      <TD>+/-0.105</TD>
+      <TD>asinh mag</TD>
+      <TD>325000000000000</TD>
+      <TD>0.000148</TD>
+      <TD>1.43e-05</TD>
+      <TD>1.43e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.43E-05</TD>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>9222       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS Petrosian Radius =    1.35".         
+SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>63</TD>
+      <TD>z (SDSS CModel) AB</TD>
+      <TD>18.529</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>325000000000000</TD>
+      <TD>0.000141</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2004SDSS2.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>9222       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.124634 47.119507 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>64</TD>
+      <TD>z (SDSS PSF) AB</TD>
+      <TD>18.982</TD>
+      <TD>+/-0.049</TD>
+      <TD>asinh mag</TD>
+      <TD>325000000000000</TD>
+      <TD>9.1e-05</TD>
+      <TD>4.11e-06</TD>
+      <TD>4.11e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.11E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>9222       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.1246302593 47.1195094023 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>65</TD>
+      <TD>z (SDSS Model) AB</TD>
+      <TD>18.593</TD>
+      <TD>+/-0.048</TD>
+      <TD>asinh mag</TD>
+      <TD>325000000000000</TD>
+      <TD>0.00013</TD>
+      <TD>5.76e-06</TD>
+      <TD>5.76e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.76E-06</TD>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>based on count statistics only</TD>
+      <TD>9222       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.1246302593 47.1195094023 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>66</TD>
+      <TD>z (SDSS CModel) AB</TD>
+      <TD>18.529</TD>
+      <TD/>
+      <TD>asinh mag</TD>
+      <TD>325000000000000</TD>
+      <TD>0.000138</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>Jy</TD>
+      <TD>2007SDSS6.C...0000:</TD>
+      <TD>no uncertainty reported</TD>
+      <TD>9222       A</TD>
+      <TD>Broad-band measurement</TD>
+      <TD>130.1246302593 47.1195094023 (J2000)</TD>
+      <TD>Modelled datum</TD>
+      <TD>SDSS flags: BLENDED - object has more than one peak; NODEBLEND - object is a blend, but no deblending attempted; BAD_RADIAL - some low S/N radial points; DEBLEND_PRUNED - parent object containing undeblended peaks; ELLIPFAINT - no isophotal fits performed; BINNED1 - detected at &gt;=5 sigma in original imaging frame; BINNED_CENTER - image was binned while centroiding;</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>67</TD>
+      <TD>W1 (WISE)</TD>
+      <TD>14.537</TD>
+      <TD>+/-0.03</TD>
+      <TD>mag</TD>
+      <TD>89400000000000</TD>
+      <TD>0.000474</TD>
+      <TD>1.31e-05</TD>
+      <TD>1.31e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.31E-05</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>3.3526     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Profile-fit</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>68</TD>
+      <TD>W1 (WISE)</TD>
+      <TD>14.518</TD>
+      <TD>+/-0.023</TD>
+      <TD>mag</TD>
+      <TD>89400000000000</TD>
+      <TD>0.000483</TD>
+      <TD>1.02e-05</TD>
+      <TD>1.02e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.02E-05</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>3.3526     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=8.25" COG-corrected</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>69</TD>
+      <TD>W1 (WISE)</TD>
+      <TD>14.201</TD>
+      <TD>+/-0.035</TD>
+      <TD>mag</TD>
+      <TD>89400000000000</TD>
+      <TD>0.000646</TD>
+      <TD>2.08e-05</TD>
+      <TD>2.08e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.08E-05</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>3.3526     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=22.0" aperture</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>70</TD>
+      <TD>4.5 microns (IRAC)</TD>
+      <TD>864.12</TD>
+      <TD>+/-1.9048E+00</TD>
+      <TD>microJy</TD>
+      <TD>66700000000000</TD>
+      <TD>0.000864</TD>
+      <TD>1.9e-06</TD>
+      <TD>1.9e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.90E-06</TD>
+      <TD>Jy</TD>
+      <TD>2013SSTSLC4.2....0C</TD>
+      <TD>uncertainty</TD>
+      <TD>4.493      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>5.8" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>71</TD>
+      <TD>4.5 microns (IRAC)</TD>
+      <TD>838.79</TD>
+      <TD>+/-1.9032E+00</TD>
+      <TD>microJy</TD>
+      <TD>66700000000000</TD>
+      <TD>0.000839</TD>
+      <TD>1.9e-06</TD>
+      <TD>1.9e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.90E-06</TD>
+      <TD>Jy</TD>
+      <TD>2013SSTSLC4.2....0C</TD>
+      <TD>uncertainty</TD>
+      <TD>4.493      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>3.8" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>72</TD>
+      <TD>W2 (WISE)</TD>
+      <TD>13.287</TD>
+      <TD>+/-0.03</TD>
+      <TD>mag</TD>
+      <TD>65100000000000</TD>
+      <TD>0.000832</TD>
+      <TD>2.3e-05</TD>
+      <TD>2.3e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.30E-05</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>4.6028     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Profile-fit</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>73</TD>
+      <TD>W2 (WISE)</TD>
+      <TD>13.302</TD>
+      <TD>+/-0.022</TD>
+      <TD>mag</TD>
+      <TD>65100000000000</TD>
+      <TD>0.000821</TD>
+      <TD>1.66e-05</TD>
+      <TD>1.66e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.66E-05</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>4.6028     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=8.25" COG-corrected</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>74</TD>
+      <TD>W2 (WISE)</TD>
+      <TD>13.229</TD>
+      <TD>+/-0.05</TD>
+      <TD>mag</TD>
+      <TD>65100000000000</TD>
+      <TD>0.000878</TD>
+      <TD>4.04e-05</TD>
+      <TD>4.04e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.04E-05</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>4.6028     microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=22.0" aperture</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>75</TD>
+      <TD>[Ar II] 6.99 (IRS)</TD>
+      <TD/>
+      <TD>&lt;0.13E-17</TD>
+      <TD>W/m^2^</TD>
+      <TD>42900000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>130000000</TD>
+      <TD/>
+      <TD>&lt;1.30E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2010ApJ...712..164H</TD>
+      <TD>3 sigma</TD>
+      <TD>6.985 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>76</TD>
+      <TD>8.0 microns (IRAC)</TD>
+      <TD>3163.6</TD>
+      <TD>+/-6.5494E+00</TD>
+      <TD>microJy</TD>
+      <TD>38100000000000</TD>
+      <TD>0.00316</TD>
+      <TD>6.55e-06</TD>
+      <TD>6.55e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-6.55E-06</TD>
+      <TD>Jy</TD>
+      <TD>2013SSTSLC4.2....0C</TD>
+      <TD>uncertainty</TD>
+      <TD>7.872      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>5.8" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>77</TD>
+      <TD>8.0 microns (IRAC)</TD>
+      <TD>3253.4</TD>
+      <TD>+/-5.8967E+00</TD>
+      <TD>microJy</TD>
+      <TD>38100000000000</TD>
+      <TD>0.00325</TD>
+      <TD>5.9e-06</TD>
+      <TD>5.9e-06</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.90E-06</TD>
+      <TD>Jy</TD>
+      <TD>2013SSTSLC4.2....0C</TD>
+      <TD>uncertainty</TD>
+      <TD>7.872      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>3.8" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>78</TD>
+      <TD>[Ar III] 8.99 (IRS)</TD>
+      <TD>2.8e-18</TD>
+      <TD>+/-0.09E-17</TD>
+      <TD>W/m^2^</TD>
+      <TD>33300000000000</TD>
+      <TD>280000000</TD>
+      <TD>90000000</TD>
+      <TD>90000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.00E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2010ApJ...712..164H</TD>
+      <TD>1 sigma</TD>
+      <TD>8.991 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>79</TD>
+      <TD>[S IV] 10.51 (IRS)</TD>
+      <TD>3.07e-17</TD>
+      <TD>+/-0.41E-17</TD>
+      <TD>W/m^2^</TD>
+      <TD>28500000000000</TD>
+      <TD>3070000000</TD>
+      <TD>410000000</TD>
+      <TD>410000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.10E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2010ApJ...712..164H</TD>
+      <TD>1 sigma</TD>
+      <TD>10.511 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>80</TD>
+      <TD>W3 (WISE)</TD>
+      <TD>9.011</TD>
+      <TD>+/-0.029</TD>
+      <TD>mag</TD>
+      <TD>25900000000000</TD>
+      <TD>0.00788</TD>
+      <TD>0.00021</TD>
+      <TD>0.00021</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.10E-04</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>11.5608    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Profile-fit</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>81</TD>
+      <TD>W3 (WISE)</TD>
+      <TD>8.977</TD>
+      <TD>+/-0.024</TD>
+      <TD>mag</TD>
+      <TD>25900000000000</TD>
+      <TD>0.00813</TD>
+      <TD>0.00018</TD>
+      <TD>0.00018</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.80E-04</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>11.5608    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=8.25" COG-corrected</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>82</TD>
+      <TD>W3 (WISE)</TD>
+      <TD>9.055</TD>
+      <TD>+/-0.032</TD>
+      <TD>mag</TD>
+      <TD>25900000000000</TD>
+      <TD>0.00756</TD>
+      <TD>0.000223</TD>
+      <TD>0.000223</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-2.23E-04</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>11.5608    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=22.0" aperture</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>83</TD>
+      <TD>[Ne II] 12.81 (IRS)</TD>
+      <TD/>
+      <TD>&lt;1.23E-17</TD>
+      <TD>W/m^2^</TD>
+      <TD>23400000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>1230000000</TD>
+      <TD/>
+      <TD>&lt;1.23E+09</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2010ApJ...712..164H</TD>
+      <TD>3 sigma</TD>
+      <TD>12.814 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>84</TD>
+      <TD>[Ne II] 12.8 (IRS)</TD>
+      <TD>1.21e-21</TD>
+      <TD>+/-0.010E-20</TD>
+      <TD>W/cm^2^</TD>
+      <TD>23400000000000</TD>
+      <TD>1210000000</TD>
+      <TD>100000000</TD>
+      <TD>100000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.00E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2008ApJ...681.1205O</TD>
+      <TD>statistical error</TD>
+      <TD>12.8 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD>Nuclear flux</TD>
+      <TD>From reprocessed raw data; Extinction-corrected for Milky Way</TD>
+     </TR>
+     <TR>
+      <TD>85</TD>
+      <TD>[Ne III] 12.56 (IRS)</TD>
+      <TD>1.54e-17</TD>
+      <TD>+/-0.41E-17</TD>
+      <TD>W/m^2^</TD>
+      <TD>19300000000000</TD>
+      <TD>1540000000</TD>
+      <TD>410000000</TD>
+      <TD>410000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-4.10E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2010ApJ...712..164H</TD>
+      <TD>1 sigma</TD>
+      <TD>15.555 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>86</TD>
+      <TD>[S III] 18.71 (IRS)</TD>
+      <TD/>
+      <TD>&lt;1.23E-17</TD>
+      <TD>W/m^2^</TD>
+      <TD>16000000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>1230000000</TD>
+      <TD/>
+      <TD>&lt;1.23E+09</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2010ApJ...712..164H</TD>
+      <TD>3 sigma</TD>
+      <TD>18.713 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>87</TD>
+      <TD>[S III] 18.7 (IRS)</TD>
+      <TD>2e-22</TD>
+      <TD>+/-0.005E-20</TD>
+      <TD>W/cm^2^</TD>
+      <TD>16000000000000</TD>
+      <TD>200000000</TD>
+      <TD>50000000</TD>
+      <TD>50000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-5.00E+07</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2008ApJ...681.1205O</TD>
+      <TD>statistical error</TD>
+      <TD>18.7 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD>Nuclear flux</TD>
+      <TD>From reprocessed raw data; Extinction-corrected for Milky Way</TD>
+     </TR>
+     <TR>
+      <TD>88</TD>
+      <TD>W4 (WISE)</TD>
+      <TD>6.178</TD>
+      <TD>+/-0.056</TD>
+      <TD>mag</TD>
+      <TD>13600000000000</TD>
+      <TD>0.0283</TD>
+      <TD>0.00146</TD>
+      <TD>0.00146</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.46E-03</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>22.0883    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>From fitting to map</TD>
+      <TD>Profile-fit</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>89</TD>
+      <TD>W4 (WISE)</TD>
+      <TD>6.169</TD>
+      <TD>+/-0.057</TD>
+      <TD>mag</TD>
+      <TD>13600000000000</TD>
+      <TD>0.0285</TD>
+      <TD>0.0015</TD>
+      <TD>0.0015</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.50E-03</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>22.0883    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=16.5" COG-corrected</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>90</TD>
+      <TD>W4 (WISE)</TD>
+      <TD>6.474</TD>
+      <TD>+/-0.062</TD>
+      <TD>mag</TD>
+      <TD>13600000000000</TD>
+      <TD>0.0215</TD>
+      <TD>0.00123</TD>
+      <TD>0.00123</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.23E-03</TD>
+      <TD>Jy</TD>
+      <TD>2013wise.rept....1C</TD>
+      <TD>uncertainty</TD>
+      <TD>22.0883    microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>r=22.0" aperture</TD>
+      <TD>From new raw data; Uncorrected for known sources in beam</TD>
+     </TR>
+     <TR>
+      <TD>91</TD>
+      <TD>24 microns (MIPS)</TD>
+      <TD>24200</TD>
+      <TD>+/-9.4595E+01</TD>
+      <TD>microJy</TD>
+      <TD>12700000000000</TD>
+      <TD>0.0242</TD>
+      <TD>9.46e-05</TD>
+      <TD>9.46e-05</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-9.46E-05</TD>
+      <TD>Jy</TD>
+      <TD>2013SSTSLC4.2....0C</TD>
+      <TD>uncertainty</TD>
+      <TD>23.68      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Flux in fixed aperture</TD>
+      <TD>14.7" aperture</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>92</TD>
+      <TD>24 microns (MIPS)</TD>
+      <TD>25408</TD>
+      <TD>+/-1.0303E+02</TD>
+      <TD>microJy</TD>
+      <TD>12700000000000</TD>
+      <TD>0.0254</TD>
+      <TD>0.000103</TD>
+      <TD>0.000103</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.03E-04</TD>
+      <TD>Jy</TD>
+      <TD>2013SSTSLC4.2....0C</TD>
+      <TD>uncertainty</TD>
+      <TD>23.68      microns</TD>
+      <TD>Broad-band measurement</TD>
+      <TD/>
+      <TD>Modelled datum</TD>
+      <TD>PSF fit</TD>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>93</TD>
+      <TD>[O IV] 25.89 (IRS)</TD>
+      <TD/>
+      <TD>&lt;0.92E-17</TD>
+      <TD>W/m^2^</TD>
+      <TD>11600000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>920000000</TD>
+      <TD/>
+      <TD>&lt;9.20E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2010ApJ...712..164H</TD>
+      <TD>3 sigma</TD>
+      <TD>25.890 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>94</TD>
+      <TD>[Fe II] 26.0 (IRS)</TD>
+      <TD>1.77e-21</TD>
+      <TD>+/-0.036E-20</TD>
+      <TD>W/cm^2^</TD>
+      <TD>11500000000000</TD>
+      <TD>1770000000</TD>
+      <TD>360000000</TD>
+      <TD>360000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-3.60E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2008ApJ...681.1205O</TD>
+      <TD>statistical error</TD>
+      <TD>26.0 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD>Nuclear flux</TD>
+      <TD>From reprocessed raw data; Extinction-corrected for Milky Way</TD>
+     </TR>
+     <TR>
+      <TD>95</TD>
+      <TD>[Fe II] 25.99 (IRS)</TD>
+      <TD/>
+      <TD>&lt;0.92E-17</TD>
+      <TD>W/m^2^</TD>
+      <TD>11500000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>920000000</TD>
+      <TD/>
+      <TD>&lt;9.20E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2010ApJ...712..164H</TD>
+      <TD>3 sigma</TD>
+      <TD>25.988 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>96</TD>
+      <TD>[Fe III] 33.04 (IRS)</TD>
+      <TD/>
+      <TD>&lt;0.92E-17</TD>
+      <TD>W/m^2^</TD>
+      <TD>9070000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>920000000</TD>
+      <TD/>
+      <TD>&lt;9.20E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2010ApJ...712..164H</TD>
+      <TD>3 sigma</TD>
+      <TD>33.038 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>97</TD>
+      <TD>[S III] 33.4 (IRS)</TD>
+      <TD>3.3e-22</TD>
+      <TD>+/-0.011E-20</TD>
+      <TD>W/cm^2^</TD>
+      <TD>8980000000000</TD>
+      <TD>330000000</TD>
+      <TD>110000000</TD>
+      <TD>110000000</TD>
+      <TD/>
+      <TD/>
+      <TD>+/-1.10E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2008ApJ...681.1205O</TD>
+      <TD>statistical error</TD>
+      <TD>33.4 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD>Nuclear flux</TD>
+      <TD>From reprocessed raw data; Extinction-corrected for Milky Way</TD>
+     </TR>
+     <TR>
+      <TD>98</TD>
+      <TD>[S III] 33.48 (IRS)</TD>
+      <TD/>
+      <TD>&lt;0.92E-17</TD>
+      <TD>W/m^2^</TD>
+      <TD>8950000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>920000000</TD>
+      <TD/>
+      <TD>&lt;9.20E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2010ApJ...712..164H</TD>
+      <TD>3 sigma</TD>
+      <TD>33.481 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>99</TD>
+      <TD>[Si II] 34.82 (IRS)</TD>
+      <TD/>
+      <TD>&lt;0.92E-17</TD>
+      <TD>W/m^2^</TD>
+      <TD>8610000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>920000000</TD>
+      <TD/>
+      <TD>&lt;9.20E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2010ApJ...712..164H</TD>
+      <TD>3 sigma</TD>
+      <TD>34.815 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+     <TR>
+      <TD>100</TD>
+      <TD>[Ne III] 36.01 (IRS)</TD>
+      <TD/>
+      <TD>&lt;0.92E-17</TD>
+      <TD>W/m^2^</TD>
+      <TD>8320000000000</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+      <TD>920000000</TD>
+      <TD/>
+      <TD>&lt;9.20E+08</TD>
+      <TD>Jy-Hz</TD>
+      <TD>2010ApJ...712..164H</TD>
+      <TD>3 sigma</TD>
+      <TD>36.014 microns</TD>
+      <TD>Line measurement; flux integrated over line; lines measured in emission</TD>
+      <TD/>
+      <TD>Flux integrated from map</TD>
+      <TD/>
+      <TD>From new raw data</TD>
+     </TR>
+    </TABLEDATA>
+   </DATA>
+  </TABLE>
+ </RESOURCE>
+</VOTABLE>
