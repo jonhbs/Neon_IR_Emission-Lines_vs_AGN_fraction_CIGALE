@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE version="1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.ivoa.net/xml/VOTable/v1.3"
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3">
+ <DESCRIPTION>
+   VizieR Astronomical Server vizier.u-strasbg.fr
+    Date: 2022-04-04T17:31:24 [V1.99+ (14-Oct-2013)]
+   Explanations and Statistics of UCDs:			See LINK below
+   In case of problem, please report to:	cds-question@unistra.fr
+   In this version, NULL integer columns are written as an empty string
+   &lt;TD&gt;&lt;/TD&gt;, explicitely possible from VOTable-1.3
+ </DESCRIPTION>
+<!-- VOTable description at http://www.ivoa.net/Documents/latest/VOT.html -->
+<INFO ID="VERSION" name="votable-version" value="1.99+ (14-Oct-2013)"/>
+<INFO ID="Ref" name="-ref" value="VOTx958394"/>
+<INFO name="-out.form" value="mini"/>
+<INFO name="MaxTuples" value="50000" />
+<INFO name="queryParameters" value="5">
+-oc.form=D.
+-c=96.028 -60.998
+-phot
+-out=_raj,_dej,_tabname(),_ID(),_sed4,_t,_etime
+-c.rs=5
+</INFO>
+<INFO ID="Target" name="-c" value="096.028000-60.998000,rs=5.">
+Constraint -c.rs=5</INFO>
+
+<RESOURCE ID="VizieR_S702408684" name="VizieR(2022-04-04T17:31:24)">
+  <DESCRIPTION>VizieR database maintained by CDS, see http://vizier.u-strasbg.fr</DESCRIPTION>
+  <COOSYS ID="J2000" system="eq_FK5" equinox="J2000"/>
+  <TIMESYS ID="time_1" refposition="BARYCENTER" timeorigin="0.000000" timescale="TCB"/>
+  <TABLE ID="VizieR_0" name="allVizieR">
+    <DESCRIPTION>all VizieR catalogues</DESCRIPTION>
+<!-- The Full GSC2.3.2 Catalogue (945592683 objects) -->
+
+    <!-- Definitions of GROUPs and FIELDs -->
+    <GROUP ID="gsed" name="_sed" ucd="phot" utype="spec:PhotometryPoint">
+      <DESCRIPTION>The SED group is made of 4 columns: mean frequency, flux, flux error, and filter designation</DESCRIPTION>
+      <FIELDref ref="sed_freq" utype="photdm:PhotometryFilter.SpectralAxis.Coverage.Location.Value"/>
+      <FIELDref ref="sed_flux" utype="spec:PhotometryPoint"/>
+      <FIELDref ref="sed_eflux" utype="spec:PhotometryPointError"/>
+      <FIELDref ref="sed_filter" utype="photdm:PhotometryFilter.identifier"/>
+    </GROUP>
+    <FIELD name="_RAJ2000" ucd="pos.eq.ra" ref="J2000" datatype="double" width="12" precision="8" unit="deg">
+      <DESCRIPTION>Right ascension (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_DEJ2000" ucd="pos.eq.dec" ref="J2000" datatype="double" width="12" precision="8" unit="deg">
+      <DESCRIPTION>Declination (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_tabname" ucd="meta.table" datatype="char" arraysize="32*">
+      <DESCRIPTION>Table name</DESCRIPTION>
+      <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR-5?-info=XML&amp;-out.add=.&amp;-source=I/305/out&amp;-c=${+RAJ2000}${+DEJ2000}&amp;-c.eq=J2000.000&amp;-c.rs=0.5"/>
+    </FIELD>
+    <FIELD name="_ID" ucd="meta.id" datatype="char" arraysize="64*">
+      <DESCRIPTION>String which identifies the row</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_time" ucd="time.epoch" ref="time_1" ID="_tab1_37" datatype="double" width="14" precision="6" unit="d">
+      <DESCRIPTION>time (JD) in TCB/barycenter</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_etime" ucd="stat.error;time.epoch" ref="time_1" ID="_tab1_38" datatype="double" width="7" precision="1" unit="s">
+      <DESCRIPTION>time error (uncertainty and time conversion)</DESCRIPTION>
+    </FIELD>
+    <FIELD ID="sed_freq" name="_sed_freq" ucd="em.freq" unit="GHz" datatype="double" width="10" precision="E6">
+      <DESCRIPTION>Mean frequency, in GHz</DESCRIPTION>
+    </FIELD>
+    <FIELD ID="sed_flux" name="_sed_flux" ucd="phot.flux.density" unit="Jy" datatype="float" width="9" precision="E3">
+      <DESCRIPTION>Corresponding flux density, in Jy</DESCRIPTION>
+    </FIELD>
+    <FIELD ID="sed_eflux" name="_sed_eflux" ucd="stat.error;phot.flux.density" unit="Jy" datatype="float" width="8" precision="E2">
+      <DESCRIPTION>Mean error (standard deviations) of flux density</DESCRIPTION>
+    </FIELD>
+    <FIELD ID="sed_filter" name="_sed_filter" ucd="meta.id;instr.filter" unit="" datatype="char" width="32" arraysize="32*">
+      <DESCRIPTION>Filter designation, in the form photoSystem:filterName; a designation starting by ':=' is an assumed monochromatic point; this column is empty when the frequency is specified for each data point.</DESCRIPTION>
+      <LINK href="http://cdsarc.u-strasbg.fr/viz-bin/metafilter?${_sed_filter}"/>
+    </FIELD>
+<DATA><TABLEDATA>
+<TR><TD>096.02716000</TD><TD>-60.99787100</TD><TD>I/305/out</TD><TD>GSC2.3===S4FG013273&amp;-c=096.027160 -60.997871,eq=J2000&amp;-c.rs=0.00</TD><TD></TD><TD>0.0</TD><TD>640.58e+3</TD><TD>6.93e-6</TD><TD>4.25e-6</TD><TD>POSS-II:J</TD></TR>
+<TR><TD>096.0278800000000</TD><TD>-60.9988600000000</TD><TD>I/353/gsc242</TD><TD>-c=096.02788000000 -60.99886000000,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>138.55e+3</TD><TD>142.e-6</TD><TD>35.e-6</TD><TD>2MASS:Ks</TD></TR>
+<TR><TD>096.0278800000000</TD><TD>-60.9988600000000</TD><TD>I/353/gsc242</TD><TD>-c=096.02788000000 -60.99886000000,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>181.75e+3</TD><TD>141.e-6</TD><TD></TD><TD>2MASS:H</TD></TR>
+<TR><TD>096.0278800000000</TD><TD>-60.9988600000000</TD><TD>I/353/gsc242</TD><TD>-c=096.02788000000 -60.99886000000,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>241.96e+3</TD><TD>46.2e-6</TD><TD></TD><TD>2MASS:J</TD></TR>
+<TR><TD>096.02755000</TD><TD>-60.99756306</TD><TD>II/339/uvotssc1</TD><TD>recno=2831760</TD><TD></TD><TD>0.0</TD><TD>1.3348e+6</TD><TD>3.19e-6</TD><TD></TD><TD>UVOT:UVM2</TD></TR>
+<TR><TD>096.026587900</TD><TD>-60.998829100</TD><TD>II/363/unwise</TD><TD>-c=096.0265879 -60.9988291,eq=J2000&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>65.172e+3</TD><TD>19.4e-6</TD><TD>2.6e-6</TD><TD>WISE:W2</TD></TR>
+<TR><TD>096.026587900</TD><TD>-60.998829100</TD><TD>II/363/unwise</TD><TD>-c=096.0265879 -60.9988291,eq=J2000&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>89.490e+3</TD><TD>31.4e-6</TD><TD>1.3e-6</TD><TD>WISE:W1</TD></TR>
+<TR><TD>096.026417700</TD><TD>-60.998754100</TD><TD>II/365/catwise</TD><TD>-c=096.0264177 -60.9987541,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>65.172e+3</TD><TD>14.7e-6</TD><TD>2.2e-6</TD><TD>WISE:W2</TD></TR>
+<TR><TD>096.026417700</TD><TD>-60.998754100</TD><TD>II/365/catwise</TD><TD>-c=096.0264177 -60.9987541,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>89.490e+3</TD><TD>30.4e-6</TD><TD>1.4e-6</TD><TD>WISE:W1</TD></TR>
+<TR><TD>096.02658700</TD><TD>-60.99897500</TD><TD>II/371/des_dr2</TD><TD>-c=096.026587 -60.998975,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>298.20e+3</TD><TD>28.3e-6</TD><TD>1.9e-6</TD><TD>CTIO/DECam:Y</TD></TR>
+<TR><TD>096.02658700</TD><TD>-60.99897500</TD><TD>II/371/des_dr2</TD><TD>-c=096.026587 -60.998975,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>325.50e+3</TD><TD>22.8e-6</TD><TD>0.6e-6</TD><TD>CTIO/DECam:z</TD></TR>
+<TR><TD>096.02658700</TD><TD>-60.99897500</TD><TD>II/371/des_dr2</TD><TD>-c=096.026587 -60.998975,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>386.50e+3</TD><TD>18.7e-6</TD><TD>0.3e-6</TD><TD>CTIO/DECam:i</TD></TR>
+<TR><TD>096.02658700</TD><TD>-60.99897500</TD><TD>II/371/des_dr2</TD><TD>-c=096.026587 -60.998975,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>474.20e+3</TD><TD>12.6e-6</TD><TD>0.2e-6</TD><TD>CTIO/DECam:r</TD></TR>
+<TR><TD>096.02658700</TD><TD>-60.99897500</TD><TD>II/371/des_dr2</TD><TD>-c=096.026587 -60.998975,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>647.20e+3</TD><TD>4.08e-6</TD><TD>0.13e-6</TD><TD>CTIO/DECam:g</TD></TR>
+<TR><TD>096.02735000</TD><TD>-60.99795800</TD><TD>II/371/des_dr2</TD><TD>-c=096.027350 -60.997958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>298.20e+3</TD><TD>14.3e-6</TD><TD>2.0e-6</TD><TD>CTIO/DECam:Y</TD></TR>
+<TR><TD>096.02735000</TD><TD>-60.99795800</TD><TD>II/371/des_dr2</TD><TD>-c=096.027350 -60.997958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>325.50e+3</TD><TD>14.6e-6</TD><TD>0.6e-6</TD><TD>CTIO/DECam:z</TD></TR>
+<TR><TD>096.02735000</TD><TD>-60.99795800</TD><TD>II/371/des_dr2</TD><TD>-c=096.027350 -60.997958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>386.50e+3</TD><TD>13.2e-6</TD><TD>0.3e-6</TD><TD>CTIO/DECam:i</TD></TR>
+<TR><TD>096.02735000</TD><TD>-60.99795800</TD><TD>II/371/des_dr2</TD><TD>-c=096.027350 -60.997958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>474.20e+3</TD><TD>10.8e-6</TD><TD>0.2e-6</TD><TD>CTIO/DECam:r</TD></TR>
+<TR><TD>096.02735000</TD><TD>-60.99795800</TD><TD>II/371/des_dr2</TD><TD>-c=096.027350 -60.997958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>647.20e+3</TD><TD>6.25e-6</TD><TD>0.14e-6</TD><TD>CTIO/DECam:g</TD></TR>
+</TABLEDATA></DATA>
+<INFO name="matches" value="8">matching records</INFO>
+
+<INFO name="Warning" value="increase the precision for computed column 11"/>
+<INFO name="Warning" value="increase the precision for computed column 11"/>
+<INFO name="Warning" value="increase the precision for computed column 11"/>
+<INFO name="Warning" value="increase the precision for computed column 11"/>
+<INFO name="Warning" value="increase the precision for computed column 10"/>
+<INFO name="Warning" value="connection: 9 free, 0 closed, 0 opend"/>
+<INFO name="Warning" value="change VO format int  (%08d) to char"/>
+<INFO name="Warning" value="change VO format int  (%02d) to char"/>
+<INFO name="Warning" value="change VO format int  (%03d) to char"/>
+<INFO name="Warning" value="change VO format int  (%03d) to char"/>
+<INFO name="Warning" value="(patch vizier 20171220) accept several mainpos to add _V column"/>
+<INFO name="Warning" value="change VO format int  (%02d) to char"/>
+<INFO name="Warning" value="change VO format int  (%02d) to char"/>
+<INFO name="Warning" value="change VO format int  (%02d) to char"/>
+<INFO name="Warning" value="change VO format int  (%02d) to char"/>
+<INFO name="Warning" value="change VO format int  (%02d) to char"/>
+<INFO name="Warning" value="change VO format int  (%02d) to char"/>
+<INFO name="Warning" value="change VO format int  (%02d) to char"/>
+<INFO name="Warning" value="change VO format int  (%02d) to char"/>
+<INFO name="Warning" value="change VO format int  (%05d) to char"/>
+<INFO name="Warning" value="(patch vizier 20171220) accept several mainpos to add _V column"/>
+<INFO name="Warning" value="(patch vizier 20171220) accept several mainpos to add _V column"/>
+<INFO name="Warning" value="change VO format int  (%011lld) to char"/>
+<INFO name="Warning" value="SED skip value for II/339/uvotssc1.F.UVM2=0.000000 "/>
+  </TABLE>
+</RESOURCE>
+</VOTABLE>
