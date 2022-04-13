@@ -4,7 +4,7 @@
 Created on Fri Apr  8 10:37:03 2022
 
 The next class, clean the Photometry and ignore empty values in the tables.
-This code was made by Andrés Ramos Padilla (https://github.com/aframosp/AGNView).
+This code was developed by Andrés Ramos Padilla (https://github.com/aframosp/AGNView).
 """
 
 import astropy.units as u
