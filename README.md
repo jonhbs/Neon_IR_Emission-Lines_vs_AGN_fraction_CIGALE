@@ -9,4 +9,5 @@ Proyecto: Líneas de Neón como indicadores de AGN en SIMBAD y NED
 
 
 **Universidad Nacional de Colombia - Facultad de Ciencias** 
+
 **Observatorio Astronómico Nacional**
