@@ -90,7 +90,7 @@ class CleanPhotometry:
         
 CDSFilters = ['GALEX:FUV', 'GALEX:NUV',
               "SDSS:u'", "SDSS:g'", "SDSS:r'", "SDSS:i'", "SDSS:z'",
-              'SDSS:u', 'SDSS:g', 'SDSS:r', 'SDSS:i', 'SDSS:z',
+              #'SDSS:u', 'SDSS:g', 'SDSS:r', 'SDSS:i', 'SDSS:z',
               '2MASS:J', '2MASS:H', '2MASS:Ks',
               ':=3.6um', ':=4.5um', ':=5.8um', ':=8um',
               'WISE:W1', 'WISE:W2', 'WISE:W3', 'WISE:W4',
