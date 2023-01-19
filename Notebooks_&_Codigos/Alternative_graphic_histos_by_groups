@@ -1,0 +1,50 @@
+#Just copy and replace the code in Notebook
+
+out0to90 = Table()
+out30and70 = Table()
+out_1 = Table()
+out_2 = Table()
+redshift_ranges = ['0.00 to 0.03','0.03 to 0.07','0.07 to 0.10','0.11 to 0.14','0.15 to 0.18',\
+                   '0.18 to 0.22','0.23 to 0.28','0.28 to 0.31','0.55 to 0.85','0.87 to 0.99']
+sub_plot = [(0,0),(0,1),(1,0),(1,1),(2,0),(2,1),(3,0),(3,1),(4,0),(4,1),(5,0),(5,1)]
+gs = gridspec.GridSpec(5,2)
+plt.subplots(figsize=(12,22),sharey=True)
+
+for i in range(10):
+    CIGPhotIn = Table()
+    out0090 = Table()
+    out3070 = Table()
+    CIGPhotIn = Table.read(path_CIGALE_phot+'CIGPhot_EnergyBal_'+str(i+1)+'.tbl', format='ascii')
+    out0090 = Table.read(path_CIGALE_out+'Group_'+str(i+1)+out[0]+'results.fits',format='fits')
+    out3070 = Table.read(path_CIGALE_out+'Group_'+str(i+1)+out[1]+'results.fits',format='fits')
+    
+    out0090['log.reduced_chi_square'] = np.log10(out0090['best.reduced_chi_square'])
+    out3070['log.reduced_chi_square'] = np.log10(out3070['best.reduced_chi_square'])
+    
+    binsChiS = np.linspace(-1.0,2.0,40)  # Assuming ChiSquare bins in this ranges
+    plt.subplot(gs[sub_plot[i]])
+    plt.xlim(-1,2)
+    plt.ylim(0,12)
+    plt.hist(out0090['log.reduced_chi_square'], bins=binsChiS,label='i = 0 to 90\noa= 40')
+    plt.hist(out3070['log.reduced_chi_square'], bins=binsChiS, histtype='step',label='i = 30 and 70\noa = 10, 40 and 70')
+    plt.axvline(x=-0.5,ls='--',color='gray')
+    plt.axvline(x=0.5,ls='--',color='gray')
+    plt.title('Redshift '+redshift_ranges[i])
+    plt.xlabel(r'$\log(\chi^2_{\rm{red}})$')
+    plt.ylabel('Counts')
+    plt.grid(color='k', linestyle='--', linewidth=0.1)
+    plt.legend()
+    plt.subplots_adjust(hspace=0.3,wspace=0.15) #Space between subplots
+    
+    print('Number of galaxys in group',i+1,': ',len(out0090))
+    
+    out0to90 = vstack([out0090, out0to90]) #Join all the result tables from CIGALE
+    out30and70 = vstack([out3070, out30and70]) #Join all the result tables from CIGALE
+    
+    out_1 = vstack([out0090, out_1]) #Join all the result tables from CIGALE
+    out_2 = vstack([out3070, out_2]) #Join all the result tables from CIGALE
+
+plt.savefig(path_graphs+'histo_CIGALE_fitting_groups.jpg')
+    
+print('Total galaxys: ',len(out0to90))
+#print('Total galaxys: ',len(out_1))
