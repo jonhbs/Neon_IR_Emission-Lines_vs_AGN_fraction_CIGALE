@@ -4,28 +4,30 @@
   xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3">
  <DESCRIPTION>
    VizieR Astronomical Server vizier.u-strasbg.fr
-    Date: 2022-10-31T06:33:12 [V7.294]
+    Date: 2023-05-30T20:04:15 [V7.31]
    Explanations and Statistics of UCDs:			See LINK below
    In case of problem, please report to:	cds-question@unistra.fr
    In this version, NULL integer columns are written as an empty string
    &lt;TD&gt;&lt;/TD&gt;, explicitely possible from VOTable-1.3
  </DESCRIPTION>
 <!-- VOTable description at http://www.ivoa.net/Documents/latest/VOT.html -->
-<INFO ID="VERSION" name="version" value="7.294"/>
-<INFO ID="Ref" name="-ref" value="VOTx2428079"/>
-<INFO name="-out.form" value="mini"/>
+<INFO name='protocol' value='ASU'/>
+<INFO name='request_date' value='2023-05-30T20:04:15'/>
+<INFO name='request' value='https://vizier.u-strasbg.fr//viz-bin/sed?-c=196.3636625%20-49.4679&amp;-c.rs=5'/>
+<INFO name='contact' value='cds-question@unistra.fr'/>
+<INFO name='version' value='7.31'/>
+<INFO name="header_format" value="mini"/>
 <INFO name="MaxTuples" value="50000" />
-<INFO name="queryParameters" value="5">
--oc.form=D.
--c=196.3636625 -49.4679
--phot
--out=_raj,_dej,_tabname(),_ID(),_sed4,_t,_etime
--c.rs=5
-</INFO>
+<INFO name="header_format" value="mini"/>
+<INFO name="header_format" value="mini"/>
+<INFO name="header_format" value="mini"/>
 <INFO ID="Target" name="-c" value="196.363663-49.467900,rs=5.">
 Constraint -c.rs=5</INFO>
+<INFO name="header_format" value="mini"/>
+<INFO name="header_format" value="mini"/>
+<INFO name="header_format" value="mini"/>
 
-<RESOURCE ID="VizieR_S720513192" name="VizieR(2022-10-31T06:33:12)">
+<RESOURCE ID="VizieR_S738792255" name="VizieR(2023-05-30T20:04:15)">
   <DESCRIPTION>VizieR database maintained by CDS, see http://vizier.cds.unistra.fr</DESCRIPTION>
   <COOSYS ID="J2000_2000.000" system="eq_FK5" equinox="J2000" epoch="2000.000"/>
   <COOSYS ID="J2000" system="eq_FK5" equinox="J2000"/>
@@ -48,7 +50,7 @@ Constraint -c.rs=5</INFO>
     </FIELD>
     <FIELD name="_tabname" ucd="meta.table" datatype="char" arraysize="32*">
       <DESCRIPTION>Table name</DESCRIPTION>
-      <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR-5?-info=XML&amp;-out.add=.&amp;-source=I/297/out&amp;-c=${+RAJ2000}${+DEJ2000}&amp;-c.eq=J2000.000&amp;-c.rs=0.5"/>
+      <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR-5?-info=XML&amp;-out.add=.&amp;-source=${_tabname}&amp;${_ID}"/>
     </FIELD>
     <FIELD name="_ID" ucd="meta.id" datatype="char" arraysize="64*">
       <DESCRIPTION>String which identifies the row</DESCRIPTION>
@@ -344,6 +346,7 @@ Constraint -c.rs=5</INFO>
 <TR><TD>196.362489</TD><TD>-49.467690</TD><TD>J/AJ/110/1993/table1a</TD><TD>recno=141</TD><TD></TD><TD>0.0</TD><TD>25.866e+3</TD><TD>23.6</TD><TD></TD><TD>IRAS:12</TD></TR>
 <TR><TD>196.362917</TD><TD>-49.469167</TD><TD>J/AJ/126/2237/table1</TD><TD>recno=100</TD><TD></TD><TD>0.0</TD><TD>4.8471e+3</TD><TD>359.</TD><TD></TD><TD>IRAS:60</TD></TR>
 <TR><TD>196.362917</TD><TD>-49.469167</TD><TD>J/AJ/126/2237/table1</TD><TD>recno=100</TD><TD></TD><TD>0.0</TD><TD>12.554e+3</TD><TD>14.4</TD><TD></TD><TD>IRAS:25</TD></TR>
+<TR><TD>196.3636625</TD><TD>-49.4679000</TD><TD>J/AJ/131/100/table4</TD><TD>recno=131</TD><TD></TD><TD>0.0</TD><TD>0.40800</TD><TD>12.6</TD><TD>1.3</TD><TD>:=408MHz</TD></TR>
 <TR><TD>196.363750</TD><TD>-49.467917</TD><TD>J/AJ/146/86/table1</TD><TD>recno=4292</TD><TD></TD><TD>0.0</TD><TD>138.55e+3</TD><TD>32.0</TD><TD></TD><TD>2MASS:Ks</TD></TR>
 <TR><TD>196.363750</TD><TD>-49.467917</TD><TD>J/AJ/146/86/table1</TD><TD>recno=4292</TD><TD></TD><TD>0.0</TD><TD>138.55e+3</TD><TD>11.0</TD><TD></TD><TD>2MASS:Ks</TD></TR>
 <TR><TD>196.362908</TD><TD>-49.467689</TD><TD>J/MNRAS/253/485/qigc</TD><TD>recno=10434</TD><TD></TD><TD>0.0</TD><TD>2.9979e+3</TD><TD>1.42e+3</TD><TD></TD><TD>:=100um</TD></TR>
@@ -379,8 +382,15 @@ Constraint -c.rs=5</INFO>
 <TR><TD>196.3636667</TD><TD>-49.4678889</TD><TD>J/MNRAS/440/696/tableb1</TD><TD>recno=116</TD><TD></TD><TD>0.0</TD><TD>4.8471e+3</TD><TD>626.</TD><TD></TD><TD>IRAS:60</TD></TR>
 <TR><TD>196.3636667</TD><TD>-49.4678889</TD><TD>J/MNRAS/440/696/tableb1</TD><TD>recno=116</TD><TD></TD><TD>0.0</TD><TD>138.55e+3</TD><TD>11.0</TD><TD></TD><TD>2MASS:Ks</TD></TR>
 <TR><TD>196.364500</TD><TD>-49.468210</TD><TD>J/MNRAS/479/3509/sample</TD><TD>recno=43</TD><TD></TD><TD>0.0</TD><TD>1.4000</TD><TD>6.45</TD><TD>0.10</TD><TD>:=1.4GHz</TD></TR>
+<TR><TD>196.36412048299999</TD><TD>-49.46802139279999</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=892</TD><TD></TD><TD>0.0</TD><TD>13.571e+3</TD><TD>10.1</TD><TD></TD><TD>WISE:W4</TD></TR>
+<TR><TD>196.36412048299999</TD><TD>-49.46802139279999</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=892</TD><TD></TD><TD>0.0</TD><TD>25.934e+3</TD><TD>2.60</TD><TD></TD><TD>WISE:W3</TD></TR>
+<TR><TD>196.36412048299999</TD><TD>-49.46802139279999</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=892</TD><TD></TD><TD>0.0</TD><TD>65.172e+3</TD><TD>0.448</TD><TD></TD><TD>WISE:W2</TD></TR>
+<TR><TD>196.36412048299999</TD><TD>-49.46802139279999</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=892</TD><TD></TD><TD>0.0</TD><TD>89.490e+3</TD><TD>0.246</TD><TD></TD><TD>WISE:W1</TD></TR>
+<TR><TD>196.36412048299999</TD><TD>-49.46802139279999</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=892</TD><TD></TD><TD>0.0</TD><TD>138.55e+3</TD><TD>0.120</TD><TD></TD><TD>2MASS:Ks</TD></TR>
+<TR><TD>196.36412048299999</TD><TD>-49.46802139279999</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=892</TD><TD></TD><TD>0.0</TD><TD>181.75e+3</TD><TD>32.2e-3</TD><TD></TD><TD>2MASS:H</TD></TR>
+<TR><TD>196.36412048299999</TD><TD>-49.46802139279999</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=892</TD><TD></TD><TD>0.0</TD><TD>241.96e+3</TD><TD>17.6e-3</TD><TD></TD><TD>2MASS:J</TD></TR>
 </TABLEDATA></DATA>
-<INFO name="matches" value="100">matching records</INFO>
+<INFO name="matches" value="102">matching records</INFO>
 
 <INFO name="Warning" value="increase the precision for computed column 10"/>
 <INFO name="Warning" value="increase the precision for computed column 10"/>
@@ -559,7 +569,11 @@ Constraint -c.rs=5</INFO>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
+<INFO name="Warning" value="vc_coo can't change epoch"/>
+<INFO name="Warning" value="vc_coo can't change epoch"/>
+<INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="change VO format int  (%03d) to char"/>
+<INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
   </TABLE>

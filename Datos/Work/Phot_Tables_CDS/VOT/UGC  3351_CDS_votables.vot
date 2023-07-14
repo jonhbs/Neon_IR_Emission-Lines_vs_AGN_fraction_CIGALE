@@ -4,28 +4,30 @@
   xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3">
  <DESCRIPTION>
    VizieR Astronomical Server vizier.u-strasbg.fr
-    Date: 2022-10-31T07:15:35 [V7.294]
+    Date: 2023-05-30T21:11:43 [V7.31]
    Explanations and Statistics of UCDs:			See LINK below
    In case of problem, please report to:	cds-question@unistra.fr
    In this version, NULL integer columns are written as an empty string
    &lt;TD&gt;&lt;/TD&gt;, explicitely possible from VOTable-1.3
  </DESCRIPTION>
 <!-- VOTable description at http://www.ivoa.net/Documents/latest/VOT.html -->
-<INFO ID="VERSION" name="version" value="7.294"/>
-<INFO ID="Ref" name="-ref" value="VOTx2914152"/>
-<INFO name="-out.form" value="mini"/>
+<INFO name='protocol' value='ASU'/>
+<INFO name='request_date' value='2023-05-30T21:11:43'/>
+<INFO name='request' value='https://vizier.u-strasbg.fr//viz-bin/sed?-c=86.44931666666668%2058.70106388888888&amp;-c.rs=5'/>
+<INFO name='contact' value='cds-question@unistra.fr'/>
+<INFO name='version' value='7.31'/>
+<INFO name="header_format" value="mini"/>
 <INFO name="MaxTuples" value="50000" />
-<INFO name="queryParameters" value="5">
--oc.form=D.
--c=86.44931666666668 58.70106388888888
--phot
--out=_raj,_dej,_tabname(),_ID(),_sed4,_t,_etime
--c.rs=5
-</INFO>
+<INFO name="header_format" value="mini"/>
+<INFO name="header_format" value="mini"/>
+<INFO name="header_format" value="mini"/>
 <INFO ID="Target" name="-c" value="086.449317+58.701064,rs=5.">
 Constraint -c.rs=5</INFO>
+<INFO name="header_format" value="mini"/>
+<INFO name="header_format" value="mini"/>
+<INFO name="header_format" value="mini"/>
 
-<RESOURCE ID="VizieR_S720515735" name="VizieR(2022-10-31T07:15:35)">
+<RESOURCE ID="VizieR_S738796303" name="VizieR(2023-05-30T21:11:43)">
   <DESCRIPTION>VizieR database maintained by CDS, see http://vizier.cds.unistra.fr</DESCRIPTION>
   <COOSYS ID="J2000_2000.000" system="eq_FK5" equinox="J2000" epoch="2000.000"/>
   <COOSYS ID="J2000" system="eq_FK5" equinox="J2000"/>
@@ -48,7 +50,7 @@ Constraint -c.rs=5</INFO>
     </FIELD>
     <FIELD name="_tabname" ucd="meta.table" datatype="char" arraysize="32*">
       <DESCRIPTION>Table name</DESCRIPTION>
-      <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR-5?-info=XML&amp;-out.add=.&amp;-source=I/297/out&amp;-c=${+RAJ2000}${+DEJ2000}&amp;-c.eq=J2000.000&amp;-c.rs=0.5"/>
+      <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR-5?-info=XML&amp;-out.add=.&amp;-source=${_tabname}&amp;${_ID}"/>
     </FIELD>
     <FIELD name="_ID" ucd="meta.id" datatype="char" arraysize="64*">
       <DESCRIPTION>String which identifies the row</DESCRIPTION>
@@ -86,6 +88,9 @@ Constraint -c.rs=5</INFO>
 <TR><TD>086.44961900</TD><TD>+58.70111800</TD><TD>I/317/sample</TD><TD>PPMXL=== 553297132571814365&amp;-c=086.449619 +58.701118,eq=J2000&amp;-c</TD><TD></TD><TD>0.0</TD><TD>138.55e+3</TD><TD>40.3e-3</TD><TD>1.1e-3</TD><TD>2MASS:Ks</TD></TR>
 <TR><TD>086.44961900</TD><TD>+58.70111800</TD><TD>I/317/sample</TD><TD>PPMXL=== 553297132571814365&amp;-c=086.449619 +58.701118,eq=J2000&amp;-c</TD><TD></TD><TD>0.0</TD><TD>181.75e+3</TD><TD>34.7e-3</TD><TD>1.0e-3</TD><TD>2MASS:H</TD></TR>
 <TR><TD>086.44961900</TD><TD>+58.70111800</TD><TD>I/317/sample</TD><TD>PPMXL=== 553297132571814365&amp;-c=086.449619 +58.701118,eq=J2000&amp;-c</TD><TD></TD><TD>0.0</TD><TD>241.96e+3</TD><TD>15.7e-3</TD><TD>0.4e-3</TD><TD>2MASS:J</TD></TR>
+<!-- **** Error in asu_next(1) for table=I/319/xpm -->
+<!-- **** Error in asu_next(1) for table=I/327/cmc15 -->
+<!-- **** Error in asu_next(1) for table=I/337/gaia -->
 <TR><TD>086.4492326000000</TD><TD>+58.7010441500000</TD><TD>I/353/gsc242</TD><TD>-c=086.44923260000 +58.70104415000,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD></TD><TD>138.55e+3</TD><TD>0.111</TD><TD>0.003</TD><TD>2MASS:Ks</TD></TR>
 <TR><TD>086.4492326000000</TD><TD>+58.7010441500000</TD><TD>I/353/gsc242</TD><TD>-c=086.44923260000 +58.70104415000,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD></TD><TD>181.75e+3</TD><TD>0.105</TD><TD>0.002</TD><TD>2MASS:H</TD></TR>
 <TR><TD>086.4492326000000</TD><TD>+58.7010441500000</TD><TD>I/353/gsc242</TD><TD>-c=086.44923260000 +58.70104415000,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD></TD><TD>241.96e+3</TD><TD>65.3e-3</TD><TD>1.5e-3</TD><TD>2MASS:J</TD></TR>
@@ -269,13 +274,21 @@ Constraint -c.rs=5</INFO>
 <TR><TD>086.449583</TD><TD>+58.701111</TD><TD>J/MNRAS/444/527/table6</TD><TD>recno=418</TD><TD></TD><TD>0.0</TD><TD>84.449e+3</TD><TD>83.2e-3</TD><TD></TD><TD>Spitzer/IRAC:3.6</TD></TR>
 <TR><TD>086.45010874300</TD><TD>+58.70091679400</TD><TD>J/MNRAS/474/5008/spidxcat</TD><TD>recno=676976</TD><TD></TD><TD>0.0</TD><TD>0.14700</TD><TD>0.540</TD><TD>0.006</TD><TD>:=147MHz</TD></TR>
 <TR><TD>086.45010874300</TD><TD>+58.70091679400</TD><TD>J/MNRAS/474/5008/spidxcat</TD><TD>recno=676976</TD><TD></TD><TD>0.0</TD><TD>1.4000</TD><TD>0.140</TD><TD>0.001</TD><TD>:=1.4GHz</TD></TR>
+<TR><TD>086.45047760010000</TD><TD>+58.70097732540000</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=634</TD><TD></TD><TD>0.0</TD><TD>13.571e+3</TD><TD>0.592</TD><TD></TD><TD>WISE:W4</TD></TR>
+<TR><TD>086.45047760010000</TD><TD>+58.70097732540000</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=634</TD><TD></TD><TD>0.0</TD><TD>25.934e+3</TD><TD>0.273</TD><TD></TD><TD>WISE:W3</TD></TR>
+<TR><TD>086.45047760010000</TD><TD>+58.70097732540000</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=634</TD><TD></TD><TD>0.0</TD><TD>65.172e+3</TD><TD>38.2e-3</TD><TD></TD><TD>WISE:W2</TD></TR>
+<TR><TD>086.45047760010000</TD><TD>+58.70097732540000</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=634</TD><TD></TD><TD>0.0</TD><TD>89.490e+3</TD><TD>47.4e-3</TD><TD></TD><TD>WISE:W1</TD></TR>
+<TR><TD>086.45047760010000</TD><TD>+58.70097732540000</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=634</TD><TD></TD><TD>0.0</TD><TD>138.55e+3</TD><TD>40.3e-3</TD><TD></TD><TD>2MASS:Ks</TD></TR>
+<TR><TD>086.45047760010000</TD><TD>+58.70097732540000</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=634</TD><TD></TD><TD>0.0</TD><TD>181.75e+3</TD><TD>34.7e-3</TD><TD></TD><TD>2MASS:H</TD></TR>
+<TR><TD>086.45047760010000</TD><TD>+58.70097732540000</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=634</TD><TD></TD><TD>0.0</TD><TD>241.96e+3</TD><TD>15.7e-3</TD><TD></TD><TD>2MASS:J</TD></TR>
+<TR><TD>086.4500833</TD><TD>+58.7009444</TD><TD>J/MNRAS/510/2495/tablea1</TD><TD>recno=17</TD><TD></TD><TD>0.0</TD><TD>1.4000</TD><TD>0.138</TD><TD>0.005</TD><TD>:=1.4GHz</TD></TR>
 <TR><TD>086.44989957</TD><TD>+58.70109737</TD><TD>J/other/BSAO/50.115/table1</TD><TD>recno=129</TD><TD></TD><TD>0.0</TD><TD>0.36500</TD><TD>0.371</TD><TD></TD><TD>:=365MHz</TD></TR>
 <TR><TD>086.44989957</TD><TD>+58.70109737</TD><TD>J/other/BSAO/50.115/table1</TD><TD>recno=129</TD><TD></TD><TD>0.0</TD><TD>2.9979e+3</TD><TD>29.3</TD><TD></TD><TD>:=100um</TD></TR>
 <TR><TD>086.44989957</TD><TD>+58.70109737</TD><TD>J/other/BSAO/50.115/table1</TD><TD>recno=129</TD><TD></TD><TD>0.0</TD><TD>4.9965e+3</TD><TD>14.4</TD><TD></TD><TD>:=60um</TD></TR>
 <TR><TD>086.44989957</TD><TD>+58.70109737</TD><TD>J/other/BSAO/50.115/table1</TD><TD>recno=129</TD><TD></TD><TD>0.0</TD><TD>11.992e+3</TD><TD>0.813</TD><TD></TD><TD>:=25um</TD></TR>
 <TR><TD>086.44989957</TD><TD>+58.70109737</TD><TD>J/other/BSAO/50.115/table1</TD><TD>recno=129</TD><TD></TD><TD>0.0</TD><TD>24.983e+3</TD><TD>0.501</TD><TD></TD><TD>:=12um</TD></TR>
 </TABLEDATA></DATA>
-<INFO name="matches" value="71">matching records</INFO>
+<INFO name="matches" value="73">matching records</INFO>
 
 <INFO name="Warning" value="increase the precision for computed column 10"/>
 <INFO name="Warning" value="increase the precision for computed column 10"/>
@@ -288,6 +301,8 @@ Constraint -c.rs=5</INFO>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="increase the precision for computed column 9"/>
 <INFO name="Warning" value="(patch vizier 20171220) accept several mainpos to add _V column"/>
+<INFO name="Error" value="catClient fails:(XmatchCatError) (XmatchCatError) #+++ ERROR /home/cds/vizier/bin/catClient.py -print_recno=True -source=XP"/>
+<INFO name="Error" value="pipe error: status=100 [code=1 signal=0]"/>
 <INFO name="Warning" value="change VO format int  (%02d) to char"/>
 <INFO name="Warning" value="change VO format int  (%02d) to char"/>
 <INFO name="Warning" value="change VO format int  (%02d) to char"/>
@@ -297,6 +312,10 @@ Constraint -c.rs=5</INFO>
 <INFO name="Warning" value="change VO format int  (%02d) to char"/>
 <INFO name="Warning" value="change VO format int  (%02d) to char"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
+<INFO name="Error" value="catClient fails:(XmatchCatError) (XmatchCatError) #+++ ERROR /home/cds/vizier/bin/catClient.py -source=CMC15 -c=086.449317+"/>
+<INFO name="Error" value="pipe error: status=100 [code=1 signal=0]"/>
+<INFO name="Error" value="catClient fails:(XmatchCatError) (XmatchCatError) #+++ ERROR /home/cds/vizier/bin/catClient.py -source=GAIA-DR1 -c=086.4493"/>
+<INFO name="Error" value="pipe error: status=100 [code=1 signal=0]"/>
 <INFO name="Warning" value="change VO format int  (%05d) to char"/>
 <INFO name="Warning" value="(patch vizier 20171220) accept several mainpos to add _V column"/>
 <INFO name="Warning" value="(patch vizier 20171220) accept several mainpos to add _V column"/>
@@ -411,6 +430,19 @@ Constraint -c.rs=5</INFO>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
+<INFO name="Warning" value="vc_coo can't change epoch"/>
+<INFO name="Warning" value="vc_coo can't change epoch"/>
+<INFO name="Warning" value="vc_coo can't change epoch"/>
+<INFO name="Warning" value="vc_coo can't change epoch"/>
+<INFO name="Warning" value="vc_coo can't change epoch"/>
+<INFO name="QUERY_STATUS" value="ERROR">
+catClient fails:(XmatchCatError) (XmatchCatError) #+++ ERROR /home/cds/vizier/bin/catClient.py -print_recno=True -source=XP
+pipe error: status=100 [code=1 signal=0]
+catClient fails:(XmatchCatError) (XmatchCatError) #+++ ERROR /home/cds/vizier/bin/catClient.py -source=CMC15 -c=086.449317+
+pipe error: status=100 [code=1 signal=0]
+catClient fails:(XmatchCatError) (XmatchCatError) #+++ ERROR /home/cds/vizier/bin/catClient.py -source=GAIA-DR1 -c=086.4493
+pipe error: status=100 [code=1 signal=0]
+</INFO>
   </TABLE>
 </RESOURCE>
 </VOTABLE>

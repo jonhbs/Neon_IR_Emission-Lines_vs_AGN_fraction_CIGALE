@@ -4,28 +4,27 @@
   xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3">
  <DESCRIPTION>
    VizieR Astronomical Server vizier.u-strasbg.fr
-    Date: 2022-10-31T07:00:19 [V7.294]
+    Date: 2023-05-30T20:45:25 [V7.31]
    Explanations and Statistics of UCDs:			See LINK below
    In case of problem, please report to:	cds-question@unistra.fr
    In this version, NULL integer columns are written as an empty string
    &lt;TD&gt;&lt;/TD&gt;, explicitely possible from VOTable-1.3
  </DESCRIPTION>
 <!-- VOTable description at http://www.ivoa.net/Documents/latest/VOT.html -->
-<INFO ID="VERSION" name="version" value="7.294"/>
-<INFO ID="Ref" name="-ref" value="VOTx2566197"/>
-<INFO name="-out.form" value="mini"/>
+<INFO name='protocol' value='ASU'/>
+<INFO name='request_date' value='2023-05-30T20:45:25'/>
+<INFO name='request' value='https://vizier.u-strasbg.fr//viz-bin/sed?-c=51.20286952403%20-3.04225598151&amp;-c.rs=5'/>
+<INFO name='contact' value='cds-question@unistra.fr'/>
+<INFO name='version' value='7.31'/>
+<INFO name="header_format" value="mini"/>
 <INFO name="MaxTuples" value="50000" />
-<INFO name="queryParameters" value="5">
--oc.form=D.
--c=51.20286952403 -3.04225598151
--phot
--out=_raj,_dej,_tabname(),_ID(),_sed4,_t,_etime
--c.rs=5
-</INFO>
+<INFO name="header_format" value="mini"/>
+<INFO name="header_format" value="mini"/>
+<INFO name="header_format" value="mini"/>
 <INFO ID="Target" name="-c" value="051.202870-03.042256,rs=5.">
 Constraint -c.rs=5</INFO>
 
-<RESOURCE ID="VizieR_S720514819" name="VizieR(2022-10-31T07:00:19)">
+<RESOURCE ID="VizieR_S738794725" name="VizieR(2023-05-30T20:45:25)">
   <DESCRIPTION>VizieR database maintained by CDS, see http://vizier.cds.unistra.fr</DESCRIPTION>
   <COOSYS ID="J2000_2000.000" system="eq_FK5" equinox="J2000" epoch="2000.000"/>
   <COOSYS ID="J2000" system="eq_FK5" equinox="J2000"/>
@@ -48,7 +47,7 @@ Constraint -c.rs=5</INFO>
     </FIELD>
     <FIELD name="_tabname" ucd="meta.table" datatype="char" arraysize="32*">
       <DESCRIPTION>Table name</DESCRIPTION>
-      <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR-5?-info=XML&amp;-out.add=.&amp;-source=I/289/out&amp;-c=${+RAJ2000}${+DEJ2000}&amp;-c.eq=J2000.000&amp;-c.rs=0.5"/>
+      <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR-5?-info=XML&amp;-out.add=.&amp;-source=${_tabname}&amp;${_ID}"/>
     </FIELD>
     <FIELD name="_ID" ucd="meta.id" datatype="char" arraysize="64*">
       <DESCRIPTION>String which identifies the row</DESCRIPTION>
@@ -111,13 +110,13 @@ Constraint -c.rs=5</INFO>
 <TR><TD>051.202914047</TD><TD>-03.042194124</TD><TD>I/340/ucac5</TD><TD>-c=051.2029142 -03.0421939,eq=J2000&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>241.96e+3</TD><TD>27.3e-3</TD><TD></TD><TD>2MASS:J</TD></TR>
 <TR><TD>051.202914047</TD><TD>-03.042194124</TD><TD>I/340/ucac5</TD><TD>-c=051.2029142 -03.0421939,eq=J2000&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>445.46e+3</TD><TD>1.23e-3</TD><TD></TD><TD>Gaia:G</TD></TR>
 <TR><TD>051.202980241</TD><TD>-03.042109090</TD><TD>I/342/f3</TD><TD>recno=24612993</TD><TD></TD><TD>0.0</TD><TD>674.90e+3</TD><TD>6.75e-3</TD><TD>1.76e-3</TD><TD>Johnson:B</TD></TR>
-<TR><TD>051.2028765448223</TD><TD>-03.0422558909371</TD><TD>I/345/gaia2</TD><TD>-c=051.20287654482 -03.04225589094,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>388.10e+3</TD><TD>6.07e-3</TD><TD>0.11e-3</TD><TD>GAIA/GAIA2:Grp</TD></TR>
-<TR><TD>051.2028765448223</TD><TD>-03.0422558909371</TD><TD>I/345/gaia2</TD><TD>-c=051.20287654482 -03.04225589094,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>481.50e+3</TD><TD>1.08e-3</TD><TD>0.02e-3</TD><TD>GAIA/GAIA2:G</TD></TR>
-<TR><TD>051.2028765448223</TD><TD>-03.0422558909371</TD><TD>I/345/gaia2</TD><TD>-c=051.20287654482 -03.04225589094,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>594.10e+3</TD><TD>2.29e-3</TD><TD>0.05e-3</TD><TD>GAIA/GAIA2:Gbp</TD></TR>
+<TR><TD>051.2028765448200</TD><TD>-03.0422558909400</TD><TD>I/345/gaia2</TD><TD>-c=051.20287654482 -03.04225589094,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>388.10e+3</TD><TD>6.07e-3</TD><TD>0.11e-3</TD><TD>GAIA/GAIA2:Grp</TD></TR>
+<TR><TD>051.2028765448200</TD><TD>-03.0422558909400</TD><TD>I/345/gaia2</TD><TD>-c=051.20287654482 -03.04225589094,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>481.50e+3</TD><TD>1.08e-3</TD><TD>0.02e-3</TD><TD>GAIA/GAIA2:G</TD></TR>
+<TR><TD>051.2028765448200</TD><TD>-03.0422558909400</TD><TD>I/345/gaia2</TD><TD>-c=051.20287654482 -03.04225589094,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>594.10e+3</TD><TD>2.29e-3</TD><TD>0.05e-3</TD><TD>GAIA/GAIA2:Gbp</TD></TR>
 <TR><TD>051.202948497</TD><TD>-03.042192446</TD><TD>I/346/fs</TD><TD>recno=2644329</TD><TD></TD><TD>0.0</TD><TD>674.90e+3</TD><TD>9.15e-3</TD><TD>1.18e-3</TD><TD>Johnson:B</TD></TR>
-<TR><TD>051.2028695240291</TD><TD>-03.0422559815055</TD><TD>I/350/gaiaedr3</TD><TD>-c=051.20287128581 -03.04225504089,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>393.40e+3</TD><TD>5.66e-3</TD><TD>0.07e-3</TD><TD>GAIA/GAIA3:Grp</TD></TR>
-<TR><TD>051.2028695240291</TD><TD>-03.0422559815055</TD><TD>I/350/gaiaedr3</TD><TD>-c=051.20287128581 -03.04225504089,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>514.90e+3</TD><TD>270.e-6</TD><TD>6.e-6</TD><TD>GAIA/GAIA3:G</TD></TR>
-<TR><TD>051.2028695240291</TD><TD>-03.0422559815055</TD><TD>I/350/gaiaedr3</TD><TD>-c=051.20287128581 -03.04225504089,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>595.30e+3</TD><TD>2.07e-3</TD><TD>0.06e-3</TD><TD>GAIA/GAIA3:Gbp</TD></TR>
+<TR><TD>051.2028695233261</TD><TD>-03.0422559831122</TD><TD>I/350/gaiaedr3</TD><TD>-c=051.20287128581 -03.04225504089,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>393.40e+3</TD><TD>5.66e-3</TD><TD>0.07e-3</TD><TD>GAIA/GAIA3:Grp</TD></TR>
+<TR><TD>051.2028695233261</TD><TD>-03.0422559831122</TD><TD>I/350/gaiaedr3</TD><TD>-c=051.20287128581 -03.04225504089,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>514.90e+3</TD><TD>270.e-6</TD><TD>6.e-6</TD><TD>GAIA/GAIA3:G</TD></TR>
+<TR><TD>051.2028695233261</TD><TD>-03.0422559831122</TD><TD>I/350/gaiaedr3</TD><TD>-c=051.20287128581 -03.04225504089,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>595.30e+3</TD><TD>2.07e-3</TD><TD>0.06e-3</TD><TD>GAIA/GAIA3:Gbp</TD></TR>
 <TR><TD>051.2030475086513</TD><TD>-03.0422877134011</TD><TD>I/353/gsc242</TD><TD>-c=051.20304870605 -03.04228973389,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD></TD><TD>332.44e+3</TD><TD>10.5e-3</TD><TD>1.0e-3</TD><TD>SDSS:z</TD></TR>
 <TR><TD>051.2030475086513</TD><TD>-03.0422877134011</TD><TD>I/353/gsc242</TD><TD>-c=051.20304870605 -03.04228973389,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD></TD><TD>392.66e+3</TD><TD>7.57e-3</TD><TD>0.70e-3</TD><TD>SDSS:i</TD></TR>
 <TR><TD>051.2030475086513</TD><TD>-03.0422877134011</TD><TD>I/353/gsc242</TD><TD>-c=051.20304870605 -03.04228973389,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD></TD><TD>479.90e+3</TD><TD>4.52e-3</TD><TD>0.45e-3</TD><TD>SDSS:r</TD></TR>
@@ -138,9 +137,9 @@ Constraint -c.rs=5</INFO>
 <TR><TD>051.2029420000000</TD><TD>-03.0422990000000</TD><TD>I/353/gsc242</TD><TD>-c=051.20294200000 -03.04229900000,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD></TD><TD>241.96e+3</TD><TD>0.109</TD><TD>0.002</TD><TD>2MASS:J</TD></TR>
 <TR><TD>051.2038570000000</TD><TD>-03.0430770000000</TD><TD>I/353/gsc242</TD><TD>-c=051.20385700000 -03.04307700000,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD></TD><TD>138.55e+3</TD><TD>8.02e-3</TD><TD>0.47e-3</TD><TD>2MASS:Ks</TD></TR>
 <TR><TD>051.2022350000000</TD><TD>-03.0414630000000</TD><TD>I/353/gsc242</TD><TD>-c=051.20223500000 -03.04146300000,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD></TD><TD>138.55e+3</TD><TD>9.73e-3</TD><TD>0.64e-3</TD><TD>2MASS:Ks</TD></TR>
-<TR><TD>051.2028695240291</TD><TD>-03.0422559815055</TD><TD>I/355/gaiadr3</TD><TD>-c=051.20287128581 -03.04225504089,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>393.40e+3</TD><TD>5.66e-3</TD><TD>0.07e-3</TD><TD>GAIA/GAIA3:Grp</TD></TR>
-<TR><TD>051.2028695240291</TD><TD>-03.0422559815055</TD><TD>I/355/gaiadr3</TD><TD>-c=051.20287128581 -03.04225504089,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>514.90e+3</TD><TD>270.e-6</TD><TD>6.e-6</TD><TD>GAIA/GAIA3:G</TD></TR>
-<TR><TD>051.2028695240291</TD><TD>-03.0422559815055</TD><TD>I/355/gaiadr3</TD><TD>-c=051.20287128581 -03.04225504089,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>595.30e+3</TD><TD>2.07e-3</TD><TD>0.06e-3</TD><TD>GAIA/GAIA3:Gbp</TD></TR>
+<TR><TD>051.2028695233261</TD><TD>-03.0422559831122</TD><TD>I/355/gaiadr3</TD><TD>-c=051.20287128581 -03.04225504089,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>393.40e+3</TD><TD>5.66e-3</TD><TD>0.07e-3</TD><TD>GAIA/GAIA3:Grp</TD></TR>
+<TR><TD>051.2028695233261</TD><TD>-03.0422559831122</TD><TD>I/355/gaiadr3</TD><TD>-c=051.20287128581 -03.04225504089,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>514.90e+3</TD><TD>270.e-6</TD><TD>6.e-6</TD><TD>GAIA/GAIA3:G</TD></TR>
+<TR><TD>051.2028695233261</TD><TD>-03.0422559831122</TD><TD>I/355/gaiadr3</TD><TD>-c=051.20287128581 -03.04225504089,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>595.30e+3</TD><TD>2.07e-3</TD><TD>0.06e-3</TD><TD>GAIA/GAIA3:Gbp</TD></TR>
 <TR><TD>051.202566</TD><TD>-3.042441</TD><TD>II/125/main</TD><TD>recno=17325</TD><TD></TD><TD>0.0</TD><TD>2.9406e+3</TD><TD>2.88</TD><TD>0.26</TD><TD>IRAS:100</TD></TR>
 <TR><TD>051.202566</TD><TD>-3.042441</TD><TD>II/125/main</TD><TD>recno=17325</TD><TD></TD><TD>0.0</TD><TD>4.8471e+3</TD><TD>2.36</TD><TD>0.24</TD><TD>IRAS:60</TD></TR>
 <TR><TD>051.202566</TD><TD>-3.042441</TD><TD>II/125/main</TD><TD>recno=17325</TD><TD></TD><TD>0.0</TD><TD>12.554e+3</TD><TD>1.08</TD><TD>0.09</TD><TD>IRAS:25</TD></TR>
@@ -205,18 +204,18 @@ Constraint -c.rs=5</INFO>
 <TR><TD>051.20288159000</TD><TD>-03.04224558000</TD><TD>II/349/ps1</TD><TD>-c=051.202881590 -03.042245580,eq=J2000&amp;-c.rs=0.004</TD><TD>2456331.428715</TD><TD>1100.0</TD><TD>489.40e+3</TD><TD>58.5e-3</TD><TD></TD><TD>PAN-STARRS/PS1:r</TD></TR>
 <TR><TD>051.20288159000</TD><TD>-03.04224558000</TD><TD>II/349/ps1</TD><TD>-c=051.202881590 -03.042245580,eq=J2000&amp;-c.rs=0.004</TD><TD>2456331.428715</TD><TD>1100.0</TD><TD>628.20e+3</TD><TD>43.3e-3</TD><TD></TD><TD>PAN-STARRS/PS1:g</TD></TR>
 <TR><TD>051.20284111</TD><TD>-03.04200194</TD><TD>II/356/xmmom41s</TD><TD>recno=1257323</TD><TD></TD><TD>0.0</TD><TD>552.05e+3</TD><TD>11.8e-3</TD><TD>0.0e-3</TD><TD>XMM-OT:V</TD></TR>
-<TR><TD>051.20299792290</TD><TD>-03.04224395752</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>329.80e+3</TD><TD>41.1e-3</TD><TD>0.4e-3</TD><TD>SkyMapper/SkyMapper:z</TD></TR>
-<TR><TD>051.20299792290</TD><TD>-03.04224395752</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>329.80e+3</TD><TD>6.42e-3</TD><TD>0.61e-3</TD><TD>SkyMapper/SkyMapper:z</TD></TR>
-<TR><TD>051.20299792290</TD><TD>-03.04224395752</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>388.70e+3</TD><TD>33.3e-3</TD><TD>1.9e-3</TD><TD>SkyMapper/SkyMapper:i</TD></TR>
-<TR><TD>051.20299792290</TD><TD>-03.04224395752</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>388.70e+3</TD><TD>5.19e-3</TD><TD>0.48e-3</TD><TD>SkyMapper/SkyMapper:i</TD></TR>
-<TR><TD>051.20299792290</TD><TD>-03.04224395752</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>496.30e+3</TD><TD>24.1e-3</TD><TD>2.5e-3</TD><TD>SkyMapper/SkyMapper:r</TD></TR>
-<TR><TD>051.20299792290</TD><TD>-03.04224395752</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>496.30e+3</TD><TD>3.95e-3</TD><TD>0.39e-3</TD><TD>SkyMapper/SkyMapper:r</TD></TR>
-<TR><TD>051.20299792290</TD><TD>-03.04224395752</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>603.40e+3</TD><TD>16.0e-3</TD><TD>1.4e-3</TD><TD>SkyMapper/SkyMapper:g</TD></TR>
-<TR><TD>051.20299792290</TD><TD>-03.04224395752</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>603.40e+3</TD><TD>2.93e-3</TD><TD>0.24e-3</TD><TD>SkyMapper/SkyMapper:g</TD></TR>
-<TR><TD>051.20299792290</TD><TD>-03.04224395752</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>774.50e+3</TD><TD>2.08e-3</TD><TD>0.63e-3</TD><TD>SkyMapper/SkyMapper:v</TD></TR>
-<TR><TD>051.20299792290</TD><TD>-03.04224395752</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>774.50e+3</TD><TD>528.e-6</TD><TD>33.e-6</TD><TD>SkyMapper/SkyMapper:v</TD></TR>
-<TR><TD>051.20299792290</TD><TD>-03.04224395752</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>857.00e+3</TD><TD>737.e-6</TD><TD>67.e-6</TD><TD>SkyMapper/SkyMapper:u</TD></TR>
-<TR><TD>051.20299792290</TD><TD>-03.04224395752</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>857.00e+3</TD><TD>162.e-6</TD><TD>12.e-6</TD><TD>SkyMapper/SkyMapper:u</TD></TR>
+<TR><TD>051.20299792300</TD><TD>-03.04224395800</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>329.80e+3</TD><TD>41.1e-3</TD><TD>0.4e-3</TD><TD>SkyMapper/SkyMapper:z</TD></TR>
+<TR><TD>051.20299792300</TD><TD>-03.04224395800</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>329.80e+3</TD><TD>6.42e-3</TD><TD>0.61e-3</TD><TD>SkyMapper/SkyMapper:z</TD></TR>
+<TR><TD>051.20299792300</TD><TD>-03.04224395800</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>388.70e+3</TD><TD>33.3e-3</TD><TD>1.9e-3</TD><TD>SkyMapper/SkyMapper:i</TD></TR>
+<TR><TD>051.20299792300</TD><TD>-03.04224395800</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>388.70e+3</TD><TD>5.19e-3</TD><TD>0.48e-3</TD><TD>SkyMapper/SkyMapper:i</TD></TR>
+<TR><TD>051.20299792300</TD><TD>-03.04224395800</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>496.30e+3</TD><TD>24.1e-3</TD><TD>2.5e-3</TD><TD>SkyMapper/SkyMapper:r</TD></TR>
+<TR><TD>051.20299792300</TD><TD>-03.04224395800</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>496.30e+3</TD><TD>3.95e-3</TD><TD>0.39e-3</TD><TD>SkyMapper/SkyMapper:r</TD></TR>
+<TR><TD>051.20299792300</TD><TD>-03.04224395800</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>603.40e+3</TD><TD>16.0e-3</TD><TD>1.4e-3</TD><TD>SkyMapper/SkyMapper:g</TD></TR>
+<TR><TD>051.20299792300</TD><TD>-03.04224395800</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>603.40e+3</TD><TD>2.93e-3</TD><TD>0.24e-3</TD><TD>SkyMapper/SkyMapper:g</TD></TR>
+<TR><TD>051.20299792300</TD><TD>-03.04224395800</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>774.50e+3</TD><TD>2.08e-3</TD><TD>0.63e-3</TD><TD>SkyMapper/SkyMapper:v</TD></TR>
+<TR><TD>051.20299792300</TD><TD>-03.04224395800</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>774.50e+3</TD><TD>528.e-6</TD><TD>33.e-6</TD><TD>SkyMapper/SkyMapper:v</TD></TR>
+<TR><TD>051.20299792300</TD><TD>-03.04224395800</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>857.00e+3</TD><TD>737.e-6</TD><TD>67.e-6</TD><TD>SkyMapper/SkyMapper:u</TD></TR>
+<TR><TD>051.20299792300</TD><TD>-03.04224395800</TD><TD>II/358/smss</TD><TD>-c=051.202997923 -03.042243958,eq=ICRS&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>857.00e+3</TD><TD>162.e-6</TD><TD>12.e-6</TD><TD>SkyMapper/SkyMapper:u</TD></TR>
 <TR><TD>051.202854100</TD><TD>-03.042258000</TD><TD>II/363/unwise</TD><TD>-c=051.2028541 -03.0422580,eq=J2000&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>65.172e+3</TD><TD>56.9e-3</TD><TD>0.0e-3</TD><TD>WISE:W2</TD></TR>
 <TR><TD>051.202854100</TD><TD>-03.042258000</TD><TD>II/363/unwise</TD><TD>-c=051.2028541 -03.0422580,eq=J2000&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>89.490e+3</TD><TD>43.2e-3</TD><TD>0.0e-3</TD><TD>WISE:W1</TD></TR>
 <TR><TD>051.202864400</TD><TD>-03.042300500</TD><TD>II/365/catwise</TD><TD>-c=051.2028644 -03.0423005,eq=ICRS&amp;-c.rs=0.004</TD><TD>2457021.321207</TD><TD>1100.0</TD><TD>65.172e+3</TD><TD>56.3e-3</TD><TD>0.5e-3</TD><TD>WISE:W2</TD></TR>
@@ -507,7 +506,9 @@ Constraint -c.rs=5</INFO>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
+<INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="change VO format int  (%03d) to char"/>
+<INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>

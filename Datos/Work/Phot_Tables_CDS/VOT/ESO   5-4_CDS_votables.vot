@@ -4,28 +4,30 @@
   xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3">
  <DESCRIPTION>
    VizieR Astronomical Server vizier.u-strasbg.fr
-    Date: 2022-10-31T06:56:02 [V7.294]
+    Date: 2023-05-30T20:38:00 [V7.31]
    Explanations and Statistics of UCDs:			See LINK below
    In case of problem, please report to:	cds-question@unistra.fr
    In this version, NULL integer columns are written as an empty string
    &lt;TD&gt;&lt;/TD&gt;, explicitely possible from VOTable-1.3
  </DESCRIPTION>
 <!-- VOTable description at http://www.ivoa.net/Documents/latest/VOT.html -->
-<INFO ID="VERSION" name="version" value="7.294"/>
-<INFO ID="Ref" name="-ref" value="VOTx2545199"/>
-<INFO name="-out.form" value="mini"/>
+<INFO name='protocol' value='ASU'/>
+<INFO name='request_date' value='2023-05-30T20:38:00'/>
+<INFO name='request' value='https://vizier.u-strasbg.fr//viz-bin/sed?-c=91.4238375%20-86.63195&amp;-c.rs=5'/>
+<INFO name='contact' value='cds-question@unistra.fr'/>
+<INFO name='version' value='7.31'/>
+<INFO name="header_format" value="mini"/>
 <INFO name="MaxTuples" value="50000" />
-<INFO name="queryParameters" value="5">
--oc.form=D.
--c=91.4238375 -86.63195
--phot
--out=_raj,_dej,_tabname(),_ID(),_sed4,_t,_etime
--c.rs=5
-</INFO>
+<INFO name="header_format" value="mini"/>
+<INFO name="header_format" value="mini"/>
+<INFO name="header_format" value="mini"/>
 <INFO ID="Target" name="-c" value="091.423838-86.631950,rs=5.">
 Constraint -c.rs=5</INFO>
+<INFO name="header_format" value="mini"/>
+<INFO name="header_format" value="mini"/>
+<INFO name="header_format" value="mini"/>
 
-<RESOURCE ID="VizieR_S720514562" name="VizieR(2022-10-31T06:56:02)">
+<RESOURCE ID="VizieR_S738794280" name="VizieR(2023-05-30T20:38:00)">
   <DESCRIPTION>VizieR database maintained by CDS, see http://vizier.cds.unistra.fr</DESCRIPTION>
   <COOSYS ID="J2000_2000.000" system="eq_FK5" equinox="J2000" epoch="2000.000"/>
   <COOSYS ID="J2000" system="eq_FK5" equinox="J2000"/>
@@ -48,7 +50,7 @@ Constraint -c.rs=5</INFO>
     </FIELD>
     <FIELD name="_tabname" ucd="meta.table" datatype="char" arraysize="32*">
       <DESCRIPTION>Table name</DESCRIPTION>
-      <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR-5?-info=XML&amp;-out.add=.&amp;-source=I/297/out&amp;-c=${+RAJ2000}${+DEJ2000}&amp;-c.eq=J2000.000&amp;-c.rs=0.5"/>
+      <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR-5?-info=XML&amp;-out.add=.&amp;-source=${_tabname}&amp;${_ID}"/>
     </FIELD>
     <FIELD name="_ID" ucd="meta.id" datatype="char" arraysize="64*">
       <DESCRIPTION>String which identifies the row</DESCRIPTION>
@@ -136,10 +138,10 @@ Constraint -c.rs=5</INFO>
 <TR><TD>091.421886300</TD><TD>-86.631624500</TD><TD>II/328/allwise</TD><TD>AllWISE===J060541.25-863753.8&amp;-c=091.4218863 -86.6316245,eq=J200</TD><TD></TD><TD>0.0</TD><TD>241.96e+3</TD><TD>14.2e-3</TD><TD>1.5e-3</TD><TD>2MASS:J</TD></TR>
 <TR><TD>091.40480200</TD><TD>-86.63231000</TD><TD>II/335/galex_ais</TD><TD>-c=091.404802 -86.632310,eq=J2000&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>1.2967e+6</TD><TD>402.e-6</TD><TD>27.e-6</TD><TD>GALEX:NUV</TD></TR>
 <TR><TD>091.40480200</TD><TD>-86.63231000</TD><TD>II/335/galex_ais</TD><TD>-c=091.404802 -86.632310,eq=J2000&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>1.9607e+6</TD><TD>14.9e-6</TD><TD>4.3e-6</TD><TD>GALEX:FUV</TD></TR>
-<TR><TD>091.43542500</TD><TD>-86.63267889</TD><TD>II/339/uvotssc1</TD><TD>recno=2658952</TD><TD></TD><TD>0.0</TD><TD>865.20e+3</TD><TD>482.e-6</TD><TD></TD><TD>UVOT:U</TD></TR>
-<TR><TD>091.42470306</TD><TD>-86.63254306</TD><TD>II/339/uvotssc1</TD><TD>recno=2658652</TD><TD></TD><TD>0.0</TD><TD>682.59e+3</TD><TD>1.85e-3</TD><TD></TD><TD>UVOT:B</TD></TR>
-<TR><TD>091.41228389</TD><TD>-86.63235611</TD><TD>II/339/uvotssc1</TD><TD>recno=2658311</TD><TD></TD><TD>0.0</TD><TD>1.1530e+6</TD><TD>235.e-6</TD><TD></TD><TD>UVOT:UVW1</TD></TR>
 <TR><TD>091.40786500</TD><TD>-86.63194889</TD><TD>II/339/uvotssc1</TD><TD>recno=2658180</TD><TD></TD><TD>0.0</TD><TD>1.5549e+6</TD><TD>25.6e-6</TD><TD></TD><TD>UVOT:UVW2</TD></TR>
+<TR><TD>091.41228389</TD><TD>-86.63235611</TD><TD>II/339/uvotssc1</TD><TD>recno=2658311</TD><TD></TD><TD>0.0</TD><TD>1.1530e+6</TD><TD>235.e-6</TD><TD></TD><TD>UVOT:UVW1</TD></TR>
+<TR><TD>091.42470306</TD><TD>-86.63254306</TD><TD>II/339/uvotssc1</TD><TD>recno=2658652</TD><TD></TD><TD>0.0</TD><TD>682.59e+3</TD><TD>1.85e-3</TD><TD></TD><TD>UVOT:B</TD></TR>
+<TR><TD>091.43542500</TD><TD>-86.63267889</TD><TD>II/339/uvotssc1</TD><TD>recno=2658952</TD><TD></TD><TD>0.0</TD><TD>865.20e+3</TD><TD>482.e-6</TD><TD></TD><TD>UVOT:U</TD></TR>
 <TR><TD>091.421482000</TD><TD>-86.631643100</TD><TD>II/363/unwise</TD><TD>-c=091.4214820 -86.6316431,eq=J2000&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>65.172e+3</TD><TD>33.2e-3</TD><TD>0.0e-3</TD><TD>WISE:W2</TD></TR>
 <TR><TD>091.421482000</TD><TD>-86.631643100</TD><TD>II/363/unwise</TD><TD>-c=091.4214820 -86.6316431,eq=J2000&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>89.490e+3</TD><TD>49.7e-3</TD><TD>0.0e-3</TD><TD>WISE:W1</TD></TR>
 <TR><TD>091.421553100</TD><TD>-86.631650200</TD><TD>II/363/unwise</TD><TD>-c=091.4215531 -86.6316502,eq=J2000&amp;-c.rs=0.004</TD><TD></TD><TD>0.0</TD><TD>65.172e+3</TD><TD>32.9e-3</TD><TD>0.0e-3</TD><TD>WISE:W2</TD></TR>
@@ -296,8 +298,15 @@ Constraint -c.rs=5</INFO>
 <TR><TD>091.423333</TD><TD>-86.631944</TD><TD>J/MNRAS/456/3335/table12</TD><TD>recno=87</TD><TD></TD><TD>0.0</TD><TD>1.1992e+3</TD><TD>11.9</TD><TD>0.8</TD><TD>:=250um</TD></TR>
 <TR><TD>091.4218800</TD><TD>-86.6316200</TD><TD>J/MNRAS/474/5363/table1</TD><TD>recno=12761</TD><TD></TD><TD>0.0</TD><TD>13.571e+3</TD><TD>0.829</TD><TD>0.006</TD><TD>WISE:W4</TD></TR>
 <TR><TD>091.4218800</TD><TD>-86.6316200</TD><TD>J/MNRAS/474/5363/table1</TD><TD>recno=12761</TD><TD></TD><TD>0.0</TD><TD>25.934e+3</TD><TD>0.478</TD><TD>0.003</TD><TD>WISE:W3</TD></TR>
+<TR><TD>091.42217254640001</TD><TD>-86.63168334960000</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=655</TD><TD></TD><TD>0.0</TD><TD>13.571e+3</TD><TD>0.453</TD><TD></TD><TD>WISE:W4</TD></TR>
+<TR><TD>091.42217254640001</TD><TD>-86.63168334960000</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=655</TD><TD></TD><TD>0.0</TD><TD>25.934e+3</TD><TD>0.156</TD><TD></TD><TD>WISE:W3</TD></TR>
+<TR><TD>091.42217254640001</TD><TD>-86.63168334960000</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=655</TD><TD></TD><TD>0.0</TD><TD>65.172e+3</TD><TD>44.8e-3</TD><TD></TD><TD>WISE:W2</TD></TR>
+<TR><TD>091.42217254640001</TD><TD>-86.63168334960000</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=655</TD><TD></TD><TD>0.0</TD><TD>89.490e+3</TD><TD>66.0e-3</TD><TD></TD><TD>WISE:W1</TD></TR>
+<TR><TD>091.42217254640001</TD><TD>-86.63168334960000</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=655</TD><TD></TD><TD>0.0</TD><TD>138.55e+3</TD><TD>40.1e-3</TD><TD></TD><TD>2MASS:Ks</TD></TR>
+<TR><TD>091.42217254640001</TD><TD>-86.63168334960000</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=655</TD><TD></TD><TD>0.0</TD><TD>181.75e+3</TD><TD>28.7e-3</TD><TD></TD><TD>2MASS:H</TD></TR>
+<TR><TD>091.42217254640001</TD><TD>-86.63168334960000</TD><TD>J/MNRAS/487/1823/table1</TD><TD>recno=655</TD><TD></TD><TD>0.0</TD><TD>241.96e+3</TD><TD>14.2e-3</TD><TD></TD><TD>2MASS:J</TD></TR>
 </TABLEDATA></DATA>
-<INFO name="matches" value="72">matching records</INFO>
+<INFO name="matches" value="73">matching records</INFO>
 
 <INFO name="Warning" value="increase the precision for computed column 10"/>
 <INFO name="Warning" value="increase the precision for computed column 10"/>
@@ -342,10 +351,10 @@ Constraint -c.rs=5</INFO>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="change VO format int  (%011lld) to char"/>
-<INFO name="Warning" value="SED skip value for II/339/uvotssc1.F.U=0.000000 "/>
-<INFO name="Warning" value="SED skip value for II/339/uvotssc1.F.B=0.000000 "/>
-<INFO name="Warning" value="SED skip value for II/339/uvotssc1.F.UVW1=0.000000 "/>
 <INFO name="Warning" value="SED skip value for II/339/uvotssc1.F.UVW2=0.000000 "/>
+<INFO name="Warning" value="SED skip value for II/339/uvotssc1.F.UVW1=0.000000 "/>
+<INFO name="Warning" value="SED skip value for II/339/uvotssc1.F.B=0.000000 "/>
+<INFO name="Warning" value="SED skip value for II/339/uvotssc1.F.U=0.000000 "/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
@@ -391,6 +400,8 @@ Constraint -c.rs=5</INFO>
 <INFO name="Warning" value="change VO format int  (%03d) to char"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="change VO format int  (%03d) to char"/>
+<INFO name="Warning" value="vc_coo can't change epoch"/>
+<INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>
 <INFO name="Warning" value="vc_coo can't change epoch"/>

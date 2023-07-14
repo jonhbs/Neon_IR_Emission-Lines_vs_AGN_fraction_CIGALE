@@ -23,7 +23,7 @@
     <DESCRIPTION>
      Table name
     </DESCRIPTION>
-    <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR-5?-info=XML&amp;-out.add=.&amp;-source=I/289/out&amp;-c=${+RAJ2000}${+DEJ2000}&amp;-c.eq=J2000.000&amp;-c.rs=0.5"/>
+    <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR-5?-info=XML&amp;-out.add=.&amp;-source=${_tabname}&amp;${_ID}"/>
    </FIELD>
    <FIELD ID="_ID" arraysize="64" datatype="char" name="_ID" ucd="meta.id">
     <DESCRIPTION>
@@ -152,10 +152,10 @@
       <TD>PM2000=2576446</TD>
       <TD/>
       <TD>    0.0</TD>
-      <TD>    241960</TD>
-      <TD>   0.0459</TD>
-      <TD>   0.001</TD>
-      <TD>2MASS:J</TD>
+      <TD>    138550</TD>
+      <TD>   0.0196</TD>
+      <TD>  0.0004</TD>
+      <TD>2MASS:Ks</TD>
       <TD>2006A&amp;A...448.1235D</TD>
      </TR>
      <TR>
@@ -165,10 +165,10 @@
       <TD>PM2000=2576446</TD>
       <TD/>
       <TD>    0.0</TD>
-      <TD>    241960</TD>
-      <TD>   0.0181</TD>
-      <TD>  0.0006</TD>
-      <TD>2MASS:J</TD>
+      <TD>    181750</TD>
+      <TD>    0.012</TD>
+      <TD>  0.0004</TD>
+      <TD>2MASS:H</TD>
       <TD>2006A&amp;A...448.1235D</TD>
      </TR>
      <TR>
@@ -549,7 +549,7 @@
       <TD>2016KPCB...32..260A</TD>
      </TR>
      <TR>
-      <TD>334.301099318</TD>
+      <TD>334.301099319</TD>
       <TD> 14.239144043</TD>
       <TD>I/345/gaia2</TD>
       <TD>-c=334.30109914162 +14.23914354828,eq=ICRS&amp;-c.rs=0.004</TD>
@@ -562,7 +562,7 @@
       <TD>2018A&amp;A...616A...1G</TD>
      </TR>
      <TR>
-      <TD>334.301099318</TD>
+      <TD>334.301099319</TD>
       <TD> 14.239144043</TD>
       <TD>I/345/gaia2</TD>
       <TD>-c=334.30109914162 +14.23914354828,eq=ICRS&amp;-c.rs=0.004</TD>
@@ -575,7 +575,7 @@
       <TD>2018A&amp;A...616A...1G</TD>
      </TR>
      <TR>
-      <TD>334.301099318</TD>
+      <TD>334.301099319</TD>
       <TD> 14.239144043</TD>
       <TD>I/345/gaia2</TD>
       <TD>-c=334.30109914162 +14.23914354828,eq=ICRS&amp;-c.rs=0.004</TD>
@@ -588,8 +588,8 @@
       <TD>2018A&amp;A...616A...1G</TD>
      </TR>
      <TR>
-      <TD>334.301099017</TD>
-      <TD> 14.239143848</TD>
+      <TD>334.301099016</TD>
+      <TD> 14.239143846</TD>
       <TD>I/350/gaiaedr3</TD>
       <TD>-c=334.30109914402 +14.23914352589,eq=ICRS&amp;-c.rs=0.004</TD>
       <TD/>
@@ -601,8 +601,8 @@
       <TD>2020yCat.1350....0G</TD>
      </TR>
      <TR>
-      <TD>334.301099017</TD>
-      <TD> 14.239143848</TD>
+      <TD>334.301099016</TD>
+      <TD> 14.239143846</TD>
       <TD>I/350/gaiaedr3</TD>
       <TD>-c=334.30109914402 +14.23914352589,eq=ICRS&amp;-c.rs=0.004</TD>
       <TD/>
@@ -614,8 +614,8 @@
       <TD>2020yCat.1350....0G</TD>
      </TR>
      <TR>
-      <TD>334.301099017</TD>
-      <TD> 14.239143848</TD>
+      <TD>334.301099016</TD>
+      <TD> 14.239143846</TD>
       <TD>I/350/gaiaedr3</TD>
       <TD>-c=334.30109914402 +14.23914352589,eq=ICRS&amp;-c.rs=0.004</TD>
       <TD/>
@@ -913,8 +913,8 @@
       <TD>2008AJ....136..735L</TD>
      </TR>
      <TR>
-      <TD>334.301099017</TD>
-      <TD> 14.239143848</TD>
+      <TD>334.301099016</TD>
+      <TD> 14.239143846</TD>
       <TD>I/355/gaiadr3</TD>
       <TD>-c=334.30109914402 +14.23914352589,eq=ICRS&amp;-c.rs=0.004</TD>
       <TD/>
@@ -926,8 +926,8 @@
       <TD>2022yCat.1355....0G</TD>
      </TR>
      <TR>
-      <TD>334.301099017</TD>
-      <TD> 14.239143848</TD>
+      <TD>334.301099016</TD>
+      <TD> 14.239143846</TD>
       <TD>I/355/gaiadr3</TD>
       <TD>-c=334.30109914402 +14.23914352589,eq=ICRS&amp;-c.rs=0.004</TD>
       <TD/>
@@ -939,8 +939,8 @@
       <TD>2022yCat.1355....0G</TD>
      </TR>
      <TR>
-      <TD>334.301099017</TD>
-      <TD> 14.239143848</TD>
+      <TD>334.301099016</TD>
+      <TD> 14.239143846</TD>
       <TD>I/355/gaiadr3</TD>
       <TD>-c=334.30109914402 +14.23914352589,eq=ICRS&amp;-c.rs=0.004</TD>
       <TD/>
@@ -3615,6 +3615,97 @@
       <TD>   0.025</TD>
       <TD>:=12um</TD>
       <TD>2014MNRAS.439.1648A</TD>
+     </TR>
+     <TR>
+      <TD>334.300933838</TD>
+      <TD> 14.239201546</TD>
+      <TD>J/MNRAS/487/1823/table1</TD>
+      <TD>recno=41</TD>
+      <TD/>
+      <TD>    0.0</TD>
+      <TD>     13571</TD>
+      <TD>    0.107</TD>
+      <TD/>
+      <TD>WISE:W4</TD>
+      <TD>2019MNRAS.487.1823L</TD>
+     </TR>
+     <TR>
+      <TD>334.300933838</TD>
+      <TD> 14.239201546</TD>
+      <TD>J/MNRAS/487/1823/table1</TD>
+      <TD>recno=41</TD>
+      <TD/>
+      <TD>    0.0</TD>
+      <TD>     25934</TD>
+      <TD>   0.0647</TD>
+      <TD/>
+      <TD>WISE:W3</TD>
+      <TD>2019MNRAS.487.1823L</TD>
+     </TR>
+     <TR>
+      <TD>334.300933838</TD>
+      <TD> 14.239201546</TD>
+      <TD>J/MNRAS/487/1823/table1</TD>
+      <TD>recno=41</TD>
+      <TD/>
+      <TD>    0.0</TD>
+      <TD>     65172</TD>
+      <TD>   0.0496</TD>
+      <TD/>
+      <TD>WISE:W2</TD>
+      <TD>2019MNRAS.487.1823L</TD>
+     </TR>
+     <TR>
+      <TD>334.300933838</TD>
+      <TD> 14.239201546</TD>
+      <TD>J/MNRAS/487/1823/table1</TD>
+      <TD>recno=41</TD>
+      <TD/>
+      <TD>    0.0</TD>
+      <TD>     89490</TD>
+      <TD>   0.0395</TD>
+      <TD/>
+      <TD>WISE:W1</TD>
+      <TD>2019MNRAS.487.1823L</TD>
+     </TR>
+     <TR>
+      <TD>334.300933838</TD>
+      <TD> 14.239201546</TD>
+      <TD>J/MNRAS/487/1823/table1</TD>
+      <TD>recno=41</TD>
+      <TD/>
+      <TD>    0.0</TD>
+      <TD>    138550</TD>
+      <TD>   0.0196</TD>
+      <TD/>
+      <TD>2MASS:Ks</TD>
+      <TD>2019MNRAS.487.1823L</TD>
+     </TR>
+     <TR>
+      <TD>334.300933838</TD>
+      <TD> 14.239201546</TD>
+      <TD>J/MNRAS/487/1823/table1</TD>
+      <TD>recno=41</TD>
+      <TD/>
+      <TD>    0.0</TD>
+      <TD>    181750</TD>
+      <TD>    0.012</TD>
+      <TD/>
+      <TD>2MASS:H</TD>
+      <TD>2019MNRAS.487.1823L</TD>
+     </TR>
+     <TR>
+      <TD>334.300933838</TD>
+      <TD> 14.239201546</TD>
+      <TD>J/MNRAS/487/1823/table1</TD>
+      <TD>recno=41</TD>
+      <TD/>
+      <TD>    0.0</TD>
+      <TD>    241960</TD>
+      <TD>  0.00771</TD>
+      <TD/>
+      <TD>2MASS:J</TD>
+      <TD>2019MNRAS.487.1823L</TD>
      </TR>
      <TR>
       <TD>334.301083300</TD>
