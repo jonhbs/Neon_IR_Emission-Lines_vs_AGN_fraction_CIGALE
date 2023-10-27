@@ -9,24 +9,27 @@ jobernals@unal.edu.co
 
 import numpy as np
 import seaborn as sns
-
+import pandas as pd
 from matplotlib import pyplot as plt
 from scipy.stats import norm
 
 
-def bootstrapCorr(n,fract,df,var1,var2,pdfhisto=False,kdehisto=False,conf=90):
+def bootstrapCorr(n,fract,data,var1,var2,pdfhisto=False,kdehisto=False,conf=95):
     '''
     This functions do the bootstraping for the correlation coefficients
     Inputs:
     n: Number of samples
     fract: Fraction of data from the intial 
            dataframe to make the samples
-    df: Dataframe
+    data: Data
     var1, var2: Variables to be correlated
     pdfhisto: If you want to print the histogram with a pdf
     snshisto_ If you want to print the histogram with the kde
     conf: Confidence Interval
     '''
+
+    df = data.to_pandas()
+
     corr_bootstrap = []
     for i in range(n):
         sample = df.sample(frac=fract,replace=True, random_state=i)
